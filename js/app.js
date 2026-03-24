@@ -117,20 +117,46 @@ function starHTML(rating, interactive = false, prefix = '') {
 // ─── Save & persist ──────────────────────────────────────────────────────────
 function persist() {
   saveState(state);
-  // Sync to server (shared state for all visitors)
+  const body = JSON.stringify(state);
+  _lastPersistedJSON = body;
   fetch(API_BASE + '/api/state', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(state)
+    body
   }).catch(() => {}); // fail silently if server unavailable
 }
 
 async function loadFromServer() {
   try {
-    const res = await fetch('/api/state');
+    const res = await fetch(API_BASE + '/api/state');
     if (!res.ok) return null;
     return await res.json();
   } catch { return null; }
+}
+
+// ─── Live sync via SSE ───────────────────────────────────────────────────────
+let _lastPersistedJSON = null;
+
+function applyRemoteState(incoming) {
+  const json = JSON.stringify(incoming);
+  if (json === _lastPersistedJSON) return; // our own change, ignore
+  state.weekPlan    = incoming.weekPlan;
+  state.cyclePlans  = incoming.cyclePlans;
+  state.intervalWeeks = incoming.intervalWeeks;
+  state.currentWeekOffset = incoming.currentWeekOffset;
+  if (currentView === 'plan') renderPlan();
+  showToast('Plan aktualisiert');
+}
+
+function connectSSE() {
+  const es = new EventSource(API_BASE + '/api/events');
+  es.onmessage = e => {
+    try { applyRemoteState(JSON.parse(e.data)); } catch {}
+  };
+  es.onerror = () => {
+    es.close();
+    setTimeout(connectSSE, 5000); // reconnect after 5 s
+  };
 }
 
 // ─── Cycle / Interval Logic ───────────────────────────────────────────────────
@@ -699,16 +725,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     saveState(state);
   }
 
-  // Poll for updates from other visitors every 30 seconds
-  setInterval(async () => {
-    const s = await loadFromServer();
-    if (s && JSON.stringify(s.weekPlan) !== JSON.stringify(state.weekPlan)) {
-      state.weekPlan = s.weekPlan;
-      state.cyclePlans = s.cyclePlans || {};
-      saveState(state);
-      if (currentView === 'plan') renderPlan();
-    }
-  }, 30000);
+  // Live sync via SSE
+  connectSSE();
 
   // Nav clicks
   document.querySelectorAll('.nav-item').forEach(item => {
