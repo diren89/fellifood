@@ -15,6 +15,26 @@
 </head>
 <body>
 
+<!-- ═══ LOGIN ════════════════════════════════════════════════════════════════ -->
+<div id="login-screen">
+  <div class="login-box">
+    <div class="login-logo">
+      <div class="logo-mark">🍽</div>
+      <div class="logo-text">FelliFood</div>
+      <div class="logo-sub">Familienküche</div>
+    </div>
+    <form id="login-form" onsubmit="handleLogin(event)">
+      <input id="login-password" type="password" placeholder="Passwort" autocomplete="current-password" />
+      <label class="login-remember">
+        <input type="checkbox" id="login-remember" checked />
+        <span>Angemeldet bleiben</span>
+      </label>
+      <button type="submit" class="btn btn-primary">Einloggen</button>
+      <p id="login-error" class="login-error"></p>
+    </form>
+  </div>
+</div>
+
 <div id="app">
 
   <!-- ═══ HEADER ══════════════════════════════════════════════════════════ -->

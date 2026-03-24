@@ -2,6 +2,39 @@
    FelliFood – App JavaScript
    ═══════════════════════════════════════════════════════════════════════════ */
 
+// ─── Auth ────────────────────────────────────────────────────────────────────
+const PW_HASH = '3a68dadd356b301edee1659a23e6d387ca953fe5083d396c00218b67824d6a62';
+
+async function sha256(str) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function handleLogin(e) {
+  e.preventDefault();
+  const pw = document.getElementById('login-password').value;
+  const remember = document.getElementById('login-remember').checked;
+  const hash = await sha256(pw);
+  if (hash === PW_HASH) {
+    (remember ? localStorage : sessionStorage).setItem('ff_auth', '1');
+    document.getElementById('login-screen').classList.add('hidden');
+    document.getElementById('app').classList.remove('hidden');
+  } else {
+    document.getElementById('login-error').textContent = 'Falsches Passwort';
+    document.getElementById('login-password').value = '';
+  }
+}
+
+function checkAuth() {
+  const auth = localStorage.getItem('ff_auth') === '1' || sessionStorage.getItem('ff_auth') === '1';
+  if (auth) {
+    document.getElementById('login-screen').classList.add('hidden');
+    document.getElementById('app').classList.remove('hidden');
+  } else {
+    document.getElementById('app').classList.add('hidden');
+  }
+}
+
 // ─── API ─────────────────────────────────────────────────────────────────────
 const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? ''
@@ -709,6 +742,8 @@ function saveNewRecipe() {
 
 // ─── Init ─────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', async () => {
+  checkAuth();
+
   // Load shared state from server first, fall back to localStorage
   const serverState = await loadFromServer();
   if (serverState) {
