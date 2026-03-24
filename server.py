@@ -1,9 +1,8 @@
 import os, json, http.server, socketserver
 from urllib.parse import urlparse
 
-os.chdir('/Users/christian.fellenstein/Desktop/FelliFood')
-PORT = 3456
-STATE_FILE = 'state.json'
+PORT = int(os.environ.get('PORT', 3456))
+STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'state.json')
 
 class Handler(http.server.SimpleHTTPRequestHandler):
 
@@ -49,6 +48,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def log_message(self, fmt, *args):
         pass  # suppress request logs
 
+Handler.directory = os.path.dirname(os.path.abspath(__file__))
 socketserver.TCPServer.allow_reuse_address = True
 with socketserver.TCPServer(('', PORT), Handler) as httpd:
     print(f'FelliFood running on http://localhost:{PORT}')

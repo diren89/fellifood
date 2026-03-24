@@ -2,6 +2,11 @@
    FelliFood – App JavaScript
    ═══════════════════════════════════════════════════════════════════════════ */
 
+// ─── API ─────────────────────────────────────────────────────────────────────
+const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? ''
+  : 'https://fellifood.onrender.com';
+
 // ─── State ──────────────────────────────────────────────────────────────────
 let state = initState();
 let currentView = 'plan';
@@ -113,7 +118,7 @@ function starHTML(rating, interactive = false, prefix = '') {
 function persist() {
   saveState(state);
   // Sync to server (shared state for all visitors)
-  fetch('/api/state', {
+  fetch(API_BASE + '/api/state', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(state)

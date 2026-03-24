@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# State (lokale Daten)
+state.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+.idea/
