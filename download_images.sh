@@ -1,0 +1,78 @@
+#!/bin/bash
+# Downloads recipe images from Unsplash to images/recipes/
+cd "$(dirname "$0")"
+OUT="images/recipes"
+
+download() {
+  local file="$OUT/$1"
+  local id="$2"
+  if [ ! -f "$file" ]; then
+    echo "↓ $1"
+    curl -sL "https://images.unsplash.com/photo-${id}?w=400&q=80" -o "$file"
+    sleep 0.3
+  else
+    echo "✓ $1 (already exists)"
+  fi
+}
+
+# Existing recipes (r1–r10)
+download "spaghetti-bolognese.jpg"      "1555949258-eb67b1ef0ceb"
+download "gemuese-curry.jpg"            "1585937421612-70a008356fbe"
+download "avocado-toast.jpg"            "1541519227354-08fa5d50c820"
+download "grillhaehnchen.jpg"           "1598103442097-8b74394b95c5"
+download "linsensuppe.jpg"              "1547592180-85f173990554"
+download "pfannkuchen.jpg"              "1567620905732-2d1ec7ab7445"
+download "caesar-salad.jpg"             "1546793665-c74683f339c1"
+download "lachs.jpg"                    "1467003909585-2f8a72700288"
+download "kuerbissuppe.jpg"             "1476718406336-bb5a9690ee2a"
+download "haehnchen-wrap.jpg"           "1552332386-f8dd00dc2f85"
+
+# New recipes (r11–r110)
+download "chia-pudding.jpg"             "1511690656952-34342bb7c2f2"
+download "porridge.jpg"                 "1504307651254-35680f356dfd"
+download "smoothie-bowl.jpg"            "1512621776951-a57141f2eefd"
+download "overnight-oats.jpg"           "1517673400952-9d09f06ef5d7"
+download "chili.jpg"                    "1505253716362-afaea1d3d1af"
+download "pasta-lentils.jpg"            "1574894709920-11b28e7367e3"
+download "broccoli-gratin.jpg"          "1583608205776-bfd35f0d9f83"
+download "rice-vegetables.jpg"          "1603133872878-684f208fb84b"
+download "thai-curry.jpg"               "1455619452474-d2be8b1e70cd"
+download "grain-salad.jpg"              "1540420773420-3366772f4999"
+download "potato-dish.jpg"              "1567620832903-9fc6debc209f"
+download "spring-rolls.jpg"             "1534482421-64566f976cfa"
+download "vegetables.jpg"               "1498837167922-ddd27525d352"
+download "gnocchi.jpg"                  "1621996346565-e3dbc646d9a9"
+download "mediterranean-veg.jpg"        "1572453800999-e8d2d1589b7c"
+download "falafel.jpg"                  "1593001872095-7d5b3868dd20"
+download "pad-thai.jpg"                 "1559314809-0d155014e29e"
+download "tofu-bowl.jpg"                "1546069901-ba9599a7e63c"
+download "tacos.jpg"                    "1565299585323-38d6b0865b47"
+download "soup.jpg"                     "1547592166-23ac45744acd"
+download "paella.jpg"                   "1534080564583-6be75777b70a"
+download "noodles.jpg"                  "1569050467447-ce54b3bbc37d"
+download "burger.jpg"                   "1568901346375-23c9450c58cd"
+download "hummus.jpg"                   "1541014741259-de529411b96a"
+download "bibimbap.jpg"                 "1590301157890-4810ed352733"
+download "gazpacho.jpg"                 "1607532941433-304659e8198a"
+download "scrambled-eggs.jpg"           "1525351484163-7529414344d8"
+download "muesli.jpg"                   "1511688878353-3a0ca7551bff"
+download "french-toast.jpg"             "1484723091739-30d6baae8efa"
+download "bacon-breakfast.jpg"          "1528736235302-52922df5c122"
+download "eggs-benedict.jpg"            "1482007816882-61b2da028c4d"
+download "quiche.jpg"                   "1557075877-56ae18128e5e"
+download "mac-cheese.jpg"               "1474447976484-0e5f1e7ac3e5"
+download "caprese.jpg"                  "1579871494-dddbb2a69b38"
+download "tomato-soup.jpg"              "1571167366335-e105a2bfa5f2"
+download "pasta.jpg"                    "1473093295043-cdd792d0e4f6"
+download "risotto.jpg"                  "1457332540-30b66c5e3e44"
+download "frittata.jpg"                 "1514190051997-0f6f39ca5cde"
+download "meat-dish.jpg"                "1576402187878-974f70c890a5"
+download "schnitzel.jpg"                "1577219491135-ce391730fb2c"
+download "chicken-dish.jpg"             "1595854341625-f33a65b5c815"
+download "pulled-pork.jpg"              "1558030006-b2e40b8a58dc"
+download "stir-fry.jpg"                 "1607013251379-e6eecfffe234"
+download "carbonara.jpg"                "1546549032-9759fbe6b7b3"
+download "pizza.jpg"                    "1513104890138-2fa825723cbc"
+
+echo ""
+echo "Done! $(ls $OUT | wc -l | tr -d ' ') images in $OUT/"

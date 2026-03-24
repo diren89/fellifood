@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#100c07">
+  <title>FelliFood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Barlow+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ═══ HEADER ══════════════════════════════════════════════════════════ -->
+  <header class="app-header">
+    <div class="logo" onclick="showView('plan')">
+      <div class="logo-mark">🍽</div>
+      <div>
+        <div class="logo-text">FelliFood</div>
+        <div class="logo-sub">Familienküche</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ VIEWS ═══════════════════════════════════════════════════════════ -->
+
+  <!-- ── WOCHENPLAN ───────────────────────────────────────────────────── -->
+  <div id="view-plan" class="view active">
+    <div class="main-content">
+      <div class="section-eyebrow">Deine Woche</div>
+      <div class="plan-header-row">
+        <div class="plan-header-title">Wochenplan</div>
+        <div class="week-nav">
+          <button class="btn btn-icon" id="btn-week-prev">‹</button>
+          <span class="week-range" id="week-label"></span>
+          <button class="btn btn-icon" id="btn-week-next">›</button>
+        </div>
+      </div>
+
+      <div class="week-actions">
+        <button class="btn btn-secondary" id="btn-autofill">
+          ✦ Leere befüllen
+        </button>
+        <button class="btn btn-primary" id="btn-autofill-all">
+          ⟳ Neu würfeln
+        </button>
+      </div>
+
+      <div class="interval-row">
+        <span class="interval-label">Wiederholung</span>
+        <div class="interval-chips">
+          <button class="interval-chip active" data-weeks="1">Wöchentlich</button>
+          <button class="interval-chip" data-weeks="2">2-wöchig</button>
+          <button class="interval-chip" data-weeks="4">Monatlich</button>
+        </div>
+      </div>
+
+      <div id="plan-days"></div>
+    </div>
+  </div>
+
+  <!-- ── REZEPTE ──────────────────────────────────────────────────────── -->
+  <div id="view-recipes" class="view">
+    <div class="main-content">
+      <div class="recipes-header-row">
+        <div>
+          <div class="section-eyebrow">Sammlung</div>
+          <div class="section-title" style="margin-bottom:0">Rezepte</div>
+        </div>
+        <button class="btn-add-recipe" id="btn-add-recipe" aria-label="Rezept hinzufügen">+</button>
+      </div>
+
+      <div class="search-bar">
+        <span class="search-icon">✦</span>
+        <input type="search" id="recipe-search" placeholder="Rezept suchen…">
+      </div>
+
+      <div class="filter-pills-row">
+        <span class="filter-pill" data-group="label" data-val="vegan">🌱 Vegan</span>
+        <span class="filter-pill" data-group="label" data-val="vegetarisch">🥕 Vegetarisch</span>
+        <span class="filter-pill" data-group="label" data-val="fleisch">🥩 Fleisch</span>
+        <span class="filter-pill" data-group="mahlzeit" data-val="fruehstueck">🌅 Frühstück</span>
+        <span class="filter-pill" data-group="mahlzeit" data-val="mittagessen">☀️ Mittagessen</span>
+        <span class="filter-pill" data-group="mahlzeit" data-val="abendessen">🌙 Abendessen</span>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-section-header">
+          <span>Ernährungsweise</span>
+          <span class="toggle-icon">▾</span>
+        </div>
+        <div class="filter-section-body">
+          <span class="filter-chip" data-group="label" data-val="vegan">🌱 Vegan</span>
+          <span class="filter-chip" data-group="label" data-val="vegetarisch">🥕 Vegetarisch</span>
+          <span class="filter-chip" data-group="label" data-val="fleisch">🥩 Mit Fleisch</span>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-section-header">
+          <span>Mahlzeit</span>
+          <span class="toggle-icon">▾</span>
+        </div>
+        <div class="filter-section-body">
+          <span class="filter-chip" data-group="mahlzeit" data-val="fruehstueck">🌅 Frühstück</span>
+          <span class="filter-chip" data-group="mahlzeit" data-val="mittagessen">☀️ Mittagessen</span>
+          <span class="filter-chip" data-group="mahlzeit" data-val="abendessen">🌙 Abendessen</span>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-section-header">
+          <span>Küche</span>
+          <span class="toggle-icon">▾</span>
+        </div>
+        <div class="filter-section-body">
+          <span class="filter-chip" data-group="kueche" data-val="deutsch">🇩🇪 Deutsch</span>
+          <span class="filter-chip" data-group="kueche" data-val="italienisch">🇮🇹 Italienisch</span>
+          <span class="filter-chip" data-group="kueche" data-val="asiatisch">🥢 Asiatisch</span>
+          <span class="filter-chip" data-group="kueche" data-val="mexikanisch">🌮 Mexikanisch</span>
+          <span class="filter-chip" data-group="kueche" data-val="international">🌍 International</span>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-section-header">
+          <span>Zubereitungszeit</span>
+          <span class="toggle-icon">▾</span>
+        </div>
+        <div class="filter-section-body">
+          <span class="filter-chip" data-group="zeit" data-val="u30">⚡ Unter 30 Min.</span>
+          <span class="filter-chip" data-group="zeit" data-val="30-60">⏱ 30–60 Min.</span>
+          <span class="filter-chip" data-group="zeit" data-val="u60">⏳ Über 60 Min.</span>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-section-header">
+          <span>Schwierigkeitsgrad</span>
+          <span class="toggle-icon">▾</span>
+        </div>
+        <div class="filter-section-body">
+          <span class="filter-chip" data-group="schwierigkeit" data-val="einfach">😊 Einfach</span>
+          <span class="filter-chip" data-group="schwierigkeit" data-val="mittel">👨‍🍳 Mittel</span>
+          <span class="filter-chip" data-group="schwierigkeit" data-val="schwer">⭐ Schwer</span>
+        </div>
+      </div>
+
+      <div id="active-filters-bar" class="active-filters-bar"></div>
+      <div class="filter-bar-row">
+        <div class="results-count" id="recipe-results-count"></div>
+        <button class="btn btn-ghost btn-sm" id="btn-clear-filters">Zurücksetzen</button>
+      </div>
+
+      <div id="recipe-list"></div>
+    </div>
+  </div>
+
+  <!-- ── DETAIL (dynamisch) ─────────────────────────────────────────── -->
+  <div id="view-detail" class="view"></div>
+
+  <!-- ═══ NAV ═════════════════════════════════════════════════════════════ -->
+  <nav class="bottom-nav">
+    <button class="nav-item active" data-view="plan">
+      <span class="nav-icon">▦</span>
+      <span>Wochenplan</span>
+    </button>
+    <button class="nav-item" data-view="recipes">
+      <span class="nav-icon">◈</span>
+      <span>Rezepte</span>
+    </button>
+  </nav>
+
+</div>
+
+<!-- ═══ MODAL ════════════════════════════════════════════════════════════ -->
+<div id="modal-overlay" class="modal-overlay">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-header">
+      <div>
+        <div class="modal-title">Rezept wählen</div>
+        <div class="modal-subtitle" id="modal-meal-label"></div>
+      </div>
+      <button class="modal-close" id="modal-close">✕</button>
+    </div>
+    <div class="modal-search">
+      <input type="search" id="modal-search-input" placeholder="Rezept suchen…">
+    </div>
+    <div class="modal-filters">
+      <span class="filter-pill modal-label-pill active" data-val="all">Alle</span>
+      <span class="filter-pill modal-label-pill" data-val="vegan">🌱 Vegan</span>
+      <span class="filter-pill modal-label-pill" data-val="vegetarisch">🥕 Vegetarisch</span>
+      <span class="filter-pill modal-label-pill" data-val="fleisch">🥩 Fleisch</span>
+    </div>
+    <div class="modal-list" id="modal-recipe-list"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<!-- ═══ ADD RECIPE MODAL ════════════════════════════════════════════════════ -->
+<div id="recipe-form-overlay" class="recipe-form-overlay">
+  <div class="recipe-form-sheet">
+    <div class="recipe-form-header">
+      <div class="recipe-form-title">Neues Rezept</div>
+      <button class="modal-close" id="recipe-form-close">✕</button>
+    </div>
+    <div class="recipe-form-body">
+
+      <div class="form-field">
+        <label class="form-label">Name *</label>
+        <input type="text" class="form-input" id="rf-name" placeholder="z.B. Spaghetti Carbonara">
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Kurzbeschreibung *</label>
+        <textarea class="form-textarea" id="rf-desc" rows="2"
+          placeholder="Ein Satz zur Beschreibung des Rezepts…"></textarea>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Ernährung *</label>
+        <select class="form-select" id="rf-label">
+          <option value="vegan">🌱 Vegan</option>
+          <option value="vegetarisch">🥕 Vegetarisch</option>
+          <option value="fleisch" selected>🥩 Fleisch / Fisch</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Mahlzeit *</label>
+        <div class="form-checkbox-row" id="rf-mahlzeit-chips">
+          <label class="form-checkbox-chip" data-val="fruehstueck">
+            <input type="checkbox" value="fruehstueck"> 🌅 Morgen
+          </label>
+          <label class="form-checkbox-chip" data-val="mittagessen">
+            <input type="checkbox" value="mittagessen"> ☀️ Mittag
+          </label>
+          <label class="form-checkbox-chip" data-val="abendessen">
+            <input type="checkbox" value="abendessen" checked> 🌙 Abend
+          </label>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Küche</label>
+        <select class="form-select" id="rf-kueche">
+          <option value="deutsch">🇩🇪 Deutsch</option>
+          <option value="italienisch">🇮🇹 Italienisch</option>
+          <option value="asiatisch">🥢 Asiatisch</option>
+          <option value="mexikanisch">🌮 Mexikanisch</option>
+          <option value="mediterran">🌊 Mediterran</option>
+          <option value="international" selected>🌍 International</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Zubereitungszeit (Minuten) *</label>
+        <input type="number" class="form-input" id="rf-zeit" value="30" min="1" max="720">
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Schwierigkeit</label>
+        <select class="form-select" id="rf-schwierigkeit">
+          <option value="einfach" selected>😊 Einfach</option>
+          <option value="mittel">👨‍🍳 Mittel</option>
+          <option value="schwer">⭐ Schwer</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Zutaten (eine pro Zeile) *</label>
+        <textarea class="form-textarea" id="rf-zutaten" rows="5"
+          placeholder="400 g Spaghetti&#10;200 g Pancetta&#10;4 Eigelb&#10;…"></textarea>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Zubereitung (Schritte, je eine Zeile) *</label>
+        <textarea class="form-textarea" id="rf-zubereitung" rows="5"
+          placeholder="Wasser aufsetzen und Pasta kochen.&#10;Pancetta knusprig braten.&#10;…"></textarea>
+      </div>
+
+    </div>
+    <div class="recipe-form-footer">
+      <button class="btn btn-secondary" id="recipe-form-cancel" style="flex:1">Abbrechen</button>
+      <button class="btn btn-primary" id="recipe-form-save" style="flex:2">Rezept speichern</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js?v=2"></script>
+<script src="js/app.js?v=2"></script>
+</body>
+</html>
