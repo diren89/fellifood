@@ -1,18 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#100c07"/>
-  <!-- Plate -->
-  <circle cx="256" cy="272" r="118" fill="none" stroke="#E8B468" stroke-width="14"/>
-  <circle cx="256" cy="272" r="80" fill="none" stroke="#E8B468" stroke-width="8" opacity="0.4"/>
-  <!-- Fork -->
-  <g fill="#E8B468">
-    <rect x="176" y="120" width="10" height="60" rx="5"/>
-    <rect x="166" y="120" width="8" height="42" rx="4"/>
-    <rect x="188" y="120" width="8" height="42" rx="4"/>
-    <rect x="176" y="162" width="10" height="68" rx="5"/>
+  <!-- Amber rounded background -->
+  <rect width="512" height="512" rx="115" fill="#E8B468"/>
+  <!-- Glossy overlay -->
+  <rect width="512" height="512" rx="115" fill="url(#gloss)" opacity="0.18"/>
+  <defs>
+    <linearGradient id="gloss" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="white" stop-opacity="1"/>
+      <stop offset="55%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Plate (white circle) -->
+  <circle cx="256" cy="272" r="130" fill="white" opacity="0.95"/>
+  <!-- Plate inner ring -->
+  <circle cx="256" cy="272" r="100" fill="none" stroke="white" stroke-width="6" opacity="0.3"/>
+  <!-- Plate shadow/depth -->
+  <circle cx="256" cy="272" r="130" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="4"/>
+
+  <!-- Fork (left) -->
+  <g fill="#6b4c1e" opacity="0.85">
+    <!-- Handle -->
+    <rect x="148" y="310" width="16" height="82" rx="8"/>
+    <!-- Tines stem -->
+    <rect x="148" y="172" width="16" height="90" rx="5"/>
+    <!-- Left tine -->
+    <rect x="135" y="148" width="10" height="52" rx="5"/>
+    <!-- Middle tine -->
+    <rect x="151" y="148" width="10" height="52" rx="5"/>
+    <!-- Right tine -->
+    <rect x="167" y="148" width="10" height="52" rx="5"/>
   </g>
-  <!-- Knife -->
-  <g fill="#E8B468">
-    <path d="M328 120 Q344 140 336 180 L328 180 L328 120Z" rx="4"/>
-    <rect x="328" y="180" width="8" height="50" rx="4"/>
+
+  <!-- Knife (right) -->
+  <g fill="#6b4c1e" opacity="0.85">
+    <!-- Handle -->
+    <rect x="348" y="310" width="16" height="82" rx="8"/>
+    <!-- Blade -->
+    <path d="M348 172 Q348 148 364 148 L364 262 Q356 265 348 262 Z" rx="4"/>
   </g>
 </svg>
