@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/icon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/icon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/icon-180.png">
-  <link rel="stylesheet" href="css/styles.css?v=7">
+  <link rel="stylesheet" href="css/styles.css?v=10">
 </head>
 <body>
 
@@ -49,6 +49,15 @@
         <div class="logo-text">FelliFood</div>
         <div class="logo-sub">Familienküche</div>
       </div>
+    </div>
+    <!-- Hamburger FAB -->
+    <div id="fab-plan" class="fab-container">
+      <div class="fab-speed-dial" id="fab-speed-dial">
+        <button class="fab-action-item fab-action-item--outline" id="btn-autofill-all">⟳ Reset</button>
+        <button class="fab-action-item fab-action-item--outline" id="btn-autofill">✦ Wizard</button>
+        <button class="fab-action-item fab-action-item--outline" id="btn-fab-settings">⚙&#xFE0E; Einstellungen</button>
+      </div>
+      <button class="fab-main" id="fab-main">☰</button>
     </div>
   </header>
 
@@ -176,6 +185,15 @@
     <div class="main-content"></div>
   </div>
 
+  <!-- ── EINKAUFSLISTE ───────────────────────────────────────────── -->
+  <div id="view-shopping" class="view">
+    <div class="main-content">
+      <div class="section-eyebrow">Woche</div>
+      <div class="section-title">Einkaufsliste</div>
+      <div id="shopping-list-content"></div>
+    </div>
+  </div>
+
   <!-- ═══ NAV ═════════════════════════════════════════════════════════════ -->
   <nav class="bottom-nav">
     <button class="nav-item active" data-view="plan">
@@ -186,21 +204,11 @@
       <span class="nav-icon">◈</span>
       <span>Rezepte</span>
     </button>
-    <button class="nav-item" data-view="settings">
-      <span class="nav-icon">⚙&#xFE0E;</span>
-      <span>Einstellungen</span>
+    <button class="nav-item" data-view="shopping">
+      <span class="nav-icon">☰</span>
+      <span>Einkaufen</span>
     </button>
   </nav>
-
-  <!-- FAB Speed Dial -->
-  <div id="fab-plan" class="fab-container">
-    <div class="fab-speed-dial" id="fab-speed-dial">
-      <button class="fab-action-item fab-action-item--outline" id="btn-autofill-all">⟳ Reset</button>
-      <button class="fab-action-item fab-action-item--outline" id="btn-autofill">✦ Wizard</button>
-      <button class="fab-action-item fab-action-item--filled" id="btn-shopping-list">☰ Einkaufen</button>
-    </div>
-    <button class="fab-main" id="fab-main">✦</button>
-  </div>
 
 </div>
 
@@ -328,18 +336,8 @@
   </div>
 </div>
 
-<!-- Shopping List Modal -->
-<div id="modal-shopping" class="modal-overlay">
-  <div class="modal-sheet">
-    <div class="modal-header">
-      <span class="modal-title">Einkaufsliste</span>
-      <button class="modal-close" id="btn-close-shopping">✕</button>
-    </div>
-    <div id="shopping-list-content" class="shopping-list-content"></div>
-  </div>
-</div>
 
 <script src="js/data.js?v=3"></script>
-<script src="js/app.js?v=5"></script>
+<script src="js/app.js?v=8"></script>
 </body>
 </html>

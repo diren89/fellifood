@@ -81,6 +81,7 @@ function showView(name, recipeId = null, from = null) {
     if (name === 'plan')     renderPlan();
     if (name === 'recipes')  renderRecipes();
     if (name === 'settings') renderSettings();
+    if (name === 'shopping') renderShoppingList();
     const fab = document.getElementById('fab-plan');
     if (fab) { fab.style.display = name === 'plan' ? 'flex' : 'none'; fab.classList.remove('open'); }
   }
@@ -884,10 +885,44 @@ function saveNewRecipe() {
 }
 
 // ─── Shopping List ────────────────────────────────────────────────────────────
-function openShoppingList() {
-  document.getElementById('fab-plan').classList.remove('open');
-  renderShoppingList();
-  document.getElementById('modal-shopping').classList.add('open');
+function _parseIngredient(str) {
+  str = str.trim();
+  const nm = str.match(/^(\d+(?:[.,]\d+)?)\s*/);
+  if (!nm) return { amount: null, unit: null, name: str.toLowerCase() };
+  const amount = parseFloat(nm[1].replace(',', '.'));
+  let rest = str.slice(nm[0].length).trim();
+  const um = rest.match(/^(kg|g|ml|cl|dl|l|EL|TL|Pkg|Pck|Bund|Zehen?|Scheiben?|Dosen?|Becher|Gläser|Glas|Stück|St)\b\s*/);
+  let unit = null;
+  if (um) { unit = um[1]; rest = rest.slice(um[0].length).trim(); }
+  return { amount, unit, name: rest.toLowerCase() };
+}
+
+function _fmtAmt(n) {
+  if (n % 1 === 0) return String(n);
+  return String(Math.round(n * 10) / 10).replace('.', ',');
+}
+
+function _aggregateIngredients(recipes) {
+  const map = new Map();
+  const misc = new Set();
+  for (const r of recipes) {
+    for (const z of r.zutaten) {
+      const p = _parseIngredient(z);
+      if (p.amount === null) {
+        misc.add(p.name);
+      } else {
+        const key = (p.unit || '') + '::' + p.name;
+        if (map.has(key)) map.get(key).amount += p.amount;
+        else map.set(key, { amount: p.amount, unit: p.unit, name: p.name });
+      }
+    }
+  }
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  const items = [...map.values()]
+    .map(i => i.unit ? `${_fmtAmt(i.amount)} ${i.unit} ${cap(i.name)}` : `${_fmtAmt(i.amount)} ${cap(i.name)}`)
+    .sort();
+  const miscItems = [...misc].map(cap).sort();
+  return [...items, ...miscItems];
 }
 
 function renderShoppingList() {
@@ -905,25 +940,22 @@ function renderShoppingList() {
     return;
   }
 
-  container.innerHTML = recipes.map(r => `
-    <div class="shopping-recipe-block">
-      <div class="shopping-recipe-name">${r.name}</div>
-      <ul class="shopping-ingredient-list">
-        ${r.zutaten.map((z, i) => `
-          <li class="shopping-item">
-            <label>
-              <input type="checkbox" class="shopping-cb" id="cb-${r.id}-${i}">
-              <span>${z}</span>
-            </label>
-          </li>
-        `).join('')}
-      </ul>
-    </div>
-  `).join('');
+  const items = _aggregateIngredients(recipes);
+  container.innerHTML = `
+    <ul class="shopping-ingredient-list">
+      ${items.map(item => `
+        <li class="shopping-item">
+          <div class="shopping-check"></div>
+          <span>${item}</span>
+        </li>
+      `).join('')}
+    </ul>
+  `;
 
-  container.querySelectorAll('.shopping-cb').forEach(cb => {
-    cb.addEventListener('change', () => {
-      cb.closest('.shopping-item').classList.toggle('done', cb.checked);
+  container.querySelectorAll('.shopping-item').forEach(row => {
+    row.addEventListener('click', () => {
+      const isDone = row.classList.toggle('done');
+      row.querySelector('.shopping-check').classList.toggle('checked', isDone);
     });
   });
 }
@@ -1003,14 +1035,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('fab-plan').classList.remove('open');
     autoFillAll();
   });
-  document.getElementById('btn-shopping-list').addEventListener('click', openShoppingList);
-  document.getElementById('btn-close-shopping').addEventListener('click', () => {
-    document.getElementById('modal-shopping').classList.remove('open');
-  });
-  document.getElementById('modal-shopping').addEventListener('click', e => {
-    if (e.target === document.getElementById('modal-shopping')) {
-      document.getElementById('modal-shopping').classList.remove('open');
-    }
+  document.getElementById('btn-fab-settings').addEventListener('click', () => {
+    document.getElementById('fab-plan').classList.remove('open');
+    showView('settings');
   });
 
   // Recipe search
