@@ -2292,9 +2292,10 @@ function loadState() {
     const raw = localStorage.getItem(STATE_KEY);
     if (raw) {
       const s = JSON.parse(raw);
-      if (!s.intervalWeeks) s.intervalWeeks = 1;
-      if (!s.cyclePlans)    s.cyclePlans = {};
-      if (!s.settings)      s.settings = { dayConstraints: {} };
+      if (!s.intervalWeeks)  s.intervalWeeks = 1;
+      if (!s.cyclePlans)     s.cyclePlans = {};
+      if (!s.settings)       s.settings = { dayConstraints: {} };
+      if (!s.lastModified)   s.lastModified = 0;
       return s;
     }
   } catch (e) {}
@@ -2329,7 +2330,8 @@ function initState() {
     currentWeekOffset: 0,
     intervalWeeks: 1,
     cyclePlans: {},
-    settings: { dayConstraints: {} }
+    settings: { dayConstraints: {} },
+    lastModified: 0
   };
 }
 

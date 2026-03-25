@@ -154,6 +154,7 @@ function starHTML(rating, interactive = false, prefix = '') {
 
 // ─── Save & persist ──────────────────────────────────────────────────────────
 function persist() {
+  state.lastModified = Date.now();
   saveState(state);
   const body = JSON.stringify(state);
   _lastPersistedJSON = body;
@@ -882,24 +883,82 @@ function saveNewRecipe() {
   showToast(`"${name}" hinzugefügt ✓`);
 }
 
+// ─── Shopping List ────────────────────────────────────────────────────────────
+function openShoppingList() {
+  document.getElementById('fab-plan').classList.remove('open');
+  renderShoppingList();
+  document.getElementById('modal-shopping').classList.add('open');
+}
+
+function renderShoppingList() {
+  const seen = new Set();
+  const recipes = state.weekPlan
+    .flatMap(day => day.meals)
+    .filter(m => m.recipeId)
+    .map(m => getRecipe(m.recipeId))
+    .filter(r => r && !seen.has(r.id) && seen.add(r.id));
+
+  const container = document.getElementById('shopping-list-content');
+
+  if (recipes.length === 0) {
+    container.innerHTML = '<p class="shopping-empty">Kein Wochenplan vorhanden.<br>Erstelle zuerst einen Plan.</p>';
+    return;
+  }
+
+  container.innerHTML = recipes.map(r => `
+    <div class="shopping-recipe-block">
+      <div class="shopping-recipe-name">${r.name}</div>
+      <ul class="shopping-ingredient-list">
+        ${r.zutaten.map((z, i) => `
+          <li class="shopping-item">
+            <label>
+              <input type="checkbox" class="shopping-cb" id="cb-${r.id}-${i}">
+              <span>${z}</span>
+            </label>
+          </li>
+        `).join('')}
+      </ul>
+    </div>
+  `).join('');
+
+  container.querySelectorAll('.shopping-cb').forEach(cb => {
+    cb.addEventListener('change', () => {
+      cb.closest('.shopping-item').classList.toggle('done', cb.checked);
+    });
+  });
+}
+
 // ─── Init ─────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', async () => {
   checkAuth();
 
-  // Load shared state from server first, fall back to localStorage
+  // Load state: use whichever of server or localStorage is newer
   const serverState = await loadFromServer();
-  if (serverState) {
-    const savedIds = new Set(serverState.recipes.map(r => r.id));
+  const localState  = loadState();
+  const serverTime  = serverState?.lastModified || 0;
+  const localTime   = localState?.lastModified  || 0;
+
+  function mergeRecipes(s) {
+    const savedIds = new Set(s.recipes.map(r => r.id));
     const newRecipes = INITIAL_RECIPES.filter(r => !savedIds.has(r.id));
-    if (newRecipes.length) serverState.recipes = [...serverState.recipes, ...newRecipes];
+    if (newRecipes.length) s.recipes = [...s.recipes, ...newRecipes];
     const imageMap = Object.fromEntries(INITIAL_RECIPES.map(r => [r.id, r.image]));
-    serverState.recipes = serverState.recipes.map(r =>
-      imageMap[r.id] ? { ...r, image: imageMap[r.id] } : r
-    );
-    if (!serverState.intervalWeeks) serverState.intervalWeeks = 1;
-    if (!serverState.cyclePlans)    serverState.cyclePlans = {};
-    state = serverState;
+    s.recipes = s.recipes.map(r => imageMap[r.id] ? { ...r, image: imageMap[r.id] } : r);
+    if (!s.intervalWeeks) s.intervalWeeks = 1;
+    if (!s.cyclePlans)    s.cyclePlans = {};
+    if (!s.settings)      s.settings = { dayConstraints: {} };
+    return s;
+  }
+
+  if (serverState && serverTime >= localTime) {
+    // Server state is current — adopt it
+    state = mergeRecipes(serverState);
     saveState(state);
+  } else if (localTime > serverTime) {
+    // Local state is newer (e.g. server restarted) — push it back to server
+    state = mergeRecipes(localState);
+    saveState(state);
+    persist(); // re-sync localStorage → server
   }
 
   // Live sync via SSE
@@ -943,6 +1002,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('btn-autofill-all').addEventListener('click', () => {
     document.getElementById('fab-plan').classList.remove('open');
     autoFillAll();
+  });
+  document.getElementById('btn-shopping-list').addEventListener('click', openShoppingList);
+  document.getElementById('btn-close-shopping').addEventListener('click', () => {
+    document.getElementById('modal-shopping').classList.remove('open');
+  });
+  document.getElementById('modal-shopping').addEventListener('click', e => {
+    if (e.target === document.getElementById('modal-shopping')) {
+      document.getElementById('modal-shopping').classList.remove('open');
+    }
   });
 
   // Recipe search

@@ -986,15 +986,54 @@ body::after {
   height: 36px; border-radius: 999px; padding: 0 16px; width: 120px;
   font-family: var(--font-ui); font-size: .78rem; font-weight: 700;
   letter-spacing: .04em; cursor: pointer; white-space: nowrap;
-  background: transparent; color: var(--amber);
-  border: 1px solid var(--amber); box-shadow: none;
+  background: var(--bg); color: var(--fg);
+  border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,.3);
   -webkit-tap-highlight-color: transparent;
   transition: transform .15s;
 }
 .fab-action-item:active { transform: scale(.95); }
+.fab-action-item--outline {
+  background: transparent; color: var(--fg);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
 .fab-action-item--filled {
   background: var(--amber); color: var(--bg); border-color: var(--amber);
   box-shadow: 0 2px 10px rgba(232,180,104,.35);
+}
+
+/* ─── Shopping List Modal ───────────────────────────────────────────────── */
+.shopping-list-content {
+  padding: 0 16px 24px;
+  overflow-y: auto;
+  max-height: calc(80vh - 60px);
+}
+.shopping-recipe-block { margin-bottom: 20px; }
+.shopping-recipe-name {
+  font-family: var(--font-ui);
+  font-size: 13px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .06em;
+  color: var(--amber); margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.shopping-ingredient-list {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.shopping-item label {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 8px 0; cursor: pointer;
+  font-size: 15px; color: var(--text);
+}
+.shopping-cb {
+  width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px;
+  accent-color: var(--amber);
+}
+.shopping-item.done span { text-decoration: line-through; color: var(--text-muted); }
+.shopping-empty {
+  text-align: center; color: var(--text-muted);
+  font-size: 15px; line-height: 1.6; padding: 32px 16px;
 }
 
 /* ─── Add-Recipe Modal ───────────────────────────────────────────────────── */

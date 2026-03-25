@@ -195,8 +195,9 @@
   <!-- FAB Speed Dial -->
   <div id="fab-plan" class="fab-container">
     <div class="fab-speed-dial" id="fab-speed-dial">
-      <button class="fab-action-item" id="btn-autofill-all">⟳ Reset</button>
-      <button class="fab-action-item fab-action-item--filled" id="btn-autofill">✦ Wizard</button>
+      <button class="fab-action-item fab-action-item--outline" id="btn-autofill-all">⟳ Reset</button>
+      <button class="fab-action-item fab-action-item--outline" id="btn-autofill">✦ Wizard</button>
+      <button class="fab-action-item fab-action-item--filled" id="btn-shopping-list">☰ Einkaufen</button>
     </div>
     <button class="fab-main" id="fab-main">✦</button>
   </div>
@@ -327,7 +328,18 @@
   </div>
 </div>
 
+<!-- Shopping List Modal -->
+<div id="modal-shopping" class="modal-overlay">
+  <div class="modal-sheet">
+    <div class="modal-header">
+      <span class="modal-title">Einkaufsliste</span>
+      <button class="modal-close" id="btn-close-shopping">✕</button>
+    </div>
+    <div id="shopping-list-content" class="shopping-list-content"></div>
+  </div>
+</div>
+
 <script src="js/data.js?v=3"></script>
-<script src="js/app.js?v=4"></script>
+<script src="js/app.js?v=5"></script>
 </body>
 </html>
