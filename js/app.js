@@ -59,6 +59,12 @@ let swapTarget = null; // { dayIdx, mealType }
 let modalLabelFilter = 'all';
 let newRecipeImageData = null;
 let _constraintPickerKey = null;
+
+// For drag & drop
+let dragSrc = null;
+let touchDragSrc = null;
+let touchDragTimer = null;
+let touchDragGhost = null;
 let modalSearchQuery = '';
 
 // ─── Router ──────────────────────────────────────────────────────────────────
@@ -480,7 +486,10 @@ function renderPlan() {
         ? `<span class="meal-label-dot ${recipe.label}"></span>` : '';
 
       return `
-        <div class="meal-row ${doneClass}" data-day="${dayIdx}" data-meal="${meal.type}">
+        <div class="meal-row ${doneClass}" data-day="${dayIdx}" data-meal="${meal.type}"
+          ${recipe ? `draggable="true" ondragstart="onMealDragStart(event,${dayIdx},'${meal.type}')" ondragend="onMealDragEnd(event)"` : ''}
+          ondragover="onMealDragOver(event)" ondragleave="onMealDragLeave(event)" ondrop="onMealDrop(event,${dayIdx},'${meal.type}')">
+          ${recipe ? '<span class="meal-drag-handle">⠿</span>' : ''}
           <button class="meal-check ${checkedClass}"
             onclick="toggleMealDone(${dayIdx}, '${meal.type}')"
             aria-label="Abgehakt">
@@ -527,6 +536,108 @@ function renderPlan() {
 
 function toggleDayCard(dayIdx) {
   document.getElementById(`day-card-${dayIdx}`).classList.toggle('collapsed');
+}
+
+// ─── Drag & Drop ──────────────────────────────────────────────────────────────
+function swapMeals(srcDay, srcMeal, dstDay, dstMeal) {
+  const src = state.weekPlan[srcDay].meals.find(m => m.type === srcMeal);
+  const dst = state.weekPlan[dstDay].meals.find(m => m.type === dstMeal);
+  if (!src || !dst) return;
+  [src.recipeId, dst.recipeId] = [dst.recipeId, src.recipeId];
+  [src.done,     dst.done]     = [dst.done,     src.done];
+  persist();
+  renderPlan();
+}
+
+function onMealDragStart(e, dayIdx, mealType) {
+  dragSrc = { dayIdx, mealType };
+  e.dataTransfer.effectAllowed = 'move';
+  e.currentTarget.classList.add('dragging');
+}
+
+function onMealDragEnd(e) {
+  e.currentTarget.classList.remove('dragging');
+  document.querySelectorAll('.meal-row.drag-over').forEach(el => el.classList.remove('drag-over'));
+  dragSrc = null;
+}
+
+function onMealDragOver(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+  e.currentTarget.classList.add('drag-over');
+}
+
+function onMealDragLeave(e) {
+  e.currentTarget.classList.remove('drag-over');
+}
+
+function onMealDrop(e, dayIdx, mealType) {
+  e.preventDefault();
+  e.currentTarget.classList.remove('drag-over');
+  if (!dragSrc) return;
+  if (dragSrc.dayIdx === dayIdx && dragSrc.mealType === mealType) return;
+  swapMeals(dragSrc.dayIdx, dragSrc.mealType, dayIdx, mealType);
+  dragSrc = null;
+}
+
+function initMealDrag() {
+  document.addEventListener('touchstart', e => {
+    const row = e.target.closest('[draggable].meal-row');
+    if (!row || e.target.closest('button')) return;
+    const touch = e.touches[0];
+
+    touchDragTimer = setTimeout(() => {
+      touchDragSrc = { dayIdx: parseInt(row.dataset.day), mealType: row.dataset.meal };
+      row.classList.add('dragging');
+
+      touchDragGhost = row.cloneNode(true);
+      touchDragGhost.classList.add('meal-drag-ghost');
+      const rect = row.getBoundingClientRect();
+      touchDragGhost.style.cssText =
+        `position:fixed;width:${rect.width}px;left:${rect.left}px;top:${rect.top}px;pointer-events:none;z-index:9999;`;
+      document.body.appendChild(touchDragGhost);
+    }, 250);
+  }, { passive: true });
+
+  document.addEventListener('touchmove', e => {
+    clearTimeout(touchDragTimer);
+    if (!touchDragSrc) return;
+
+    const touch = e.touches[0];
+    if (touchDragGhost) {
+      touchDragGhost.style.left = touch.clientX - touchDragGhost.offsetWidth / 2 + 'px';
+      touchDragGhost.style.top  = touch.clientY - touchDragGhost.offsetHeight / 2 + 'px';
+    }
+    touchDragGhost.style.display = 'none';
+    const el = document.elementFromPoint(touch.clientX, touch.clientY);
+    touchDragGhost.style.display = '';
+    document.querySelectorAll('.meal-row.drag-over').forEach(r => r.classList.remove('drag-over'));
+    el?.closest('.meal-row')?.classList.add('drag-over');
+  }, { passive: true });
+
+  document.addEventListener('touchend', e => {
+    clearTimeout(touchDragTimer);
+    if (!touchDragSrc) return;
+
+    const touch = e.changedTouches[0];
+    if (touchDragGhost) touchDragGhost.style.display = 'none';
+    const el = document.elementFromPoint(touch.clientX, touch.clientY);
+    touchDragGhost?.remove();
+    touchDragGhost = null;
+
+    document.querySelectorAll('.meal-row.dragging, .meal-row.drag-over')
+      .forEach(r => r.classList.remove('dragging', 'drag-over'));
+
+    const targetRow = el?.closest('.meal-row');
+    if (targetRow) {
+      const dstDay  = parseInt(targetRow.dataset.day);
+      const dstMeal = targetRow.dataset.meal;
+      if (!(dstDay === touchDragSrc.dayIdx && dstMeal === touchDragSrc.mealType)) {
+        swapMeals(touchDragSrc.dayIdx, touchDragSrc.mealType, dstDay, dstMeal);
+      }
+    }
+    touchDragSrc = null;
+  }, { passive: true });
 }
 
 // ─── Render: Recipes ──────────────────────────────────────────────────────────
@@ -1140,6 +1251,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Pull-to-Refresh
   initPullToRefresh();
 
+  // Meal Drag & Drop
+  initMealDrag();
+
   // Initial render
   showView('plan');
 });
@@ -1165,6 +1279,7 @@ function initPullToRefresh() {
   }, { passive: true });
 
   document.addEventListener('touchmove', e => {
+    if (touchDragSrc) return; // no PTR during meal drag
     if (!startY) return;
     const dy = e.touches[0].clientY - startY;
     if (dy < 8) return;
