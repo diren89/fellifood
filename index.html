@@ -11,10 +11,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Barlow+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/icon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/icon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/icon-180.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="css/styles.css?v=11">
 </head>
 <body>
@@ -23,9 +24,7 @@
 <div id="login-screen">
   <div class="login-box">
     <div class="login-logo">
-      <div class="logo-mark">🍽</div>
-      <div class="logo-text">FelliFood</div>
-      <div class="logo-sub">Familienküche</div>
+      <img src="images/logo.png" alt="FelliFood" class="login-logo-img">
     </div>
     <form id="login-form" onsubmit="handleLogin(event)">
       <input id="login-password" type="password" placeholder="Passwort" autocomplete="current-password" />
@@ -44,11 +43,7 @@
   <!-- ═══ HEADER ══════════════════════════════════════════════════════════ -->
   <header class="app-header">
     <div class="logo" onclick="showView('plan')">
-      <div class="logo-mark">🍽</div>
-      <div>
-        <div class="logo-text">FelliFood</div>
-        <div class="logo-sub">Familienküche</div>
-      </div>
+      <img src="images/logo.png" alt="FelliFood" class="header-logo-img">
     </div>
     <!-- Hamburger FAB -->
     <div id="fab-plan" class="fab-container">

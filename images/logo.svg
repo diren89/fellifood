@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#160e08"/>
+
+  <!-- Chef hat body -->
+  <path d="M175 195 C155 195 130 208 128 238 C126 262 140 278 160 282
+           L180 286 L310 286 L332 282 C354 276 368 260 366 236
+           C364 208 340 194 318 195
+           C314 172 296 154 270 150 C244 146 222 160 215 178
+           C207 165 192 195 175 195 Z"
+        fill="#e8943a"/>
+
+  <!-- Hat brim / base -->
+  <ellipse cx="253" cy="288" rx="86" ry="14" fill="#e8943a"/>
+
+  <!-- Pom-pom circle (top right of hat) -->
+  <circle cx="322" cy="188" r="38" fill="#e8d8cc"/>
+
+  <!-- Fork -->
+  <g transform="translate(196, 148)" fill="#e8d8cc">
+    <!-- Fork handle -->
+    <rect x="19" y="110" width="12" height="70" rx="6"/>
+    <!-- Fork neck -->
+    <rect x="19" y="78" width="12" height="36" rx="3"/>
+    <!-- Fork tines base -->
+    <rect x="11" y="45" width="28" height="38" rx="3"/>
+    <!-- Left outer tine -->
+    <rect x="11" y="18" width="7" height="34" rx="3.5"/>
+    <!-- Left inner tine -->
+    <rect x="21" y="18" width="7" height="34" rx="3.5"/>
+    <!-- Right inner tine -->
+    <rect x="31" y="18" width="7" height="34" rx="3.5"/>
+  </g>
+
+  <!-- Text: "Felli" bold + "Food" regular — both orange -->
+  <text x="256" y="378"
+        font-family="'Arial Rounded MT Bold', 'Nunito', 'Varela Round', Arial, sans-serif"
+        font-size="88"
+        font-weight="800"
+        fill="#e8943a"
+        text-anchor="middle"
+        letter-spacing="-2">Felli</text>
+  <text x="256" y="455"
+        font-family="'Arial Rounded MT Bold', 'Nunito', 'Varela Round', Arial, sans-serif"
+        font-size="88"
+        font-weight="500"
+        fill="#e8943a"
+        text-anchor="middle"
+        letter-spacing="-1">Food</text>
+</svg>
