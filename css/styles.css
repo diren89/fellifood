@@ -98,32 +98,15 @@ body::after {
 }
 
 .app-header .logo {
-  display: flex; align-items: center; gap: 10px;
+  display: flex; align-items: center;
   cursor: pointer; text-decoration: none;
 }
-.logo-mark {
-  width: 36px; height: 36px;
-  background: var(--amber);
-  border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.1rem;
-  box-shadow: var(--shadow-amber);
-  flex-shrink: 0;
-  position: relative;
-}
-.logo-mark::after {
-  content: '';
-  position: absolute; inset: 0;
-  border-radius: 10px;
-  background: linear-gradient(135deg, rgba(255,255,255,.15) 0%, transparent 60%);
-}
-.logo-text {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text);
-  letter-spacing: -.02em;
-  line-height: 1;
+.header-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  /* Dark bg matches the logo's own background */
+  border-radius: 8px;
 }
 .logo-sub {
   font-family: var(--font-ui);
@@ -1177,11 +1160,13 @@ body::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
 }
-.login-logo .logo-mark { font-size: 48px; }
-.login-logo .logo-text { font-family: var(--font-display); font-size: 28px; color: var(--text-primary); }
-.login-logo .logo-sub  { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--text-muted); }
+.login-logo-img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 28px;
+}
 
 #login-form {
   width: 100%;
