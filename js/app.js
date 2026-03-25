@@ -57,6 +57,8 @@ let recipeSearchQuery = '';
 // For swap modal
 let swapTarget = null; // { dayIdx, mealType }
 let modalLabelFilter = 'all';
+let newRecipeImageData = null;
+let _constraintPickerKey = null;
 let modalSearchQuery = '';
 
 // ─── Router ──────────────────────────────────────────────────────────────────
@@ -76,8 +78,9 @@ function showView(name, recipeId = null, from = null) {
     const navItem = document.querySelector(`.nav-item[data-view="${name}"]`);
     if (navItem) navItem.classList.add('active');
 
-    if (name === 'plan')    renderPlan();
-    if (name === 'recipes') renderRecipes();
+    if (name === 'plan')     renderPlan();
+    if (name === 'recipes')  renderRecipes();
+    if (name === 'settings') renderSettings();
   }
 }
 
@@ -227,13 +230,20 @@ function buildWeekFromCycle(offset) {
 
 // Generate one week's worth of random meals (no dates, just meal assignments)
 function generateCycleWeek() {
-  return Array.from({ length: 7 }, () => {
+  const dayNames = ['Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag','Sonntag'];
+  return dayNames.map(dayLabel => {
     const used = [];
     return {
       meals: ['fruehstueck', 'mittagessen', 'abendessen'].map(type => {
+        const key = dayLabel + '.' + type;
+        const pinned = state.settings?.dayConstraints?.[key];
+        if (pinned) {
+          used.push(pinned);
+          return { type, recipeId: pinned, done: false };
+        }
         const r = randomRecipeForMeal(type, used);
-        used.push(r.id);
-        return { type, recipeId: r.id, done: false };
+        if (r) used.push(r.id);
+        return { type, recipeId: r ? r.id : null, done: false };
       })
     };
   });
@@ -278,14 +288,94 @@ function renderInterval() {
   });
 }
 
+// ─── Settings ────────────────────────────────────────────────────────────────
+function renderSettings() {
+  const days = ['Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag','Sonntag'];
+  const meals = [
+    { type: 'fruehstueck', label: 'Morgen' },
+    { type: 'mittagessen', label: 'Mittag' },
+    { type: 'abendessen',  label: 'Abend'  }
+  ];
+  const container = document.querySelector('#view-settings .main-content');
+  container.innerHTML = `
+    <div class="section-eyebrow">Konfiguration</div>
+    <div class="section-title" style="margin-bottom:18px">Einstellungen</div>
+
+    <div class="settings-block">
+      <div class="settings-block-title">Wiederholung</div>
+      <div class="interval-chips">
+        ${[1,2,4].map(n => `<button class="interval-chip ${state.intervalWeeks===n?'active':''}" data-weeks="${n}">${intervalLabel(n)}</button>`).join('')}
+      </div>
+    </div>
+
+    <div class="settings-block">
+      <div class="settings-block-title">Feste Vorgaben</div>
+      <div class="settings-block-desc">Lege für bestimmte Tag-/Mahlzeit-Kombinationen ein festes Rezept fest. Es wird beim automatischen Befüllen immer eingesetzt.</div>
+      <div class="day-constraints-grid">
+        ${days.map(day => `
+          <div class="dc-day-row">
+            <div class="dc-day-label">${day}</div>
+            <div class="dc-meals">
+              ${meals.map(m => {
+                const key = day + '.' + m.type;
+                const pinnedId = state.settings.dayConstraints[key];
+                const pinned = pinnedId ? getRecipe(pinnedId) : null;
+                return `<div class="dc-meal-cell">
+                  <div class="dc-meal-label">${m.label}</div>
+                  ${pinned
+                    ? `<div class="dc-pinned-chip" onclick="removeConstraint('${key}')"><span>${pinned.name}</span><span class="dc-remove">✕</span></div>`
+                    : `<button class="dc-add-btn" onclick="openConstraintPicker('${key}')">＋</button>`}
+                </div>`;
+              }).join('')}
+            </div>
+          </div>`).join('')}
+      </div>
+    </div>`;
+
+  container.querySelectorAll('.interval-chip').forEach(chip => {
+    chip.addEventListener('click', () => setIntervalWeeks(Number(chip.dataset.weeks)));
+  });
+}
+
+function openConstraintPicker(key) {
+  _constraintPickerKey = key;
+  const mealType = key.split('.')[1];
+  swapTarget = null;
+  document.getElementById('modal-meal-label').textContent = 'Vorgabe wählen';
+  modalLabelFilter = 'all';
+  modalSearchQuery = '';
+  renderModalRecipes();
+  openModal();
+}
+
+function saveConstraint(key, recipeId) {
+  state.settings.dayConstraints[key] = recipeId;
+  persist();
+  showToast('Vorgabe gespeichert ✓');
+}
+
+function removeConstraint(key) {
+  delete state.settings.dayConstraints[key];
+  persist();
+  renderSettings();
+  showToast('Vorgabe entfernt');
+}
+
 // ─── Week Plan Logic ─────────────────────────────────────────────────────────
 function autoFillPlan() {
   // Fill empty slots in current cycle position only
   state.weekPlan.forEach(day => {
     day.meals.forEach(meal => {
       if (!meal.recipeId) {
-        const usedOnDay = day.meals.map(m => m.recipeId).filter(Boolean);
-        meal.recipeId = randomRecipeForMeal(meal.type, usedOnDay).id;
+        const key = day.label + '.' + meal.type;
+        const pinned = state.settings?.dayConstraints?.[key];
+        if (pinned) {
+          meal.recipeId = pinned;
+        } else {
+          const usedOnDay = day.meals.map(m => m.recipeId).filter(Boolean);
+          const r = randomRecipeForMeal(meal.type, usedOnDay);
+          if (r) meal.recipeId = r.id;
+        }
       }
     });
   });
@@ -338,6 +428,14 @@ function swapMealRecipe(dayIdx, mealType) {
 }
 
 function assignRecipeToSwapTarget(recipeId) {
+  // Constraint-Picker-Modus
+  if (_constraintPickerKey) {
+    saveConstraint(_constraintPickerKey, recipeId);
+    _constraintPickerKey = null;
+    closeModal();
+    renderSettings();
+    return;
+  }
   if (!swapTarget) return;
   const { dayIdx, mealType } = swapTarget;
   const meal = state.weekPlan[dayIdx].meals.find(m => m.type === mealType);
@@ -582,6 +680,12 @@ function renderDetail(id) {
         <div class="detail-hero-badges">
           <span class="recipe-badge ${r.label}">${labelIcon(r.label)} ${labelText(r.label)}</span>
         </div>
+        <button class="detail-img-change-btn" onclick="changeRecipeImage('${r.id}')" title="Bild ändern">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+            <circle cx="12" cy="13" r="4"/>
+          </svg>
+        </button>
       </div>
 
       <h1 class="detail-title">${r.name}</h1>
@@ -648,6 +752,39 @@ function saveNotes(recipeId) {
   showToast('Notizen gespeichert ✓');
 }
 
+function changeRecipeImage(recipeId) {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.onchange = () => {
+    const file = input.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      const img = new Image();
+      img.onload = () => {
+        const MAX = 900;
+        const scale = img.width > MAX ? MAX / img.width : 1;
+        const canvas = document.createElement('canvas');
+        canvas.width  = Math.round(img.width  * scale);
+        canvas.height = Math.round(img.height * scale);
+        canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+        const dataUrl = canvas.toDataURL('image/jpeg', 0.82);
+        const r = getRecipe(recipeId);
+        if (!r) return;
+        r.image = dataUrl;
+        persist();
+        const el = document.querySelector('.detail-img');
+        if (el) el.src = dataUrl;
+        showToast('Bild gespeichert ✓');
+      };
+      img.src = ev.target.result;
+    };
+    reader.readAsDataURL(file);
+  };
+  input.click();
+}
+
 // ─── Modal ────────────────────────────────────────────────────────────────────
 function openModal() {
   document.getElementById('modal-overlay').classList.add('open');
@@ -707,6 +844,9 @@ function openAddRecipeModal() {
 
 function closeAddRecipeModal() {
   document.getElementById('recipe-form-overlay').classList.remove('open');
+  newRecipeImageData = null;
+  const preview = document.getElementById('rf-img-preview');
+  if (preview) preview.src = 'images/recipes/grain-salad.jpg';
 }
 
 function saveNewRecipe() {
@@ -730,7 +870,7 @@ function saveNewRecipe() {
     schwierigkeit: document.getElementById('rf-schwierigkeit').value,
     zutaten: zutatenRaw.split('\n').map(l => l.trim()).filter(Boolean),
     zubereitung: zubereitungRaw.split('\n').map(l => l.trim()).filter(Boolean),
-    image: 'images/recipes/grain-salad.jpg',
+    image: newRecipeImageData || 'images/recipes/grain-salad.jpg',
     bewertung: 0, notizen: ''
   };
   state.recipes.push(recipe);
@@ -826,6 +966,34 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (e.target === document.getElementById('recipe-form-overlay')) closeAddRecipeModal();
   });
 
+  // Image picker for new recipe
+  document.getElementById('rf-img-btn').addEventListener('click', () => {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.onchange = () => {
+      const file = input.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = ev => {
+        const img = new Image();
+        img.onload = () => {
+          const MAX = 900;
+          const scale = img.width > MAX ? MAX / img.width : 1;
+          const canvas = document.createElement('canvas');
+          canvas.width  = Math.round(img.width  * scale);
+          canvas.height = Math.round(img.height * scale);
+          canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+          newRecipeImageData = canvas.toDataURL('image/jpeg', 0.82);
+          document.getElementById('rf-img-preview').src = newRecipeImageData;
+        };
+        img.src = ev.target.result;
+      };
+      reader.readAsDataURL(file);
+    };
+    input.click();
+  });
+
   // Mahlzeit chips toggle
   document.querySelectorAll('#rf-mahlzeit-chips .form-checkbox-chip').forEach(chip => {
     chip.addEventListener('click', () => {
@@ -855,6 +1023,61 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   });
 
+  // Pull-to-Refresh
+  initPullToRefresh();
+
   // Initial render
   showView('plan');
 });
+
+// ─── Pull-to-Refresh ─────────────────────────────────────────────────────────
+function initPullToRefresh() {
+  const THRESHOLD = 72;
+  let startY = 0;
+  let pulling = false;
+
+  const indicator = document.createElement('div');
+  indicator.className = 'ptr-indicator';
+  indicator.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 1 0 .49-3.61"/></svg>';
+  document.body.appendChild(indicator);
+
+  document.addEventListener('touchstart', e => {
+    const scrollable = e.target.closest('.modal-list, .recipe-form-body');
+    if (scrollable) return;
+    const activeContent = document.querySelector('.view.active .main-content');
+    if (activeContent && activeContent.scrollTop > 0) return;
+    startY = e.touches[0].clientY;
+    pulling = false;
+  }, { passive: true });
+
+  document.addEventListener('touchmove', e => {
+    if (!startY) return;
+    const dy = e.touches[0].clientY - startY;
+    if (dy < 8) return;
+    const scrollable = e.target.closest('.modal-list, .recipe-form-body');
+    if (scrollable) return;
+    const activeContent = document.querySelector('.view.active .main-content');
+    if (!activeContent || activeContent.scrollTop > 0) return;
+    pulling = true;
+    const yOffset = Math.min(dy * 0.45, 48);
+    indicator.classList.add('ptr-pulling');
+    indicator.style.transform = `translateX(-50%) translateY(${yOffset - 60}px)`;
+    const rotation = Math.min((dy / THRESHOLD) * 180, 180);
+    indicator.querySelector('svg').style.transform = `rotate(${rotation}deg)`;
+  }, { passive: true });
+
+  document.addEventListener('touchend', e => {
+    if (!pulling) { startY = 0; return; }
+    const dy = e.changedTouches[0].clientY - startY;
+    pulling = false;
+    startY = 0;
+    if (dy >= THRESHOLD) {
+      indicator.classList.remove('ptr-pulling');
+      indicator.classList.add('ptr-loading');
+      setTimeout(() => location.reload(), 500);
+    } else {
+      indicator.classList.remove('ptr-pulling');
+      indicator.style.transform = '';
+    }
+  }, { passive: true });
+}

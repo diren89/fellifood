@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/icon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/icon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/icon-180.png">
-  <link rel="stylesheet" href="css/styles.css?v=4">
+  <link rel="stylesheet" href="css/styles.css?v=5">
 </head>
 <body>
 
@@ -74,15 +74,6 @@
         <button class="btn btn-primary" id="btn-autofill-all">
           ⟳ Neu würfeln
         </button>
-      </div>
-
-      <div class="interval-row">
-        <span class="interval-label">Wiederholung</span>
-        <div class="interval-chips">
-          <button class="interval-chip active" data-weeks="1">Wöchentlich</button>
-          <button class="interval-chip" data-weeks="2">2-wöchig</button>
-          <button class="interval-chip" data-weeks="4">Monatlich</button>
-        </div>
       </div>
 
       <div id="plan-days"></div>
@@ -189,6 +180,11 @@
   <!-- ── DETAIL (dynamisch) ─────────────────────────────────────────── -->
   <div id="view-detail" class="view"></div>
 
+  <!-- ── EINSTELLUNGEN ──────────────────────────────────────────────── -->
+  <div id="view-settings" class="view">
+    <div class="main-content"></div>
+  </div>
+
   <!-- ═══ NAV ═════════════════════════════════════════════════════════════ -->
   <nav class="bottom-nav">
     <button class="nav-item active" data-view="plan">
@@ -198,6 +194,10 @@
     <button class="nav-item" data-view="recipes">
       <span class="nav-icon">◈</span>
       <span>Rezepte</span>
+    </button>
+    <button class="nav-item" data-view="settings">
+      <span class="nav-icon">⚙</span>
+      <span>Einstellungen</span>
     </button>
   </nav>
 
@@ -300,6 +300,14 @@
       </div>
 
       <div class="form-field">
+        <label class="form-label">Bild (optional)</label>
+        <div class="form-img-preview-wrap">
+          <img id="rf-img-preview" src="images/recipes/grain-salad.jpg" alt="Vorschau">
+          <button type="button" class="btn btn-secondary btn-sm" id="rf-img-btn">Bild wählen</button>
+        </div>
+      </div>
+
+      <div class="form-field">
         <label class="form-label">Zutaten (eine pro Zeile) *</label>
         <textarea class="form-textarea" id="rf-zutaten" rows="5"
           placeholder="400 g Spaghetti&#10;200 g Pancetta&#10;4 Eigelb&#10;…"></textarea>
@@ -320,6 +328,6 @@
 </div>
 
 <script src="js/data.js?v=2"></script>
-<script src="js/app.js?v=2"></script>
+<script src="js/app.js?v=3"></script>
 </body>
 </html>

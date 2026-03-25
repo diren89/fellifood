@@ -206,6 +206,7 @@ body::after {
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
   padding: 11px 18px; border-radius: var(--radius-sm);
+  line-height: 1;
   font-family: var(--font-ui); font-size: .82rem; font-weight: 700;
   letter-spacing: .04em;
   cursor: pointer; border: none;
@@ -239,6 +240,8 @@ body::after {
 .btn-icon {
   width: 38px; height: 38px; border-radius: 50%;
   background: var(--surface-2); border: 1px solid var(--border);
+  line-height: 0;
+  padding-bottom: 6px;
   color: var(--text-muted); font-size: 1rem;
   display: flex; align-items: center; justify-content: center;
   padding: 0;
@@ -275,7 +278,12 @@ body::after {
 .week-year { font-size: .7rem; color: var(--text-muted); margin-top: 1px; }
 
 .week-actions {
-  display: flex; gap: 8px; margin-bottom: 12px;
+  display: flex; gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  margin-bottom: 20px;
 }
 .week-actions .btn { flex: 1; }
 
@@ -699,6 +707,27 @@ body::after {
   position: absolute; top: 12px; left: 12px;
   display: flex; flex-wrap: wrap; gap: 5px;
 }
+.detail-img-change-btn {
+  position: absolute; bottom: 10px; right: 10px;
+  background: rgba(16,12,7,.72);
+  border: 1px solid rgba(255,255,255,.15);
+  color: var(--text);
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; z-index: 2;
+  transition: background .15s;
+}
+.detail-img-change-btn:active { background: var(--surface-3); }
+
+.form-img-preview-wrap {
+  display: flex; align-items: center; gap: 12px;
+}
+.form-img-preview-wrap img {
+  width: 72px; height: 72px;
+  object-fit: cover; border-radius: var(--radius-sm);
+  background: var(--surface-3);
+}
 
 .detail-title {
   font-family: var(--font-display);
@@ -1090,6 +1119,86 @@ body::after {
   font-size: 13px;
   min-height: 18px;
   margin: 0;
+}
+
+/* ─── Settings ──────────────────────────────────────────────────────────── */
+.settings-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 14px;
+}
+.settings-block-title {
+  font-size: 11px; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--text-muted);
+  margin-bottom: 12px;
+}
+.settings-block-desc {
+  font-size: 14px; color: var(--text-muted);
+  margin-bottom: 14px; line-height: 1.45;
+}
+.dc-day-row {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.dc-day-row:last-child { border-bottom: none; }
+.dc-day-label {
+  font-size: 13px; font-weight: 700;
+  color: var(--text-muted); margin-bottom: 8px;
+  text-transform: uppercase; letter-spacing: .06em;
+}
+.dc-meals { display: flex; gap: 8px; flex-wrap: wrap; }
+.dc-meal-cell { display: flex; flex-direction: column; gap: 4px; min-width: 80px; }
+.dc-meal-label {
+  font-size: 11px; color: var(--text-faint);
+  text-transform: uppercase; letter-spacing: .08em;
+}
+.dc-add-btn {
+  background: var(--surface-2); border: 1px dashed var(--border-lt);
+  color: var(--text-muted); border-radius: var(--radius-sm);
+  padding: 6px 10px; font-size: 16px; cursor: pointer;
+  transition: background .15s;
+}
+.dc-add-btn:active { background: var(--surface-3); }
+.dc-pinned-chip {
+  display: flex; align-items: center; justify-content: space-between; gap: 6px;
+  background: var(--amber-glow); border: 1px solid var(--amber);
+  border-radius: var(--radius-sm); padding: 5px 8px;
+  font-size: 12px; cursor: pointer; color: var(--text);
+  max-width: 120px;
+}
+.dc-pinned-chip span:first-child {
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.dc-remove { color: var(--text-muted); flex-shrink: 0; }
+
+/* ─── Pull-to-Refresh ───────────────────────────────────────────────────── */
+.ptr-indicator {
+  position: fixed;
+  top: calc(var(--header-h) + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-60px);
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  box-shadow: var(--shadow);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--amber);
+  opacity: 0;
+  z-index: 99;
+  pointer-events: none;
+}
+.ptr-indicator.ptr-pulling {
+  opacity: 1;
+}
+.ptr-indicator.ptr-loading {
+  opacity: 1;
+  transform: translateX(-50%) translateY(8px) !important;
+  animation: ptr-spin 0.7s linear infinite;
+}
+@keyframes ptr-spin {
+  to { transform: translateX(-50%) translateY(8px) rotate(360deg); }
 }
 
 /* ─── Utility ───────────────────────────────────────────────────────────── */
