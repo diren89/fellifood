@@ -477,6 +477,33 @@ body::after {
 .meal-action-btn:hover { background: var(--surface-3); color: var(--text-muted); }
 .meal-action-btn:active { background: var(--border); }
 
+/* ─── Drag & Drop ──────────────────────────────────────────────────────────── */
+.meal-drag-handle {
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 0 4px 0 0;
+  cursor: grab;
+  flex-shrink: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  opacity: 0.5;
+}
+.meal-row[draggable]:active .meal-drag-handle { cursor: grabbing; }
+.meal-row.dragging { opacity: 0.35; }
+.meal-row.drag-over {
+  outline: 2px dashed var(--amber);
+  background: rgba(230, 181, 74, 0.12);
+  border-radius: 10px;
+}
+.meal-drag-ghost {
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+  border-radius: 12px;
+  opacity: 0.92;
+  transform: scale(1.03);
+  background: var(--surface);
+  overflow: hidden;
+}
+
 /* ─── ═══ REZEPTE ═══════════════════════════════════════════════════════── */
 
 /* Search */
