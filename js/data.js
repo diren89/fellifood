@@ -2264,6 +2264,22 @@ const INITIAL_RECIPES = [
     image: 'images/recipes/ofengemüse-halloumi.jpg',
     bewertung: 0,
     notizen: ''
+  },
+
+  {
+    id: 'r151',
+    name: 'Pizza Margherita',
+    description: 'Klassische neapolitanische Pizza mit Tomatensauce, Mozzarella und frischem Basilikum.',
+    label: 'vegetarisch',
+    mahlzeit: ['abendessen'],
+    kueche: 'italienisch',
+    zeit: 45,
+    schwierigkeit: 'mittel',
+    zutaten: ['300 g Pizzamehl (Typ 00)', '200 ml lauwarmes Wasser', '7 g Trockenhefe', '1 TL Salz', '1 TL Olivenöl', '200 g passierte Tomaten', '1 Knoblauchzehe', '250 g Mozzarella', 'Frisches Basilikum', 'Salz, Pfeffer'],
+    zubereitung: ['Hefe im Wasser auflösen, mit Mehl, Salz und Öl zu einem glatten Teig kneten. 30 Min. gehen lassen.', 'Passierte Tomaten mit gepresstem Knoblauch, Salz und Pfeffer würzen.', 'Teig dünn ausrollen, auf ein bemehltes Blech legen.', 'Tomatensauce gleichmäßig verteilen, Mozzarella in Scheiben darauflegen.', 'Im vorgeheizten Ofen bei 250 °C (Ober-/Unterhitze) 10–12 Min. backen.', 'Mit frischem Basilikum garnieren und sofort servieren.'],
+    image: 'images/recipes/pizza-margherita.jpg',
+    bewertung: 0,
+    notizen: ''
   }
 
 ];
