@@ -81,6 +81,8 @@ function showView(name, recipeId = null, from = null) {
     if (name === 'plan')     renderPlan();
     if (name === 'recipes')  renderRecipes();
     if (name === 'settings') renderSettings();
+    const fab = document.getElementById('fab-plan');
+    if (fab) { fab.style.display = name === 'plan' ? 'flex' : 'none'; fab.classList.remove('open'); }
   }
 }
 
@@ -922,9 +924,26 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
   renderInterval();
 
+  // FAB Speed Dial
+  document.getElementById('fab-main').addEventListener('click', () => {
+    document.getElementById('fab-plan').classList.toggle('open');
+  });
+  document.addEventListener('click', e => {
+    const fab = document.getElementById('fab-plan');
+    if (fab.classList.contains('open') && !fab.contains(e.target)) {
+      fab.classList.remove('open');
+    }
+  });
+
   // Auto-fill buttons
-  document.getElementById('btn-autofill').addEventListener('click', autoFillPlan);
-  document.getElementById('btn-autofill-all').addEventListener('click', autoFillAll);
+  document.getElementById('btn-autofill').addEventListener('click', () => {
+    document.getElementById('fab-plan').classList.remove('open');
+    autoFillPlan();
+  });
+  document.getElementById('btn-autofill-all').addEventListener('click', () => {
+    document.getElementById('fab-plan').classList.remove('open');
+    autoFillAll();
+  });
 
   // Recipe search
   const searchEl = document.getElementById('recipe-search');

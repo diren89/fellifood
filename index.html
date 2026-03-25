@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/icon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/icon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/icon-180.png">
-  <link rel="stylesheet" href="css/styles.css?v=5">
+  <link rel="stylesheet" href="css/styles.css?v=7">
 </head>
 <body>
 
@@ -65,15 +65,6 @@
           <span class="week-range" id="week-label"></span>
           <button class="btn btn-icon" id="btn-week-next">›</button>
         </div>
-      </div>
-
-      <div class="week-actions">
-        <button class="btn btn-secondary" id="btn-autofill">
-          ✦ Leere befüllen
-        </button>
-        <button class="btn btn-primary" id="btn-autofill-all">
-          ⟳ Neu würfeln
-        </button>
       </div>
 
       <div id="plan-days"></div>
@@ -196,10 +187,19 @@
       <span>Rezepte</span>
     </button>
     <button class="nav-item" data-view="settings">
-      <span class="nav-icon">⚙</span>
+      <span class="nav-icon">⚙&#xFE0E;</span>
       <span>Einstellungen</span>
     </button>
   </nav>
+
+  <!-- FAB Speed Dial -->
+  <div id="fab-plan" class="fab-container">
+    <div class="fab-speed-dial" id="fab-speed-dial">
+      <button class="fab-action-item" id="btn-autofill-all">⟳ Reset</button>
+      <button class="fab-action-item fab-action-item--filled" id="btn-autofill">✦ Wizard</button>
+    </div>
+    <button class="fab-main" id="fab-main">✦</button>
+  </div>
 
 </div>
 
@@ -327,7 +327,7 @@
   </div>
 </div>
 
-<script src="js/data.js?v=2"></script>
-<script src="js/app.js?v=3"></script>
+<script src="js/data.js?v=3"></script>
+<script src="js/app.js?v=4"></script>
 </body>
 </html>
