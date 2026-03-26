@@ -1,32 +1,54 @@
-# macOS
+# ─── macOS ───────────────────────────────────────────────────────────────────
 .DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
 
-# State (lokale Daten)
+# ─── Anwendungsstatus (Server-Persistenz) ────────────────────────────────────
 state.json
 
-# Python
+# ─── Python ──────────────────────────────────────────────────────────────────
 __pycache__/
 *.pyc
 *.pyo
 venv/
 .venv/
 *.egg-info/
+dist/
+build/
 
-# Editor
+# ─── Editor ──────────────────────────────────────────────────────────────────
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# Logs
+# ─── Logs ────────────────────────────────────────────────────────────────────
 *.log
+npm-debug.log*
 
-# Claude
+# ─── Node ────────────────────────────────────────────────────────────────────
+node_modules/
+
+# ─── Claude Code ─────────────────────────────────────────────────────────────
 .claude/
 
-# Temp
+# ─── Importer-Cache (generierte/heruntergeladene Zwischendaten) ──────────────
+scripts/cache/meals_raw/
+scripts/cache/translated/
+scripts/cache/all_meal_ids.json
+scripts/cache/images_done.txt
+scripts/cache/assembled_recipes.json
+scripts/cache/validation_errors.txt
+
+# ─── Umgebungsvariablen / Secrets ────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─── Temporäre Dateien ───────────────────────────────────────────────────────
 /tmp/
+*.tmp
+*.bak
