@@ -1306,6 +1306,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Meal Drag & Drop
   initMealDrag();
 
+  // Back-to-Top visibility on scroll
+  const _bttBtn = document.getElementById('btn-back-to-top');
+  window.addEventListener('scroll', () => {
+    if (_bttBtn) {
+      _bttBtn.classList.toggle('visible', window.scrollY > window.innerHeight * 0.4);
+    }
+  }, { passive: true });
+
   // Initial render
   showView('plan');
 });

@@ -1310,3 +1310,36 @@ body::after {
   border-radius: 50%;
   animation: ptr-spin 0.7s linear infinite;
 }
+
+/* ─── Back to Top Button ────────────────────────────────────────────────── */
+.btn-back-to-top {
+  position: fixed;
+  bottom: calc(var(--nav-h) + 16px);
+  right: 16px;
+  z-index: 110;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity .22s ease, transform .22s ease;
+}
+.btn-back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.btn-back-to-top:active {
+  transform: scale(.92);
+}
