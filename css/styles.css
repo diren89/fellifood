@@ -1317,9 +1317,9 @@ body::after {
   bottom: calc(var(--nav-h) + 16px);
   right: 16px;
   z-index: 110;
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
   border-radius: 50%;
   background: var(--amber);
   color: var(--bg);
