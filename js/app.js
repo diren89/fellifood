@@ -96,6 +96,10 @@ function showView(name, recipeId = null, from = null) {
     if (name === 'shopping') renderShoppingList();
     const fab = document.getElementById('fab-plan');
     if (fab) { fab.style.display = name === 'plan' ? 'flex' : 'none'; fab.classList.remove('open'); }
+
+    // Back-to-Top: ausblenden wenn View gewechselt wird
+    const btt = document.getElementById('btn-back-to-top');
+    if (btt) btt.classList.remove('visible');
   }
 }
 
@@ -1306,11 +1310,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Meal Drag & Drop
   initMealDrag();
 
-  // Back-to-Top visibility on scroll
+  // Back-to-Top visibility on scroll (nur im Rezepte-View)
   const _bttBtn = document.getElementById('btn-back-to-top');
   window.addEventListener('scroll', () => {
     if (_bttBtn) {
-      _bttBtn.classList.toggle('visible', window.scrollY > window.innerHeight * 0.4);
+      const show = currentView === 'recipes' && window.scrollY > window.innerHeight * 0.4;
+      _bttBtn.classList.toggle('visible', show);
     }
   }, { passive: true });
 

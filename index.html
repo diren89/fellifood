@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="stylesheet" href="css/styles.css?v=13">
+  <link rel="stylesheet" href="css/styles.css?v=14">
 </head>
 <body>
 
@@ -169,7 +169,6 @@
       </div>
 
       <div id="recipe-list"></div>
-      <button id="btn-back-to-top" class="btn-back-to-top" aria-label="Nach oben" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
     </div>
   </div>
 
@@ -334,6 +333,9 @@
 
 
 <script src="js/data.js?v=3"></script>
-<script src="js/app.js?v=11"></script>
+<script src="js/app.js?v=13"></script>
+
+<!-- Back-to-Top: außerhalb aller Views, damit fixed immer sichtbar -->
+<button id="btn-back-to-top" class="btn-back-to-top" aria-label="Nach oben" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>
 </body>
 </html>

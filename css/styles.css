@@ -1317,29 +1317,31 @@ body::after {
   bottom: calc(var(--nav-h) + 16px);
   right: 16px;
   z-index: 110;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
   border-radius: 50%;
+  background: var(--amber);
+  color: var(--bg);
   border: none;
-  background: var(--accent);
-  color: #fff;
-  font-size: 1.2rem;
-  line-height: 1;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0,0,0,.35);
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 12px rgba(232,180,104,.35);
+  -webkit-tap-highlight-color: transparent;
   opacity: 0;
   pointer-events: none;
   transform: translateY(10px);
-  transition: opacity .22s ease, transform .22s ease;
+  transition: opacity .22s ease, transform .22s ease, box-shadow .15s;
 }
 .btn-back-to-top.visible {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
-.btn-back-to-top:active {
-  transform: scale(.92);
-}
+.btn-back-to-top:hover { box-shadow: 0 4px 18px rgba(232,180,104,.5); transform: translateY(0) scale(1.08); }
+.btn-back-to-top:active { transform: scale(.95); }
