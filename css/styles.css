@@ -1292,3 +1292,21 @@ body::after {
 .flex-between{ display: flex; align-items: center; justify-content: space-between; }
 .mt-8  { margin-top: 8px; }
 .mt-12 { margin-top: 12px; }
+
+/* ─── Infinite Scroll Sentinel ──────────────────────────────────────────── */
+.recipe-sentinel {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / -1;   /* span all columns in grid */
+}
+.recipe-sentinel::after {
+  content: '';
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: ptr-spin 0.7s linear infinite;
+}

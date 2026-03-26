@@ -54,6 +54,12 @@ let activeFilters = {
 };
 let recipeSearchQuery = '';
 
+// ─── Infinite Scroll ──────────────────────────────────────────────────────────
+const RECIPES_PAGE_SIZE = 24;
+let _recipePage        = 0;   // how many pages already rendered
+let _filteredRecipes   = [];  // current filtered+sorted list
+let _scrollObserver    = null;
+
 // For swap modal
 let swapTarget = null; // { dayIdx, mealType }
 let modalLabelFilter = 'all';
@@ -664,27 +670,8 @@ function getFilteredRecipes() {
   });
 }
 
-function renderRecipes() {
-  const recipes = getFilteredRecipes();
-  const list = document.getElementById('recipe-list');
-
-  // Update results count
-  document.getElementById('recipe-results-count').textContent =
-    `${recipes.length} Rezept${recipes.length !== 1 ? 'e' : ''}`;
-
-  // Active filter tags
-  renderActiveFilterTags();
-
-  if (!recipes.length) {
-    list.innerHTML = `
-      <div class="empty-state">
-        <div class="empty-icon">🔍</div>
-        <p>Keine Rezepte gefunden.<br>Passe deine Filter an.</p>
-      </div>`;
-    return;
-  }
-
-  list.innerHTML = recipes.map(r => `
+function recipeCardHTML(r) {
+  return `
     <div class="recipe-card" onclick="showView('detail','${r.id}','recipes')">
       <div class="recipe-card-img-wrap">
         <img class="recipe-card-img" src="${r.image}" alt="${r.name}" loading="lazy"
@@ -709,7 +696,72 @@ function renderRecipes() {
           <span style="font-size:.72rem;color:var(--text-muted);font-weight:600">${ratingLabel(r.bewertung)}</span>
         </div>` : ''}
       </div>
-    </div>`).join('');
+    </div>`;
+}
+
+function _appendNextPage() {
+  const list   = document.getElementById('recipe-list');
+  const start  = _recipePage * RECIPES_PAGE_SIZE;
+  const slice  = _filteredRecipes.slice(start, start + RECIPES_PAGE_SIZE);
+  if (!slice.length) return;
+
+  // Remove sentinel before appending, re-add after
+  const sentinel = document.getElementById('recipe-sentinel');
+  if (sentinel) sentinel.remove();
+
+  const frag = document.createDocumentFragment();
+  slice.forEach(r => {
+    const div = document.createElement('div');
+    div.innerHTML = recipeCardHTML(r).trim();
+    frag.appendChild(div.firstElementChild);
+  });
+  list.appendChild(frag);
+  _recipePage++;
+
+  // Re-add sentinel if more pages remain
+  if (_recipePage * RECIPES_PAGE_SIZE < _filteredRecipes.length) {
+    const s = document.createElement('div');
+    s.id = 'recipe-sentinel';
+    s.className = 'recipe-sentinel';
+    list.appendChild(s);
+    if (_scrollObserver) _scrollObserver.observe(s);
+  }
+}
+
+function _initScrollObserver() {
+  if (_scrollObserver) { _scrollObserver.disconnect(); _scrollObserver = null; }
+  _scrollObserver = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) _appendNextPage();
+  }, { rootMargin: '200px' });
+}
+
+function renderRecipes() {
+  _filteredRecipes = getFilteredRecipes();
+  _recipePage = 0;
+
+  const list = document.getElementById('recipe-list');
+
+  // Update results count
+  document.getElementById('recipe-results-count').textContent =
+    `${_filteredRecipes.length} Rezept${_filteredRecipes.length !== 1 ? 'e' : ''}`;
+
+  renderActiveFilterTags();
+
+  // Disconnect old observer and clear list
+  if (_scrollObserver) { _scrollObserver.disconnect(); _scrollObserver = null; }
+  list.innerHTML = '';
+
+  if (!_filteredRecipes.length) {
+    list.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">🔍</div>
+        <p>Keine Rezepte gefunden.<br>Passe deine Filter an.</p>
+      </div>`;
+    return;
+  }
+
+  _initScrollObserver();
+  _appendNextPage(); // render first page immediately
 }
 
 function renderActiveFilterTags() {
