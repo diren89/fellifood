@@ -1325,7 +1325,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // ─── Pull-to-Refresh ─────────────────────────────────────────────────────────
 function initPullToRefresh() {
-  const THRESHOLD = 72;
+  const THRESHOLD = 120;
   let startY = 0;
   let pulling = false;
 
