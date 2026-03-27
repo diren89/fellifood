@@ -100,6 +100,10 @@ function showView(name, recipeId = null, from = null) {
     // Back-to-Top: ausblenden wenn View gewechselt wird
     const btt = document.getElementById('btn-back-to-top');
     if (btt) btt.classList.remove('visible');
+
+    // Aktive View für Reload speichern
+    localStorage.setItem('ff_last_view', name);
+    location.hash = name;
   }
 }
 
@@ -1319,8 +1323,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }, { passive: true });
 
-  // Initial render
-  showView('plan');
+  // Initial render — gespeicherte View wiederherstellen
+  const _savedView = localStorage.getItem('ff_last_view');
+  const _validViews = ['plan', 'recipes', 'shopping', 'settings'];
+  showView(_validViews.includes(_savedView) ? _savedView : 'plan');
 });
 
 // ─── Pull-to-Refresh ─────────────────────────────────────────────────────────
