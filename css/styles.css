@@ -1040,9 +1040,9 @@ body::after {
 }
 .fab-action-item:active { transform: scale(.95); }
 .fab-action-item--outline {
-  background: transparent; color: var(--fg);
-  border: 1px solid var(--border);
-  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+  background: var(--amber); color: var(--bg);
+  border: 1px solid var(--amber);
+  box-shadow: 0 2px 8px rgba(232,180,104,.35);
 }
 .fab-action-item--filled {
   background: var(--amber); color: var(--bg); border-color: var(--amber);
