@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="stylesheet" href="css/styles.css?v=15">
+  <link rel="stylesheet" href="css/styles.css?v=16">
 </head>
 <body>
 
@@ -45,16 +45,23 @@
     <div class="logo" onclick="showView('plan')">
       <img src="images/logo.png" alt="FelliFood" class="header-logo-img">
     </div>
-    <!-- Hamburger FAB -->
-    <div id="fab-plan" class="fab-container">
-      <div class="fab-speed-dial" id="fab-speed-dial">
-        <button class="fab-action-item fab-action-item--outline" id="btn-autofill-all">⟳ Reset</button>
-        <button class="fab-action-item fab-action-item--outline" id="btn-autofill">✦ Wizard</button>
+    <!-- Hamburger (nur Einstellungen) -->
+    <div id="header-menu" class="fab-container">
+      <div class="fab-speed-dial" id="header-speed-dial">
         <button class="fab-action-item fab-action-item--outline" id="btn-fab-settings">⚙&#xFE0E; Einstellungen</button>
       </div>
       <button class="fab-main" id="fab-main">☰</button>
     </div>
   </header>
+
+  <!-- Bottom FAB (Reset + Wizard, nur auf Wochenplan) -->
+  <div id="fab-plan" class="fab-plan-bottom">
+    <div class="fab-speed-dial fab-speed-dial--up" id="fab-speed-dial">
+      <button class="fab-action-item fab-action-item--outline" id="btn-autofill-all">⟳ Reset</button>
+      <button class="fab-action-item fab-action-item--outline" id="btn-autofill">✦ Wizard</button>
+    </div>
+    <button class="fab-plan-btn" id="fab-plan-btn">✦</button>
+  </div>
 
   <!-- ═══ VIEWS ═══════════════════════════════════════════════════════════ -->
 
@@ -333,7 +340,7 @@
 
 
 <script src="js/data.js?v=3"></script>
-<script src="js/app.js?v=16"></script>
+<script src="js/app.js?v=17"></script>
 
 <!-- Back-to-Top: außerhalb aller Views, damit fixed immer sichtbar -->
 <button id="btn-back-to-top" class="btn-back-to-top" aria-label="Nach oben" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#9650;</button>

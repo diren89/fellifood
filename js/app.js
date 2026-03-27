@@ -96,6 +96,8 @@ function showView(name, recipeId = null, from = null) {
     if (name === 'shopping') renderShoppingList();
     const fab = document.getElementById('fab-plan');
     if (fab) { fab.style.display = name === 'plan' ? 'flex' : 'none'; fab.classList.remove('open'); }
+    const hm = document.getElementById('header-menu');
+    if (hm) hm.classList.remove('open');
 
     // Back-to-Top: ausblenden wenn View gewechselt wird
     const btt = document.getElementById('btn-back-to-top');
@@ -1186,15 +1188,24 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
   renderInterval();
 
-  // FAB Speed Dial
+  // Header-Hamburger (nur Einstellungen)
   document.getElementById('fab-main').addEventListener('click', () => {
-    document.getElementById('fab-plan').classList.toggle('open');
+    document.getElementById('header-menu').classList.toggle('open');
   });
   document.addEventListener('click', e => {
+    const hm = document.getElementById('header-menu');
+    if (hm && hm.classList.contains('open') && !hm.contains(e.target)) {
+      hm.classList.remove('open');
+    }
     const fab = document.getElementById('fab-plan');
-    if (fab.classList.contains('open') && !fab.contains(e.target)) {
+    if (fab && fab.classList.contains('open') && !fab.contains(e.target)) {
       fab.classList.remove('open');
     }
+  });
+
+  // Bottom FAB (Reset + Wizard)
+  document.getElementById('fab-plan-btn').addEventListener('click', () => {
+    document.getElementById('fab-plan').classList.toggle('open');
   });
 
   // Auto-fill buttons
@@ -1207,7 +1218,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     autoFillAll();
   });
   document.getElementById('btn-fab-settings').addEventListener('click', () => {
-    document.getElementById('fab-plan').classList.remove('open');
+    document.getElementById('header-menu').classList.remove('open');
     showView('settings');
   });
 
