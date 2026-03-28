@@ -830,7 +830,7 @@ body::after {
 
 /* ─── Modal ─────────────────────────────────────────────────────────────── */
 .modal-overlay {
-  position: fixed; inset: 0; z-index: 200;
+  position: fixed; inset: 0; z-index: 400;
   background: rgba(0,0,0,.7);
   backdrop-filter: blur(4px);
   display: flex; align-items: flex-end;
@@ -1270,15 +1270,16 @@ body::after {
   color: var(--text-muted); margin-bottom: 8px;
   text-transform: uppercase; letter-spacing: .06em;
 }
-.dc-meals { display: flex; gap: 8px; flex-wrap: wrap; }
-.dc-meal-cell { display: flex; flex-direction: column; gap: 4px; min-width: 80px; }
+.dc-meals { display: flex; flex-direction: column; gap: 8px; }
+.dc-meal-cell { display: flex; align-items: center; gap: 8px; }
 .dc-meal-label {
   font-size: 11px; color: var(--text-faint);
   text-transform: uppercase; letter-spacing: .08em;
+  width: 48px; flex-shrink: 0;
 }
 .dc-add-btn {
   background: var(--surface-2); border: 1px dashed var(--border-lt);
-  color: var(--text-muted); border-radius: var(--radius-sm);
+  color: var(--text-muted); border-radius: var(--radius-sm); flex: 1;
   padding: 6px 10px; font-size: 16px; cursor: pointer;
   transition: background .15s;
 }
@@ -1286,9 +1287,9 @@ body::after {
 .dc-pinned-chip {
   display: flex; align-items: center; justify-content: space-between; gap: 6px;
   background: var(--amber-glow); border: 1px solid var(--amber);
+  flex: 1;
   border-radius: var(--radius-sm); padding: 5px 8px;
   font-size: 12px; cursor: pointer; color: var(--text);
-  max-width: 120px;
 }
 .dc-pinned-chip span:first-child {
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
