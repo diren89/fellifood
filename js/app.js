@@ -1342,7 +1342,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // ─── Pull-to-Refresh ─────────────────────────────────────────────────────────
 function initPullToRefresh() {
-  const THRESHOLD = 120;
+  const THRESHOLD = 220;
   let startY = 0;
   let pulling = false;
 
@@ -1364,7 +1364,7 @@ function initPullToRefresh() {
     if (touchDragSrc) return; // no PTR during meal drag
     if (!startY) return;
     const dy = e.touches[0].clientY - startY;
-    if (dy < 8) return;
+    if (dy < 20) return;
     const scrollable = e.target.closest('.modal-list, .recipe-form-body');
     if (scrollable) return;
     const activeContent = document.querySelector('.view.active .main-content');
