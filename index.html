@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="stylesheet" href="css/styles.css?v=16">
+  <link rel="stylesheet" href="css/styles.css?v=17">
 </head>
 <body>
 
@@ -42,13 +42,8 @@
 
   <!-- ═══ HEADER ══════════════════════════════════════════════════════════ -->
   <header class="app-header">
-    <!-- Hamburger (nur Einstellungen) -->
-    <div id="header-menu" class="fab-container">
-      <div class="fab-speed-dial" id="header-speed-dial">
-        <button class="fab-action-item fab-action-item--outline" id="btn-fab-settings">⚙&#xFE0E; Einstellungen</button>
-      </div>
-      <button class="fab-main" id="fab-main">☰</button>
-    </div>
+    <!-- Hamburger → Settings Drawer -->
+    <button class="fab-main" id="fab-main">☰</button>
     <div class="logo" onclick="showView('plan')">
       <img src="images/logo.svg" alt="FelliFood" class="header-logo-img">
     </div>
@@ -182,10 +177,6 @@
   <!-- ── DETAIL (dynamisch) ─────────────────────────────────────────── -->
   <div id="view-detail" class="view"></div>
 
-  <!-- ── EINSTELLUNGEN ──────────────────────────────────────────────── -->
-  <div id="view-settings" class="view">
-    <div class="main-content"></div>
-  </div>
 
   <!-- ── EINKAUFSLISTE ───────────────────────────────────────────── -->
   <div id="view-shopping" class="view">
@@ -212,6 +203,17 @@
     </button>
   </nav>
 
+
+</div>
+
+<!-- ═══ SETTINGS DRAWER ════════════════════════════════════════════════ -->
+<div id="settings-backdrop" class="settings-backdrop"></div>
+<div id="settings-drawer" class="settings-drawer">
+  <div class="settings-drawer-header">
+    <span class="settings-drawer-title">Einstellungen</span>
+    <button class="settings-drawer-close" id="settings-close">✕</button>
+  </div>
+  <div class="settings-drawer-content"></div>
 </div>
 
 <!-- ═══ MODAL ════════════════════════════════════════════════════════════ -->

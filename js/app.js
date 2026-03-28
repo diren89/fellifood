@@ -92,12 +92,10 @@ function showView(name, recipeId = null, from = null) {
 
     if (name === 'plan')     renderPlan();
     if (name === 'recipes')  renderRecipes();
-    if (name === 'settings') renderSettings();
     if (name === 'shopping') renderShoppingList();
     const fab = document.getElementById('fab-plan');
     if (fab) { fab.style.display = name === 'plan' ? 'flex' : 'none'; fab.classList.remove('open'); }
-    const hm = document.getElementById('header-menu');
-    if (hm) hm.classList.remove('open');
+    closeSettingsDrawer();
 
     // Back-to-Top: ausblenden wenn View gewechselt wird
     const btt = document.getElementById('btn-back-to-top');
@@ -107,6 +105,17 @@ function showView(name, recipeId = null, from = null) {
     localStorage.setItem('ff_last_view', name);
     location.hash = name;
   }
+}
+
+// ─── Settings Drawer ─────────────────────────────────────────────────────────
+function openSettingsDrawer() {
+  renderSettings();
+  document.getElementById('settings-drawer').classList.add('open');
+  document.getElementById('settings-backdrop').classList.add('open');
+}
+function closeSettingsDrawer() {
+  document.getElementById('settings-drawer').classList.remove('open');
+  document.getElementById('settings-backdrop').classList.remove('open');
 }
 
 // ─── Toast ───────────────────────────────────────────────────────────────────
@@ -322,7 +331,7 @@ function renderSettings() {
     { type: 'mittagessen', label: 'Mittag' },
     { type: 'abendessen',  label: 'Abend'  }
   ];
-  const container = document.querySelector('#view-settings .main-content');
+  const container = document.querySelector('#settings-drawer .settings-drawer-content');
   container.innerHTML = `
     <div class="section-eyebrow">Konfiguration</div>
     <div class="section-title" style="margin-bottom:18px">Einstellungen</div>
@@ -1188,15 +1197,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
   renderInterval();
 
-  // Header-Hamburger (nur Einstellungen)
-  document.getElementById('fab-main').addEventListener('click', () => {
-    document.getElementById('header-menu').classList.toggle('open');
-  });
+  // Header-Hamburger → Settings Drawer
+  document.getElementById('fab-main').addEventListener('click', openSettingsDrawer);
+  document.getElementById('settings-close').addEventListener('click', closeSettingsDrawer);
+  document.getElementById('settings-backdrop').addEventListener('click', closeSettingsDrawer);
+
   document.addEventListener('click', e => {
-    const hm = document.getElementById('header-menu');
-    if (hm && hm.classList.contains('open') && !hm.contains(e.target)) {
-      hm.classList.remove('open');
-    }
     const fab = document.getElementById('fab-plan');
     if (fab && fab.classList.contains('open') && !fab.contains(e.target)) {
       fab.classList.remove('open');
@@ -1216,10 +1222,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('btn-autofill-all').addEventListener('click', () => {
     document.getElementById('fab-plan').classList.remove('open');
     autoFillAll();
-  });
-  document.getElementById('btn-fab-settings').addEventListener('click', () => {
-    document.getElementById('header-menu').classList.remove('open');
-    showView('settings');
   });
 
   // Recipe search
@@ -1336,7 +1338,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Initial render — gespeicherte View wiederherstellen
   const _savedView = localStorage.getItem('ff_last_view');
-  const _validViews = ['plan', 'recipes', 'shopping', 'settings'];
+  const _validViews = ['plan', 'recipes', 'shopping'];
   showView(_validViews.includes(_savedView) ? _savedView : 'plan');
 });
 
