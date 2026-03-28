@@ -1342,7 +1342,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // ─── Pull-to-Refresh ─────────────────────────────────────────────────────────
 function initPullToRefresh() {
-  const THRESHOLD = 220;
+  const THRESHOLD = 300;
   let startY = 0;
   let pulling = false;
 
@@ -1352,12 +1352,13 @@ function initPullToRefresh() {
   document.body.appendChild(indicator);
 
   document.addEventListener('touchstart', e => {
+    startY = 0;
+    pulling = false;
     const scrollable = e.target.closest('.modal-list, .recipe-form-body');
     if (scrollable) return;
     const activeContent = document.querySelector('.view.active .main-content');
     if (activeContent && activeContent.scrollTop > 0) return;
     startY = e.touches[0].clientY;
-    pulling = false;
   }, { passive: true });
 
   document.addEventListener('touchmove', e => {
@@ -1390,5 +1391,12 @@ function initPullToRefresh() {
       indicator.classList.remove('ptr-pulling');
       indicator.style.transform = '';
     }
+  }, { passive: true });
+
+  document.addEventListener('touchcancel', () => {
+    pulling = false;
+    startY = 0;
+    indicator.classList.remove('ptr-pulling', 'ptr-loading');
+    indicator.style.transform = '';
   }, { passive: true });
 }
