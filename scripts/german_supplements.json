@@ -1,0 +1,5655 @@
+[
+  {
+    "name": "Overnight Oats mit Beeren",
+    "description": "Cremige Haferflocken, über Nacht in Milch eingeweicht und morgens mit frischen Beeren und Honig getoppt.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "80 g Haferflocken",
+      "200 ml Milch",
+      "100 g gemischte Beeren",
+      "1 EL Honig",
+      "1 EL Chiasamen",
+      "50 g Naturjoghurt"
+    ],
+    "zubereitung": [
+      "Haferflocken mit Chiasamen und Milch vermengen.",
+      "Joghurt unterrühren und über Nacht kühlen.",
+      "Morgens mit Beeren und Honig anrichten."
+    ],
+    "image": "images/recipes/overnight-oats.jpg"
+  },
+  {
+    "name": "Rührei mit Schnittlauch",
+    "description": "Lockeres, butterweiches Rührei mit frischem Schnittlauch auf geröstetem Vollkornbrot.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "deutsch",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Eier",
+      "2 EL Butter",
+      "3 EL Milch",
+      "1 Bund Schnittlauch",
+      "Salz, Pfeffer",
+      "2 Scheiben Vollkornbrot"
+    ],
+    "zubereitung": [
+      "Eier mit Milch verquirlen, salzen und pfeffern.",
+      "Butter in der Pfanne schmelzen.",
+      "Eiermasse bei niedriger Hitze stocken lassen und mit Schnittlauch servieren."
+    ],
+    "image": "images/recipes/ruehrei.jpg"
+  },
+  {
+    "name": "Buttermilch-Pfannkuchen",
+    "description": "Fluffige amerikanische Pancakes mit Buttermilch, serviert mit Ahornsirup und frischen Früchten.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 25,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g Mehl",
+      "2 TL Backpulver",
+      "2 EL Zucker",
+      "1 Prise Salz",
+      "250 ml Buttermilch",
+      "2 Eier",
+      "30 g Butter",
+      "Ahornsirup zum Servieren"
+    ],
+    "zubereitung": [
+      "Trockene Zutaten mischen.",
+      "Buttermilch, Eier und geschmolzene Butter unterrühren.",
+      "Portionsweise in der Pfanne goldbraun backen."
+    ],
+    "image": "images/recipes/pancakes.jpg"
+  },
+  {
+    "name": "Granola Bowl",
+    "description": "Knuspriges Granola mit Kokosmilch, Mango und Passionsfrüchten – ein tropisches Frühstück.",
+    "label": "vegan",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "80 g Granola",
+      "150 ml Kokosmilch",
+      "1 Mango",
+      "2 Passionsfrüchte",
+      "1 EL Kokosraspeln",
+      "1 TL Agavensirup"
+    ],
+    "zubereitung": [
+      "Granola in eine Schüssel geben.",
+      "Mit Kokosmilch aufgießen.",
+      "Mit Mango, Passionsfrucht und Kokosraspeln belegen."
+    ],
+    "image": "images/recipes/granola-bowl.jpg"
+  },
+  {
+    "name": "Avocado-Toast mit Ei",
+    "description": "Knuspriger Sauerteigtoast mit cremiger Avocado, pochiertem Ei und Chiliflocken.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 Scheiben Sauerteigbrot",
+      "1 reife Avocado",
+      "2 Eier",
+      "1 Limette",
+      "Chiliflocken",
+      "Salz, Pfeffer",
+      "Kresse"
+    ],
+    "zubereitung": [
+      "Brot toasten.",
+      "Avocado zerdrücken, mit Limettensaft, Salz und Pfeffer würzen.",
+      "Eier pochieren und zusammen mit Kresse und Chiliflocken servieren."
+    ],
+    "image": "images/recipes/avocado-toast.jpg"
+  },
+  {
+    "name": "Smoothie Bowl",
+    "description": "Dickflüssige Smoothie-Bowl aus Mango und Banane, bunt belegt mit Früchten und Saaten.",
+    "label": "vegan",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "1 gefrorene Banane",
+      "150 g gefrorene Mango",
+      "100 ml Haferdrink",
+      "1 EL Erdnussbutter",
+      "Topping: Granola, Banane, Blaubeeren, Chiasamen"
+    ],
+    "zubereitung": [
+      "Banane, Mango, Haferdrink und Erdnussbutter cremig pürieren.",
+      "In eine Schüssel füllen und mit Toppings belegen."
+    ],
+    "image": "images/recipes/smoothie-bowl.jpg"
+  },
+  {
+    "name": "Quark mit Honig und Walnüssen",
+    "description": "Cremiger Magerquark mit Walnüssen, Honig und frischen Früchten – einfach und nährstoffreich.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "deutsch",
+    "zeit": 5,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "250 g Magerquark",
+      "2 EL Honig",
+      "40 g Walnüsse",
+      "1 Apfel",
+      "1 TL Zimt"
+    ],
+    "zubereitung": [
+      "Quark mit Honig und Zimt verrühren.",
+      "Apfel würfeln und Walnüsse grob hacken.",
+      "Alles zusammen anrichten."
+    ],
+    "image": "images/recipes/quark-honig.jpg"
+  },
+  {
+    "name": "Banana Bread",
+    "description": "Saftiges, veganes Bananenbrot mit Haferflocken und Schokoladenstückchen – ideal zum Frühstück.",
+    "label": "vegan",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 60,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "3 reife Bananen",
+      "200 g Mehl",
+      "50 g Haferflocken",
+      "80 ml Kokosöl",
+      "80 g Zucker",
+      "1 TL Backpulver",
+      "1 TL Zimt",
+      "50 g Zartbitterschokolade"
+    ],
+    "zubereitung": [
+      "Bananen zerdrücken.",
+      "Alle Zutaten vermengen.",
+      "In eine Kastenform füllen und bei 175 °C ca. 50 Min. backen."
+    ],
+    "image": "images/recipes/banana-bread.jpg"
+  },
+  {
+    "name": "Omelett mit Gemüse",
+    "description": "Saftiges Omelett gefüllt mit buntem Gemüse, Kräutern und Ziegenkäse.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "französisch",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "3 Eier",
+      "1 Paprika",
+      "50 g Champignons",
+      "30 g Ziegenkäse",
+      "1 EL Butter",
+      "Salz, Pfeffer",
+      "Frischer Thymian"
+    ],
+    "zubereitung": [
+      "Gemüse klein schneiden und in Butter anbraten.",
+      "Eier verquirlen, würzen und über das Gemüse gießen.",
+      "Stocken lassen, mit Käse belegen und zusammenklappen."
+    ],
+    "image": "images/recipes/omelett.jpg"
+  },
+  {
+    "name": "Joghurt-Parfait",
+    "description": "Schichtweise angerichtetes Parfait aus griechischem Joghurt, Granola und Erdbeercompote.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g griechischer Joghurt",
+      "60 g Granola",
+      "150 g Erdbeeren",
+      "1 EL Honig",
+      "1 TL Vanilleextrakt"
+    ],
+    "zubereitung": [
+      "Erdbeeren mit Honig kurz erwärmen.",
+      "Joghurt mit Vanille verrühren.",
+      "Abwechselnd Joghurt, Granola und Erdbeeren in Gläser schichten."
+    ],
+    "image": "images/recipes/joghurt-parfait.jpg"
+  },
+  {
+    "name": "Tomatensuppe mit Croutons",
+    "description": "Samtige Tomatencremesuppe mit frischem Basilikum und knusprigen Knoblauch-Croutons.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "800 g Tomaten",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "400 ml Gemüsebrühe",
+      "2 EL Tomatenmark",
+      "1 TL Zucker",
+      "Basilikum",
+      "2 Scheiben Weißbrot",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Zwiebel und Knoblauch anschwitzen.",
+      "Tomaten und Tomatenmark zugeben, 15 Min. köcheln.",
+      "Pürieren, abschmecken.",
+      "Brot würfeln und in Olivenöl knusprig rösten."
+    ],
+    "image": "images/recipes/tomatensuppe.jpg"
+  },
+  {
+    "name": "Rote Linsensuppe",
+    "description": "Würzige orientalische Linsensuppe mit Kreuzkümmel, Paprika und einem Spritzer Zitrone.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "orientalisch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g rote Linsen",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "1 Karotte",
+      "1 TL Kreuzkümmel",
+      "1 TL Paprikapulver",
+      "1 L Gemüsebrühe",
+      "1 Zitrone",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Zwiebel, Knoblauch und Karotte anschwitzen.",
+      "Gewürze rösten, Linsen zugeben.",
+      "Mit Brühe aufgießen und 20 Min. kochen.",
+      "Pürieren und mit Zitronensaft abschmecken."
+    ],
+    "image": "images/recipes/linsensuppe.jpg"
+  },
+  {
+    "name": "Caesar Salad",
+    "description": "Knackiger Römersalat mit cremigem Caesar-Dressing, Parmesan und Croutons.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "1 Römersalat",
+      "50 g Parmesan",
+      "2 Scheiben Brot",
+      "2 EL Mayonnaise",
+      "1 TL Senf",
+      "1 Knoblauchzehe",
+      "1 EL Zitronensaft",
+      "1 TL Worcestershiresauce",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Brot würfeln und in Olivenöl rösten.",
+      "Dressing aus Mayo, Senf, Knoblauch, Zitrone und Worcestershire rühren.",
+      "Salat mit Dressing vermengen, Parmesan und Croutons darüber."
+    ],
+    "image": "images/recipes/caesar-salad.jpg"
+  },
+  {
+    "name": "Kartoffelsuppe",
+    "description": "Herzhafte deutsche Kartoffelsuppe mit Lauch, Majoran und knusprigem Speck.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "600 g Kartoffeln",
+      "1 Stange Lauch",
+      "1 Karotte",
+      "1 Zwiebel",
+      "100 g Speck",
+      "800 ml Gemüsebrühe",
+      "100 ml Sahne",
+      "1 TL Majoran",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Speck in einem Topf auslassen.",
+      "Gemüse würfeln und andünsten.",
+      "Kartoffeln und Brühe zugeben, 20 Min. köcheln.",
+      "Teilweise pürieren, Sahne zugeben und abschmecken."
+    ],
+    "image": "images/recipes/kartoffelsuppe.jpg"
+  },
+  {
+    "name": "Falafel Bowl",
+    "description": "Knusprige Falafel auf Bulgur mit Hummus, Gurken-Tomaten-Salat und Tahini-Sauce.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "orientalisch",
+    "zeit": 40,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 g Kichererbsen (Dose)",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "1 Bund Petersilie",
+      "1 TL Kreuzkümmel",
+      "1 TL Koriander",
+      "200 g Bulgur",
+      "2 Tomaten",
+      "1 Gurke",
+      "Tahini, Zitrone"
+    ],
+    "zubereitung": [
+      "Kichererbsen mit Zwiebel, Knoblauch, Petersilie und Gewürzen pürieren.",
+      "Bällchen formen und in Öl frittieren.",
+      "Bulgur kochen, Salat schneiden.",
+      "Alles in Bowls anrichten."
+    ],
+    "image": "images/recipes/falafel-bowl.jpg"
+  },
+  {
+    "name": "Spinat-Ricotta-Pasta",
+    "description": "Schnelle Pasta mit cremiger Ricotta-Spinat-Sauce, Zitronenabrieb und Pinienkernen.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g Pasta",
+      "200 g Ricotta",
+      "200 g Blattspinat",
+      "2 Knoblauchzehen",
+      "1 Zitrone",
+      "40 g Pinienkerne",
+      "Parmesan",
+      "Olivenöl",
+      "Salz, Pfeffer",
+      "Muskat"
+    ],
+    "zubereitung": [
+      "Pasta kochen.",
+      "Knoblauch in Öl anschwitzen, Spinat zugeben.",
+      "Ricotta und etwas Pastawasser einrühren.",
+      "Mit Pasta vermengen, Pinienkerne und Zitronenabrieb darüber."
+    ],
+    "image": "images/recipes/spinat-ricotta-pasta.jpg"
+  },
+  {
+    "name": "Kürbissuppe",
+    "description": "Samtiger Hokkaido-Kürbis mit Ingwer, Kokos und Kurkuma – wärmend und aromatisch.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "1 Hokkaido-Kürbis (ca. 1 kg)",
+      "1 Zwiebel",
+      "2 cm Ingwer",
+      "1 Dose Kokosmilch (400 ml)",
+      "500 ml Gemüsebrühe",
+      "1 TL Kurkuma",
+      "Kürbiskernöl",
+      "Kürbiskerne"
+    ],
+    "zubereitung": [
+      "Kürbis, Zwiebel und Ingwer anschwitzen.",
+      "Mit Brühe und Kokosmilch aufgießen, 20 Min. köcheln.",
+      "Fein pürieren, mit Kurkuma abschmecken.",
+      "Mit Kürbiskernöl und Kernen servieren."
+    ],
+    "image": "images/recipes/kueurbissuppe.jpg"
+  },
+  {
+    "name": "Buddha Bowl",
+    "description": "Bunte Bowl mit geröstetem Gemüse, Quinoa, Kichererbsen, Avocado und Tahini-Dressing.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "150 g Quinoa",
+      "1 Dose Kichererbsen",
+      "1 Süßkartoffel",
+      "1 Rote Bete",
+      "1 Avocado",
+      "50 g Rucola",
+      "2 EL Tahini",
+      "1 Zitrone",
+      "1 TL Kreuzkümmel",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Quinoa kochen.",
+      "Gemüse mit Öl und Gewürzen rösten.",
+      "Kichererbsen rösten.",
+      "Alles in Bowls anrichten, Tahini-Dressing darüber."
+    ],
+    "image": "images/recipes/buddha-bowl.jpg"
+  },
+  {
+    "name": "Gemüse-Wok",
+    "description": "Knackiger Asia-Wok mit Brokkoli, Pak Choi, Karotten und Teriyaki-Sauce über Jasminreis.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 25,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "300 g Brokkoli",
+      "1 Pak Choi",
+      "2 Karotten",
+      "150 g Zuckerschoten",
+      "2 Knoblauchzehen",
+      "2 cm Ingwer",
+      "4 EL Sojasoße",
+      "2 EL Sesamöl",
+      "1 EL Maisstärke",
+      "Sesam",
+      "Jasminreis"
+    ],
+    "zubereitung": [
+      "Reis kochen.",
+      "Gemüse in Stücke schneiden.",
+      "Knoblauch und Ingwer im Wok anbraten.",
+      "Gemüse zugeben und scharf anbraten.",
+      "Sauce einrühren und mit Sesam servieren."
+    ],
+    "image": "images/recipes/gemuese-wok.jpg"
+  },
+  {
+    "name": "Hähnchen-Wrap",
+    "description": "Saftiger Hähnchen-Wrap mit gegrilltem Hühnchen, Guacamole, Tomaten und Salatblättern.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 Tortilla-Wraps",
+      "300 g Hähnchenbrustfilet",
+      "1 Avocado",
+      "2 Tomaten",
+      "Eisbergsalat",
+      "2 EL Sauerrahm",
+      "1 TL Paprikapulver",
+      "1 TL Kreuzkümmel",
+      "Limette",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Hähnchen würzen und in der Pfanne goldbraun braten.",
+      "Avocado zerdrücken und mit Limettensaft würzen.",
+      "Wraps belegen und einrollen."
+    ],
+    "image": "images/recipes/haehnchen-wrap.jpg"
+  },
+  {
+    "name": "Caprese",
+    "description": "Klassischer Caprese-Salat mit büffelmozzarella, reifen Tomaten, Basilikum und Balsamico.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 Büffelmozzarella",
+      "4 reife Tomaten",
+      "1 Bund Basilikum",
+      "4 EL Olivenöl extra vergine",
+      "2 EL Balsamico-Reduktion",
+      "Fleur de Sel",
+      "Schwarzer Pfeffer"
+    ],
+    "zubereitung": [
+      "Tomaten und Mozzarella in Scheiben schneiden.",
+      "Abwechselnd auf einem Teller anrichten.",
+      "Mit Basilikum, Olivenöl, Balsamico, Salz und Pfeffer würzen."
+    ],
+    "image": "images/recipes/caprese.jpg"
+  },
+  {
+    "name": "Minestrone",
+    "description": "Gehaltvolle italienische Gemüsesuppe mit weißen Bohnen, Pasta und frischen Kräutern.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "1 Dose weiße Bohnen",
+      "2 Karotten",
+      "2 Stangen Sellerie",
+      "1 Zucchini",
+      "1 Dose Tomaten",
+      "100 g Pasta",
+      "1 L Gemüsebrühe",
+      "2 Knoblauchzehen",
+      "Basilikum, Thymian",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Gemüse würfeln und in Olivenöl anschwitzen.",
+      "Knoblauch zugeben, mit Tomaten und Brühe aufgießen.",
+      "20 Min. köcheln, dann Pasta und Bohnen zugeben.",
+      "Mit Kräutern abschmecken."
+    ],
+    "image": "images/recipes/minestrone.jpg"
+  },
+  {
+    "name": "Flammkuchen",
+    "description": "Hauchdünner elsässischer Flammkuchen mit Schmand, karamellisierten Zwiebeln und Speck.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "französisch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "300 g Pizzateig",
+      "150 g Schmand",
+      "2 Zwiebeln",
+      "150 g Speckwürfel",
+      "Salz, Pfeffer",
+      "Muskat",
+      "Schnittlauch"
+    ],
+    "zubereitung": [
+      "Teig dünn ausrollen.",
+      "Mit Schmand bestreichen, mit Zwiebeln und Speck belegen.",
+      "Bei 240 °C ca. 12 Min. backen.",
+      "Mit Schnittlauch garnieren."
+    ],
+    "image": "images/recipes/flammkuchen.jpg"
+  },
+  {
+    "name": "Griechischer Salat",
+    "description": "Frischer griechischer Salat mit Feta, Kalamata-Oliven, Gurke und Oregano-Vinaigrette.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "griechisch",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g Feta",
+      "3 Tomaten",
+      "1 Gurke",
+      "1 rote Zwiebel",
+      "80 g Kalamata-Oliven",
+      "1 TL getrockneter Oregano",
+      "4 EL Olivenöl",
+      "2 EL Rotweinessig",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Gemüse in grobe Stücke schneiden.",
+      "Feta in Würfel schneiden.",
+      "Alles vermengen und mit Olivenöl, Essig, Oregano, Salz und Pfeffer anrichten."
+    ],
+    "image": "images/recipes/griechischer-salat.jpg"
+  },
+  {
+    "name": "Lachs-Quinoa-Bowl",
+    "description": "Gebackener Lachs auf Quinoa mit Edamame, Avocado und Miso-Dressing.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 Lachsfilets",
+      "150 g Quinoa",
+      "100 g Edamame",
+      "1 Avocado",
+      "1 Karotte",
+      "2 EL Misopaste",
+      "1 EL Sesamöl",
+      "1 EL Reisessig",
+      "1 TL Honig",
+      "Sesam"
+    ],
+    "zubereitung": [
+      "Quinoa kochen.",
+      "Lachs mit Sojasoße bei 200 °C 15 Min. backen.",
+      "Miso-Dressing rühren.",
+      "Alles in Bowls anrichten und mit Sesam bestreuen."
+    ],
+    "image": "images/recipes/lachs-bowl.jpg"
+  },
+  {
+    "name": "Spaghetti Bolognese",
+    "description": "Klassische Bolognese mit Rinderhack, langsam geschmorter Tomaten-Gemüse-Sauce.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 60,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 g Spaghetti",
+      "500 g Rinderhack",
+      "1 Dose Tomaten (400 g)",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "2 Karotten",
+      "2 Stangen Sellerie",
+      "150 ml Rotwein",
+      "2 EL Tomatenmark",
+      "Oregano",
+      "Parmesan"
+    ],
+    "zubereitung": [
+      "Gemüse fein würfeln und anschwitzen.",
+      "Hack anbraten und mit Rotwein ablöschen.",
+      "Tomaten und Mark zugeben, 30 Min. schmoren.",
+      "Mit Pasta und Parmesan servieren."
+    ],
+    "image": "images/recipes/spaghetti-bolognese.jpg"
+  },
+  {
+    "name": "Hähnchen Tikka Masala",
+    "description": "Zart mariniertes Hähnchen in würziger Tomaten-Sahne-Sauce – indischer Klassiker.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "indisch",
+    "zeit": 45,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "600 g Hähnchenbrust",
+      "1 Dose Tomaten",
+      "200 ml Sahne",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "2 cm Ingwer",
+      "2 TL Garam Masala",
+      "1 TL Kurkuma",
+      "1 TL Paprika",
+      "Basmati-Reis",
+      "Koriander"
+    ],
+    "zubereitung": [
+      "Hähnchen marinieren und anbraten.",
+      "Zwiebel, Knoblauch und Ingwer anschwitzen.",
+      "Gewürze rösten, Tomaten zugeben.",
+      "Hähnchen und Sahne einrühren, 15 Min. köcheln.",
+      "Mit Reis und Koriander servieren."
+    ],
+    "image": "images/recipes/tikka-masala.jpg"
+  },
+  {
+    "name": "Lachs mit Kräuterkruste",
+    "description": "Saftige Lachsfilets mit knuspriger Kräuter-Parmesan-Kruste, dazu Kartoffelpüree.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 35,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "4 Lachsfilets",
+      "50 g Semmelbrösel",
+      "30 g Parmesan",
+      "1 Bund Petersilie",
+      "1 TL Zitronenabrieb",
+      "2 EL Olivenöl",
+      "600 g Kartoffeln",
+      "100 ml Milch",
+      "50 g Butter"
+    ],
+    "zubereitung": [
+      "Kartoffeln kochen und zu Püree stampfen.",
+      "Brösel, Parmesan, Petersilie und Zitronenabrieb mischen.",
+      "Lachs mit der Kruste belegen und bei 200 °C 15 Min. backen."
+    ],
+    "image": "images/recipes/lachs-krueste.jpg"
+  },
+  {
+    "name": "Gemüse-Curry",
+    "description": "Aromatisches veganes Curry mit Süßkartoffeln, Kichererbsen und Kokosmilch.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen",
+      "mittagessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "1 Dose Kichererbsen",
+      "1 Süßkartoffel",
+      "1 Paprika",
+      "1 Dose Kokosmilch",
+      "2 EL rote Currypaste",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "1 cm Ingwer",
+      "Basmati-Reis",
+      "Koriander"
+    ],
+    "zubereitung": [
+      "Zwiebel, Knoblauch, Ingwer anschwitzen.",
+      "Currypaste rösten, Gemüse zugeben.",
+      "Kokosmilch zugießen, 15 Min. köcheln.",
+      "Kichererbsen einrühren und mit Reis servieren."
+    ],
+    "image": "images/recipes/gemuese-curry.jpg"
+  },
+  {
+    "name": "Pizza Margherita",
+    "description": "Knusprige hausgemachte Pizza mit Tomatensauce, Büffelmozzarella und frischem Basilikum.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 45,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Pizzateig",
+      "200 ml Tomatensauce",
+      "200 g Büffelmozzarella",
+      "1 Bund Basilikum",
+      "2 EL Olivenöl",
+      "Salz",
+      "Oregano"
+    ],
+    "zubereitung": [
+      "Teig ausrollen.",
+      "Mit Tomatensauce bestreichen.",
+      "Mit Mozzarella belegen.",
+      "Bei 250 °C 10–12 Min. backen.",
+      "Mit Basilikum und Olivenöl fertigstellen."
+    ],
+    "image": "images/recipes/pizza-margherita.jpg"
+  },
+  {
+    "name": "Rindergulasch",
+    "description": "Herzhaftes ungarisches Rindergulasch mit Paprika, Zwiebeln und Sauerrahm.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 120,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "800 g Rindfleisch (Schulter)",
+      "3 Zwiebeln",
+      "2 Paprika",
+      "2 EL Paprikapulver (edelsüß)",
+      "1 TL Kümmel",
+      "400 ml Rinderbrühe",
+      "100 g Sauerrahm",
+      "Salz, Pfeffer",
+      "Öl",
+      "Semmelknödel oder Nudeln"
+    ],
+    "zubereitung": [
+      "Fleisch in Würfel schneiden und scharf anbraten.",
+      "Zwiebeln glasig dünsten, Paprikapulver zugeben.",
+      "Fleisch und Brühe zugeben, 90 Min. schmoren.",
+      "Sauerrahm einrühren und mit Nudeln servieren."
+    ],
+    "image": "images/recipes/gulasch.jpg"
+  },
+  {
+    "name": "Pad Thai",
+    "description": "Klassische Thai-Reisnudeln mit Tofu, Erdnüssen, Sprossen und Tamarinden-Sauce.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 30,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "200 g Reisnudeln",
+      "200 g Tofu",
+      "100 g Sojasprossen",
+      "3 Frühlingszwiebeln",
+      "60 g Erdnüsse",
+      "3 EL Tamarindenpaste",
+      "2 EL Sojasoße",
+      "1 EL Zucker",
+      "2 EL Sesamöl",
+      "Limette",
+      "Koriander"
+    ],
+    "zubereitung": [
+      "Nudeln einweichen.",
+      "Tofu knusprig braten.",
+      "Sauce aus Tamarinde, Sojasoße und Zucker anrühren.",
+      "Alles zusammen im Wok schwenken und mit Erdnüssen und Limette servieren."
+    ],
+    "image": "images/recipes/pad-thai.jpg"
+  },
+  {
+    "name": "Wiener Schnitzel",
+    "description": "Goldbraunes Wiener Schnitzel vom Kalb mit Preiselbeeren, Zitrone und Kartoffelsalat.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 30,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "4 Kalbsschnitzel",
+      "2 Eier",
+      "100 g Mehl",
+      "150 g Semmelbrösel",
+      "Salz, Pfeffer",
+      "200 ml Butterschmalz",
+      "1 Zitrone",
+      "4 EL Preiselbeeren",
+      "600 g Kartoffeln für Salat"
+    ],
+    "zubereitung": [
+      "Schnitzel klopfen, salzen und pfeffern.",
+      "In Mehl, Ei und Bröseln panieren.",
+      "In Butterschmalz schwimmend goldbraun ausbacken.",
+      "Mit Zitrone und Preiselbeeren servieren."
+    ],
+    "image": "images/recipes/schnitzel.jpg"
+  },
+  {
+    "name": "Pesto Pasta",
+    "description": "Schnelle Pasta mit selbstgemachtem Basilikum-Pesto, Pinienkernen und Kirschtomaten.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g Pasta",
+      "60 g Basilikum",
+      "50 g Pinienkerne",
+      "60 g Parmesan",
+      "2 Knoblauchzehen",
+      "100 ml Olivenöl",
+      "200 g Kirschtomaten",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Basilikum, Pinienkerne, Parmesan und Knoblauch pürieren.",
+      "Olivenöl einrühren.",
+      "Pasta kochen und mit Pesto vermengen.",
+      "Mit Kirschtomaten servieren."
+    ],
+    "image": "images/recipes/pesto-pasta.jpg"
+  },
+  {
+    "name": "Pulled Pork Burger",
+    "description": "Zartes, langsam gegarter Pulled Pork im Brioche-Bun mit Coleslaw und BBQ-Sauce.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 240,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "1 kg Schweineschulter",
+      "4 Brioche-Buns",
+      "200 g Weißkohl",
+      "2 Karotten",
+      "4 EL BBQ-Sauce",
+      "2 EL Mayonnaise",
+      "1 TL Apfelessig",
+      "Rub: Paprika, Salz, Kreuzkümmel, brauner Zucker"
+    ],
+    "zubereitung": [
+      "Fleisch mit Rub einreiben und über Nacht marinieren.",
+      "Bei 120 °C ca. 4 Std. schmoren.",
+      "Mit zwei Gabeln zerpflücken.",
+      "Coleslaw aus Kohl, Karotten, Mayo und Essig anrühren.",
+      "Burger belegen."
+    ],
+    "image": "images/recipes/pulled-pork-burger.jpg"
+  },
+  {
+    "name": "Ratatouille",
+    "description": "Provenzalisches Schmorgericht aus Zucchini, Aubergine, Paprika und Tomaten.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "französisch",
+    "zeit": 60,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "1 Aubergine",
+      "2 Zucchini",
+      "2 Paprika",
+      "4 Tomaten",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "400 ml Tomatensauce",
+      "Thymian, Rosmarin",
+      "Olivenöl",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Gemüse in dünne Scheiben schneiden.",
+      "Tomatensauce in Auflaufform gießen.",
+      "Gemüsescheiben überlappend einschichten.",
+      "Mit Kräutern und Olivenöl würzen.",
+      "Bei 180 °C 45 Min. backen."
+    ],
+    "image": "images/recipes/ratatouille.jpg"
+  },
+  {
+    "name": "Chili con Carne",
+    "description": "Würziger mexikanischer Eintopf mit Rinderhack, Kidneybohnen und Jalapeños.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "mexikanisch",
+    "zeit": 50,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "500 g Rinderhack",
+      "1 Dose Kidneybohnen",
+      "1 Dose Mais",
+      "1 Dose Tomaten",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "1 Jalapeño",
+      "2 TL Chilipulver",
+      "1 TL Kreuzkümmel",
+      "Salz",
+      "Sauerrahm, Tortilla-Chips"
+    ],
+    "zubereitung": [
+      "Hack mit Zwiebel und Knoblauch anbraten.",
+      "Gewürze rösten, Tomaten zugeben.",
+      "Bohnen und Mais zugeben, 25 Min. köcheln.",
+      "Mit Sauerrahm und Chips servieren."
+    ],
+    "image": "images/recipes/chili-con-carne.jpg"
+  },
+  {
+    "name": "Risotto ai Funghi",
+    "description": "Cremiges Pilzrisotto mit Porcini, Parmesan und frischem Thymian.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 40,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Risottoreis (Arborio)",
+      "300 g Champignons",
+      "20 g getrocknete Porcini",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "150 ml Weißwein",
+      "900 ml Gemüsebrühe",
+      "60 g Parmesan",
+      "40 g Butter",
+      "Thymian"
+    ],
+    "zubereitung": [
+      "Porcini einweichen.",
+      "Zwiebel und Knoblauch anschwitzen, Reis zugeben.",
+      "Mit Wein ablöschen.",
+      "Brühe kellenweise zugießen und rühren.",
+      "Pilze zugeben, mit Butter und Parmesan montieren."
+    ],
+    "image": "images/recipes/risotto-funghi.jpg"
+  },
+  {
+    "name": "Hähnchengeschnetzeltes",
+    "description": "Zartes Hähnchengeschnetzeltes in Champignon-Rahmsauce mit Spätzle.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "500 g Hähnchenbrust",
+      "300 g Champignons",
+      "1 Zwiebel",
+      "200 ml Sahne",
+      "100 ml Geflügelbrühe",
+      "1 TL Senf",
+      "Petersilie",
+      "500 g Spätzle",
+      "Butter",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Hähnchen in Streifen schneiden und anbraten.",
+      "Zwiebel und Pilze anschwitzen.",
+      "Brühe und Sahne zugeben, einkochen.",
+      "Senf einrühren, mit Spätzle servieren."
+    ],
+    "image": "images/recipes/geschnetzeltes.jpg"
+  },
+  {
+    "name": "Gemüselasagne",
+    "description": "Üppige Lasagne mit geröstetem Gemüse, Béchamelsauce und reichlich Parmesan.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 70,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "12 Lasagneplatten",
+      "1 Aubergine",
+      "2 Zucchini",
+      "1 Paprika",
+      "400 ml Tomatensauce",
+      "500 ml Bechamelsauce",
+      "100 g Parmesan",
+      "Mozzarella",
+      "Olivenöl",
+      "Thymian",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Gemüse rösten.",
+      "Lasagneplatten, Tomatensoße, Gemüse und Béchamel abwechselnd schichten.",
+      "Mit Parmesan und Mozzarella abschließen.",
+      "Bei 180 °C 40 Min. backen."
+    ],
+    "image": "images/recipes/gemuese-lasagne.jpg"
+  },
+  {
+    "name": "Shakshuka",
+    "description": "Pochierte Eier in würziger Tomatensauce mit Feta und frischem Brot zum Dippen.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen",
+      "fruehstueck"
+    ],
+    "kueche": "orientalisch",
+    "zeit": 25,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Eier",
+      "1 Dose Tomaten",
+      "1 Paprika",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "1 TL Harissa",
+      "1 TL Kreuzkümmel",
+      "1 TL Paprikapulver",
+      "80 g Feta",
+      "Petersilie",
+      "Brot"
+    ],
+    "zubereitung": [
+      "Zwiebel, Knoblauch und Paprika anbraten.",
+      "Gewürze und Harissa zugeben.",
+      "Tomaten angießen, 10 Min. köcheln.",
+      "Mulden eindrücken und Eier hineinschlagen.",
+      "Zudecken bis Eier gestockt, mit Feta und Petersilie servieren."
+    ],
+    "image": "images/recipes/shakshuka.jpg"
+  },
+  {
+    "name": "Schweinebraten",
+    "description": "Saftiger bayerischer Schweinebraten mit knuspriger Schwarte, Knödelteig und Sauerkraut.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 150,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "1,5 kg Schweinekamm mit Schwarte",
+      "2 Zwiebeln",
+      "1 Bund Suppengemüse",
+      "500 ml Bier (hell)",
+      "1 TL Kümmel",
+      "1 TL Majoran",
+      "Salz, Pfeffer",
+      "Knödel",
+      "Sauerkraut"
+    ],
+    "zubereitung": [
+      "Schwarte rautenförmig einschneiden, kräftig würzen.",
+      "Scharf anbraten.",
+      "Gemüse zugeben, mit Bier ablöschen.",
+      "Bei 160 °C 2 Std. schmoren.",
+      "Mit Knödeln und Sauerkraut servieren."
+    ],
+    "image": "images/recipes/schweinebraten.jpg"
+  },
+  {
+    "name": "Thai Green Curry",
+    "description": "Mildes grünes Thai-Curry mit Tofu, Aubergine, Zucchini und frischem Thai-Basilikum.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g Tofu",
+      "1 Aubergine",
+      "1 Zucchini",
+      "1 Dose Kokosmilch (400 ml)",
+      "2 EL grüne Currypaste",
+      "1 EL Sesamöl",
+      "Jasminreis",
+      "Thai-Basilikum",
+      "Limette",
+      "Sojasoße"
+    ],
+    "zubereitung": [
+      "Tofu knusprig braten.",
+      "Currypaste in Öl rösten, Kokosmilch zugießen.",
+      "Gemüse zugeben, 10 Min. köcheln.",
+      "Tofu einrühren, mit Basilikum und Limette servieren."
+    ],
+    "image": "images/recipes/thai-curry.jpg"
+  },
+  {
+    "name": "Pasta Carbonara",
+    "description": "Authentische römische Carbonara mit Guanciale, Ei, Pecorino und schwarzem Pfeffer.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 25,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 g Spaghetti",
+      "150 g Guanciale oder Pancetta",
+      "4 Eigelb",
+      "1 Ei",
+      "80 g Pecorino Romano",
+      "40 g Parmesan",
+      "Schwarzer Pfeffer",
+      "Salz"
+    ],
+    "zubereitung": [
+      "Guanciale knusprig braten.",
+      "Eier mit Käse und viel Pfeffer verrühren.",
+      "Pasta kochen, etwas Pastawasser auffangen.",
+      "Pasta mit Guanciale vermengen, Eiermix zügig unterrühren.",
+      "Pastawasser nach Bedarf zugeben."
+    ],
+    "image": "images/recipes/pasta-carbonara.jpg"
+  },
+  {
+    "name": "Zucchini-Tomaten-Auflauf",
+    "description": "Leichter mediterraner Auflauf mit Zucchini, Tomaten, Mozzarella und Kräutern.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "mediterranisch",
+    "zeit": 45,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "3 Zucchini",
+      "4 Tomaten",
+      "200 g Mozzarella",
+      "2 Knoblauchzehen",
+      "4 EL Olivenöl",
+      "Basilikum, Oregano",
+      "Salz, Pfeffer",
+      "50 g Parmesan"
+    ],
+    "zubereitung": [
+      "Gemüse in Scheiben schneiden.",
+      "In Auflaufform schichten.",
+      "Mit Olivenöl, Knoblauch und Kräutern würzen.",
+      "Mozzarella und Parmesan darüber.",
+      "Bei 200 °C 30 Min. backen."
+    ],
+    "image": "images/recipes/zucchini-auflauf.jpg"
+  },
+  {
+    "name": "Linsendhal",
+    "description": "Cremiges indisches Linsengericht mit Kokosmilch, Spinat und Gewürzöl.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "indisch",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g rote Linsen",
+      "1 Dose Kokosmilch",
+      "200 g Blattspinat",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "2 cm Ingwer",
+      "1 TL Kurkuma",
+      "1 TL Garam Masala",
+      "1 TL Senfsamen",
+      "Basmati-Reis"
+    ],
+    "zubereitung": [
+      "Linsen mit Kokosmilch und Brühe kochen.",
+      "Spinat unterrühren.",
+      "Senfsamen, Knoblauch, Ingwer und Gewürze in Öl für das Tarka rösten.",
+      "Über die Linsen gießen und mit Reis servieren."
+    ],
+    "image": "images/recipes/linsendhal.jpg"
+  },
+  {
+    "name": "Hähnchen-Pfanne mit Paprika",
+    "description": "Saftige Hähnchenstücke in Paprika-Tomaten-Sauce mit Oliven und Kapern.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "mediterran",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Hähnchenschenkel",
+      "3 Paprika",
+      "1 Dose Tomaten",
+      "1 Zwiebel",
+      "60 g schwarze Oliven",
+      "2 EL Kapern",
+      "2 Knoblauchzehen",
+      "200 ml Hühnerbrühe",
+      "Thymian, Rosmarin",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Hähnchen scharf anbraten.",
+      "Gemüse anschwitzen, Tomaten und Brühe zugeben.",
+      "Hähnchen zurück in die Pfanne, mit Kräutern 25 Min. schmoren.",
+      "Mit Oliven und Kapern servieren."
+    ],
+    "image": "images/recipes/haehnchen-paprika.jpg"
+  },
+  {
+    "name": "Bibimbap",
+    "description": "Koreanische Reisschüssel mit buntem Gemüse, Spiegelei und pikanter Gochujang-Sauce.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 40,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Jasminreis",
+      "2 Karotten",
+      "1 Zucchini",
+      "100 g Sojasprossen",
+      "100 g Spinat",
+      "4 Eier",
+      "2 EL Gochujang-Paste",
+      "1 EL Sesamöl",
+      "Sesam",
+      "Sojasoße"
+    ],
+    "zubereitung": [
+      "Reis kochen.",
+      "Gemüse einzeln in Sesamöl anbraten und würzen.",
+      "Spiegeleier braten.",
+      "Alles auf dem Reis anrichten und mit Gochujang-Sauce servieren."
+    ],
+    "image": "images/recipes/bibimbap.jpg"
+  },
+  {
+    "name": "Käsespätzle",
+    "description": "Deftige Allgäuer Käsespätzle mit geschmolzenem Bergkäse und karamellisierten Zwiebeln.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 40,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 g Spätzle",
+      "200 g Bergkäse",
+      "100 g Emmentaler",
+      "3 Zwiebeln",
+      "3 EL Butter",
+      "100 ml Sahne",
+      "Salz, Pfeffer",
+      "Schnittlauch"
+    ],
+    "zubereitung": [
+      "Spätzle kochen.",
+      "Zwiebeln in Butter langsam karamellisieren.",
+      "Spätzle und geriebenen Käse abwechselnd schichten.",
+      "Sahne angießen und überbacken.",
+      "Mit Zwiebeln und Schnittlauch servieren."
+    ],
+    "image": "images/recipes/kaesspätzle.jpg"
+  },
+  {
+    "name": "Lachs-Tacos",
+    "description": "Knusprige Maistortillas mit gebratenem Lachs, Mango-Salsa und Avocadocreme.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "mexikanisch",
+    "zeit": 25,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g Lachsfilet",
+      "8 kleine Maistortillas",
+      "1 Mango",
+      "1 Avocado",
+      "1 rote Zwiebel",
+      "1 Limette",
+      "1 Jalapeño",
+      "Koriander",
+      "1 TL Paprikapulver",
+      "Olivenöl",
+      "Salz"
+    ],
+    "zubereitung": [
+      "Lachs mit Paprika würzen und anbraten.",
+      "Mango, Zwiebel und Jalapeño für die Salsa würfeln.",
+      "Avocado mit Limette zerdrücken.",
+      "Tortillas belegen und mit Koriander servieren."
+    ],
+    "image": "images/recipes/lachs-tacos.jpg"
+  },
+  {
+    "name": "Avocado-Toast",
+    "description": "Geröstetes Sauerteigbrot mit cremiger Avocado, Chiliflocken und Zitrone.",
+    "label": "vegan",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 Scheiben Sauerteigbrot",
+      "1 reife Avocado",
+      "1 Zitrone",
+      "Chiliflocken",
+      "Fleur de Sel",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Brot toasten.",
+      "Avocado zerdrücken, mit Zitronensaft und Salz würzen.",
+      "Auf dem Toast verteilen und mit Chiliflocken bestreuen."
+    ],
+    "image": "images/recipes/avocado-toast.jpg"
+  },
+  {
+    "name": "Bircher Müsli",
+    "description": "Über Nacht eingeweichtes Haferflocken-Müsli mit Äpfeln und Nüssen.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "100 g Haferflocken",
+      "200 ml Milch",
+      "1 Apfel",
+      "50 g Walnüsse",
+      "2 EL Honig",
+      "1 TL Zimtpulver",
+      "50 g Naturjoghurt"
+    ],
+    "zubereitung": [
+      "Haferflocken in Milch über Nacht einweichen.",
+      "Apfel reiben und untermischen.",
+      "Mit Joghurt, Honig und Nüssen servieren."
+    ],
+    "image": "images/recipes/bircher-muesli.jpg"
+  },
+  {
+    "name": "Shakshuka",
+    "description": "Pochierte Eier in würziger Tomaten-Paprika-Sauce – ein nahöstlicher Klassiker.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 25,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Eier",
+      "400 g Dosentomaten",
+      "2 Paprika",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "1 TL Kreuzkümmel",
+      "1 TL Paprikapulver",
+      "Olivenöl",
+      "Salz"
+    ],
+    "zubereitung": [
+      "Zwiebel und Knoblauch anbraten.",
+      "Paprika würfeln und mitbraten.",
+      "Tomaten zugeben und köcheln lassen.",
+      "Mulden formen, Eier reinschlagen und stocken lassen."
+    ],
+    "image": "images/recipes/shakshuka.jpg"
+  },
+  {
+    "name": "Smoothie Bowl",
+    "description": "Dicke Beeren-Bananen-Bowl mit bunten Toppings und Granola.",
+    "label": "vegan",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 gefrorene Bananen",
+      "150 g Tiefkühlbeeren",
+      "50 ml Pflanzenmilch",
+      "2 EL Granola",
+      "1 EL Chiasamen",
+      "frische Früchte zum Belegen"
+    ],
+    "zubereitung": [
+      "Bananen und Beeren mit Pflanzenmilch pürieren.",
+      "In eine Schüssel füllen.",
+      "Mit Granola, Chiasamen und frischen Früchten toppen."
+    ],
+    "image": "images/recipes/smoothie-bowl.jpg"
+  },
+  {
+    "name": "Pancakes mit Ahornsirup",
+    "description": "Fluffige amerikanische Pfannkuchen mit Butter und Ahornsirup.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g Mehl",
+      "2 Eier",
+      "300 ml Milch",
+      "1 TL Backpulver",
+      "1 Prise Salz",
+      "2 EL Zucker",
+      "Butter zum Braten",
+      "Ahornsirup"
+    ],
+    "zubereitung": [
+      "Alle Zutaten zu einem glatten Teig rühren.",
+      "Portionen in der Pfanne von beiden Seiten backen.",
+      "Mit Butter und Ahornsirup servieren."
+    ],
+    "image": "images/recipes/pancakes.jpg"
+  },
+  {
+    "name": "Französisches Omelett",
+    "description": "Zartes, cremiges Omelett nach klassischer Pariser Art.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 10,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "3 Eier",
+      "1 EL Butter",
+      "Salz, Pfeffer",
+      "frische Kräuter (Schnittlauch, Petersilie)"
+    ],
+    "zubereitung": [
+      "Eier verquirlen und würzen.",
+      "Butter in Pfanne schmelzen.",
+      "Eier eingießen und bei mittlerer Hitze stocken lassen.",
+      "Aufrollen und sofort servieren."
+    ],
+    "image": "images/recipes/omelett.jpg"
+  },
+  {
+    "name": "Acai Bowl",
+    "description": "Energiereiche Acai-Bowl mit Mandelbutter, Banane und Kokosflocken.",
+    "label": "vegan",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 Acai-Portionsbeutel (gefroren)",
+      "1 Banane",
+      "100 ml Mandelmilch",
+      "2 EL Mandelbutter",
+      "2 EL Kokosflocken",
+      "Granola"
+    ],
+    "zubereitung": [
+      "Acai und Banane mit Mandelmilch pürieren.",
+      "In Schüssel füllen.",
+      "Mit Mandelbutter, Kokosflocken und Granola toppen."
+    ],
+    "image": "images/recipes/acai-bowl.jpg"
+  },
+  {
+    "name": "Egg Benedict",
+    "description": "Pochiertes Ei auf English Muffin mit Hollandaise und Räucherlachs.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 30,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "4 Eier",
+      "2 English Muffins",
+      "100 g Räucherlachs",
+      "3 Eigelb",
+      "150 g Butter",
+      "1 Zitrone",
+      "Weißweinessig",
+      "Salz"
+    ],
+    "zubereitung": [
+      "Hollandaise aus Eigelb und geklärter Butter herstellen.",
+      "Eier in Essigwasser pochieren.",
+      "Muffins toasten.",
+      "Muffin, Lachs, Ei und Sauce schichten."
+    ],
+    "image": "images/recipes/eggs-benedict.jpg"
+  },
+  {
+    "name": "Quark mit Früchten",
+    "description": "Cremiger Magerquark mit frischen Früchten und einem Hauch Honig.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "deutsch",
+    "zeit": 5,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "250 g Magerquark",
+      "100 ml Milch",
+      "2 EL Honig",
+      "200 g Beeren",
+      "1 Banane",
+      "1 EL Leinsamen"
+    ],
+    "zubereitung": [
+      "Quark mit Milch cremig rühren.",
+      "Früchte waschen und vorbereiten.",
+      "Quark mit Früchten und Honig anrichten."
+    ],
+    "image": "images/recipes/quark-fruechte.jpg"
+  },
+  {
+    "name": "Rührei mit Spinat",
+    "description": "Lockeres Rührei mit frischem Babyspinat und Feta.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Eier",
+      "80 g Babyspinat",
+      "50 g Feta",
+      "1 EL Butter",
+      "Salz, Pfeffer",
+      "Muskatnuss"
+    ],
+    "zubereitung": [
+      "Eier verquirlen.",
+      "Butter erhitzen, Spinat kurz anwelken.",
+      "Eier zugeben und cremig stocken lassen.",
+      "Feta darüberbröckeln."
+    ],
+    "image": "images/recipes/ruehrei-spinat.jpg"
+  },
+  {
+    "name": "Gazpacho",
+    "description": "Eisgekühlte spanische Tomatensuppe mit Gurke und Paprika.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "800 g reife Tomaten",
+      "1 Gurke",
+      "1 rote Paprika",
+      "1 Knoblauchzehe",
+      "3 EL Olivenöl",
+      "2 EL Rotweinessig",
+      "Salz",
+      "Weißbrot"
+    ],
+    "zubereitung": [
+      "Tomaten, Gurke und Paprika grob würfeln.",
+      "Alles mit Knoblauch, Öl und Essig pürieren.",
+      "Durch ein Sieb passieren und kalt stellen."
+    ],
+    "image": "images/recipes/gazpacho.jpg"
+  },
+  {
+    "name": "Falafel-Bowl",
+    "description": "Knusprige Falafel auf Quinoa mit Hummus und Taboulé.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 40,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 g Kichererbsen (Dose)",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "1 TL Kreuzkümmel",
+      "Petersilie",
+      "200 g Quinoa",
+      "Hummus",
+      "Zitrone"
+    ],
+    "zubereitung": [
+      "Kichererbsen mit Gewürzen und Kräutern pürieren.",
+      "Falafel formen und frittieren oder backen.",
+      "Quinoa kochen.",
+      "Bowl anrichten."
+    ],
+    "image": "images/recipes/falafel-bowl.jpg"
+  },
+  {
+    "name": "Vietnamesische Sommerrollen",
+    "description": "Frische Reispapierrollen mit Garnelen, Glasnudeln und Erdnussdip.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 35,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "8 Reispapierblätter",
+      "200 g Garnelen",
+      "100 g Glasnudeln",
+      "Eisbergsalat",
+      "Minze",
+      "Koriander",
+      "3 EL Erdnussbutter",
+      "2 EL Sojasoße"
+    ],
+    "zubereitung": [
+      "Garnelen kochen, Nudeln einweichen.",
+      "Reispapier kurz in Wasser tauchen.",
+      "Füllung einrollen.",
+      "Dip aus Erdnussbutter und Sojasoße anrühren."
+    ],
+    "image": "images/recipes/sommerrollen.jpg"
+  },
+  {
+    "name": "Kartoffelsuppe",
+    "description": "Herzhafte deutsche Kartoffelsuppe mit Würstchen und Majoran.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 45,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "800 g Kartoffeln",
+      "2 Möhren",
+      "1 Stange Sellerie",
+      "1 Zwiebel",
+      "1 L Gemüsebrühe",
+      "2 Würstchen",
+      "1 TL Majoran",
+      "Petersilie"
+    ],
+    "zubereitung": [
+      "Gemüse würfeln und in Öl andünsten.",
+      "Brühe zugeben und 25 Min. köcheln.",
+      "Teilweise pürieren.",
+      "Würstchen in Scheiben einlegen."
+    ],
+    "image": "images/recipes/kartoffelsuppe.jpg"
+  },
+  {
+    "name": "Caprese-Salat",
+    "description": "Klassischer Tomaten-Mozzarella-Salat mit frischem Basilikum.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Tomaten",
+      "250 g Mozzarella",
+      "frisches Basilikum",
+      "3 EL Olivenöl",
+      "Balsamicocreme",
+      "Fleur de Sel",
+      "schwarzer Pfeffer"
+    ],
+    "zubereitung": [
+      "Tomaten und Mozzarella in Scheiben schneiden.",
+      "Abwechselnd anrichten.",
+      "Mit Öl, Balsamico und Basilikum garnieren."
+    ],
+    "image": "images/recipes/caprese.jpg"
+  },
+  {
+    "name": "Chicken Teriyaki",
+    "description": "Zartes Hähnchen in süß-salziger Teriyaki-Glasur mit Jasminreis.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Hähnchenoberschenkel",
+      "4 EL Sojasoße",
+      "2 EL Mirin",
+      "2 EL Sake",
+      "1 EL Honig",
+      "1 Knoblauchzehe",
+      "300 g Jasminreis"
+    ],
+    "zubereitung": [
+      "Marinade aus Soja, Mirin, Sake und Honig mischen.",
+      "Hähnchen marinieren und anbraten.",
+      "Marinade glasieren.",
+      "Mit Reis servieren."
+    ],
+    "image": "images/recipes/chicken-teriyaki.jpg"
+  },
+  {
+    "name": "Griechischer Salat",
+    "description": "Bunter Salat mit Oliven, Feta, Tomaten und Gurke.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 Tomaten",
+      "1 Gurke",
+      "1 rote Zwiebel",
+      "100 g schwarze Oliven",
+      "200 g Feta",
+      "3 EL Olivenöl",
+      "1 EL Rotweinessig",
+      "Oregano"
+    ],
+    "zubereitung": [
+      "Gemüse grob würfeln.",
+      "Mit Oliven und Feta anrichten.",
+      "Dressing aus Öl, Essig und Oregano darübergeben."
+    ],
+    "image": "images/recipes/griechischer-salat.jpg"
+  },
+  {
+    "name": "Tomatenbisque",
+    "description": "Cremige Tomatensuppe mit Basilikumöl und Crème fraîche.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "1 kg Tomaten",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "500 ml Gemüsebrühe",
+      "100 ml Sahne",
+      "Basilikum",
+      "2 EL Olivenöl",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Zwiebel und Knoblauch anbraten.",
+      "Tomaten zugeben und 20 Min. köcheln.",
+      "Pürieren und durch Sieb passieren.",
+      "Sahne einrühren und abschmecken."
+    ],
+    "image": "images/recipes/tomatenbisque.jpg"
+  },
+  {
+    "name": "Wrap mit Hähnchen",
+    "description": "Vollkorn-Wrap gefüllt mit Grillhähnchen, Avocado und Salatblättern.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 Vollkorn-Tortillas",
+      "200 g Hähnchenbrustfilet",
+      "1 Avocado",
+      "Rucola",
+      "2 EL Joghurt-Dressing",
+      "1 TL Paprikapulver"
+    ],
+    "zubereitung": [
+      "Hähnchen würzen und grillen.",
+      "In Streifen schneiden.",
+      "Tortilla mit Dressing, Salat, Avocado und Hähnchen belegen und einrollen."
+    ],
+    "image": "images/recipes/wrap-haehnchen.jpg"
+  },
+  {
+    "name": "Linsensuppe",
+    "description": "Sättigende rote Linsensuppe mit Kokosmilch und Ingwer.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "250 g rote Linsen",
+      "400 ml Kokosmilch",
+      "800 ml Gemüsebrühe",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "1 Stück Ingwer",
+      "1 TL Kurkuma",
+      "1 TL Kreuzkümmel"
+    ],
+    "zubereitung": [
+      "Zwiebel, Knoblauch und Ingwer anbraten.",
+      "Gewürze zugeben.",
+      "Linsen und Brühe einrühren.",
+      "Kokosmilch zugeben und 20 Min. köcheln.",
+      "Pürieren."
+    ],
+    "image": "images/recipes/linsensuppe.jpg"
+  },
+  {
+    "name": "Nudelsalat",
+    "description": "Bunter Nudelsalat mit Paprika, Mais und Joghurt-Dressing.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "300 g Spiralnudeln",
+      "1 Paprika",
+      "1 Dose Mais",
+      "1 rote Zwiebel",
+      "100 g Joghurt",
+      "2 EL Mayonnaise",
+      "Salz, Pfeffer",
+      "Petersilie"
+    ],
+    "zubereitung": [
+      "Nudeln kochen und abkühlen lassen.",
+      "Gemüse klein schneiden.",
+      "Joghurt und Mayo verrühren.",
+      "Alles vermengen und abschmecken."
+    ],
+    "image": "images/recipes/nudelsalat.jpg"
+  },
+  {
+    "name": "Flammkuchen",
+    "description": "Knuspriger Elsässer Flammkuchen mit Crème fraîche, Speck und Zwiebeln.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "1 Flammkuchenteig",
+      "150 g Crème fraîche",
+      "100 g Speckwürfel",
+      "2 Zwiebeln",
+      "Salz, Pfeffer",
+      "Schnittlauch"
+    ],
+    "zubereitung": [
+      "Ofen auf 250 °C vorheizen.",
+      "Teig mit Crème fraîche bestreichen.",
+      "Mit Speck und Zwiebelringen belegen.",
+      "12 Min. knusprig backen."
+    ],
+    "image": "images/recipes/flammkuchen.jpg"
+  },
+  {
+    "name": "Veganer Burger",
+    "description": "Saftiger Kidneybohnen-Burger mit Guacamole und Süßkartoffel-Pommes.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 45,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 g Kidneybohnen",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "100 g Haferflocken",
+      "2 EL Tomatenmark",
+      "1 TL Räucherpaprika",
+      "2 Süßkartoffeln",
+      "Burger-Buns",
+      "Avocado"
+    ],
+    "zubereitung": [
+      "Bohnen zerdrücken und mit Hafer und Gewürzen mischen.",
+      "Patties formen und braten.",
+      "Süßkartoffeln als Pommes im Ofen rösten.",
+      "Burger zusammensetzen."
+    ],
+    "image": "images/recipes/veganer-burger.jpg"
+  },
+  {
+    "name": "Ramen",
+    "description": "Aromatische japanische Nudelsuppe mit Schweinefleisch und weichem Ei.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 60,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Ramen-Nudeln",
+      "400 g Schweinebauch",
+      "2 weiche Eier",
+      "1 L Hühnerbrühe",
+      "3 EL Sojasoße",
+      "1 EL Miso",
+      "Nori",
+      "Frühlingszwiebeln"
+    ],
+    "zubereitung": [
+      "Schweinebauch schmoren.",
+      "Brühe mit Sojasoße und Miso verfeinern.",
+      "Nudeln kochen.",
+      "Bowl mit Fleisch, Ei, Nori und Frühlingszwiebeln anrichten."
+    ],
+    "image": "images/recipes/ramen.jpg"
+  },
+  {
+    "name": "Brokkoli-Quiche",
+    "description": "Herzhafte Quiche mit Brokkoli, Cheddar und Ei-Sahne-Guss.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 55,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "1 Mürbeteig",
+      "300 g Brokkoli",
+      "100 g Cheddar",
+      "3 Eier",
+      "200 ml Sahne",
+      "Salz, Pfeffer",
+      "Muskat"
+    ],
+    "zubereitung": [
+      "Teig in Form legen und vorbacken.",
+      "Brokkoli blanchieren.",
+      "Eier mit Sahne verquirlen.",
+      "Füllung einlegen und 30 Min. backen."
+    ],
+    "image": "images/recipes/brokkoli-quiche.jpg"
+  },
+  {
+    "name": "Mangosalat",
+    "description": "Frischer Thai-Mangosalat mit Chili, Erdnüssen und Fischsoße.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 grüne Mangos",
+      "1 Karotte",
+      "1 rote Chili",
+      "3 EL Erdnüsse",
+      "2 EL Limettensaft",
+      "1 EL Sojasoße",
+      "Koriander",
+      "Minze"
+    ],
+    "zubereitung": [
+      "Mango und Karotte in Julienne schneiden.",
+      "Dressing aus Limette, Sojasoße und Chili mischen.",
+      "Alles vermengen und mit Erdnüssen bestreuen."
+    ],
+    "image": "images/recipes/mangosalat.jpg"
+  },
+  {
+    "name": "Pulled Pork Sandwich",
+    "description": "Zart geschmortes Schweinefleisch auf Brioche-Bun mit Coleslaw.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "international",
+    "zeit": 90,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "1 kg Schweineschulter",
+      "2 EL BBQ-Gewürz",
+      "200 ml Apfelsaft",
+      "4 Brioche-Buns",
+      "200 g Weißkohl",
+      "100 g Karotten",
+      "3 EL Mayonnaise"
+    ],
+    "zubereitung": [
+      "Fleisch einreiben und im Ofen 4 h bei 150 °C garen.",
+      "Mit Gabeln zupfen.",
+      "Coleslaw aus Kohl, Karotten und Mayo mischen.",
+      "Sandwich belegen."
+    ],
+    "image": "images/recipes/pulled-pork.jpg"
+  },
+  {
+    "name": "Pho Bo",
+    "description": "Vietnamesische Rinderbrühe mit Reisnudeln, frischen Kräutern und Sprossen.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 90,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "500 g Rindermarkknochen",
+      "200 g Rinderfilet",
+      "200 g Reisnudeln",
+      "1 Zwiebel",
+      "Ingwer",
+      "Sternanis",
+      "Zimt",
+      "Fischsoße",
+      "Bohnenkraut",
+      "Limette"
+    ],
+    "zubereitung": [
+      "Knochen rösten und Brühe 2 h kochen.",
+      "Mit Gewürzen aromatisieren.",
+      "Nudeln kochen.",
+      "Bowl mit dünnen Fleischscheiben füllen.",
+      "Mit Brühe übergießen."
+    ],
+    "image": "images/recipes/pho-bo.jpg"
+  },
+  {
+    "name": "Zucchini-Frittata",
+    "description": "Gebackenes Eiergericht mit Zucchini, Parmesan und frischen Kräutern.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "6 Eier",
+      "2 Zucchini",
+      "50 g Parmesan",
+      "1 Zwiebel",
+      "2 EL Olivenöl",
+      "Basilikum",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Zucchini und Zwiebel anbraten.",
+      "Eier verquirlen und über Gemüse gießen.",
+      "Parmesan darüberstreuen.",
+      "Im Ofen bei 180 °C 15 Min. backen."
+    ],
+    "image": "images/recipes/frittata.jpg"
+  },
+  {
+    "name": "Miso-Suppe mit Tofu",
+    "description": "Leichte japanische Miso-Suppe mit Seidentofu, Algen und Frühlingszwiebeln.",
+    "label": "vegan",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "3 EL Miso-Paste",
+      "1 L Wasser",
+      "150 g Seidentofu",
+      "2 EL Wakame-Algen",
+      "3 Frühlingszwiebeln",
+      "1 TL Sesamöl"
+    ],
+    "zubereitung": [
+      "Wasser erhitzen.",
+      "Algen einweichen.",
+      "Tofu würfeln.",
+      "Miso in Wasser auflösen (nicht kochen).",
+      "Tofu, Algen und Zwiebeln einlegen."
+    ],
+    "image": "images/recipes/miso-suppe.jpg"
+  },
+  {
+    "name": "Rindergulasch",
+    "description": "Ungarisches Gulasch mit zartem Rindfleisch und Paprika.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 90,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "800 g Rindergulasch",
+      "3 Zwiebeln",
+      "2 Paprika",
+      "400 g Dosentomaten",
+      "2 EL Paprikapulver",
+      "1 TL Kümmel",
+      "500 ml Rinderbrühe",
+      "Öl"
+    ],
+    "zubereitung": [
+      "Fleisch scharf anbraten.",
+      "Zwiebeln und Paprika dazugeben.",
+      "Paprikapulver einrühren.",
+      "Brühe und Tomaten zugeben.",
+      "Zugedeckt 1 h schmoren."
+    ],
+    "image": "images/recipes/gulasch.jpg"
+  },
+  {
+    "name": "Shakshuka Deluxe",
+    "description": "Würzige Tomaten-Harissa-Pfanne mit Feta und Eiern.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "6 Eier",
+      "400 g Dosentomaten",
+      "1 TL Harissa",
+      "1 Paprika",
+      "1 Zwiebel",
+      "100 g Feta",
+      "Koriander",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Zwiebel und Paprika anbraten.",
+      "Tomaten und Harissa zugeben.",
+      "Mulden formen und Eier einschlagen.",
+      "Feta darüberbröckeln."
+    ],
+    "image": "images/recipes/shakshuka-deluxe.jpg"
+  },
+  {
+    "name": "Tagliatelle al Ragù",
+    "description": "Handgemachte Tagliatelle mit klassischer Bolognese nach Nonna-Art.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 90,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "400 g Tagliatelle",
+      "500 g Rinderhack",
+      "1 Zwiebel",
+      "2 Möhren",
+      "2 Stangen Sellerie",
+      "200 ml Rotwein",
+      "400 g Dosentomaten",
+      "Parmesan"
+    ],
+    "zubereitung": [
+      "Soffritto aus Zwiebel, Möhre, Sellerie braten.",
+      "Hack anbraten.",
+      "Rotwein ablöschen.",
+      "Tomaten zugeben, 45 Min. köcheln.",
+      "Pasta al dente kochen."
+    ],
+    "image": "images/recipes/tagliatelle-ragu.jpg"
+  },
+  {
+    "name": "Schweinefilet im Speckmantel",
+    "description": "Zartes Schweinefilet in knusprigem Bacon mit Kräuterkruste.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 45,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "600 g Schweinefilet",
+      "8 Scheiben Bacon",
+      "2 EL Dijonsenf",
+      "Rosmarin",
+      "Thymian",
+      "Knoblauch",
+      "Olivenöl",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Filet mit Senf und Kräutern einreiben.",
+      "Mit Bacon umwickeln.",
+      "In Pfanne anbraten.",
+      "Bei 180 °C 20 Min. im Ofen fertig garen."
+    ],
+    "image": "images/recipes/schweinefilet-speck.jpg"
+  },
+  {
+    "name": "Moussaka",
+    "description": "Griechischer Auberginenauflauf mit Hackfleisch und Béchamelhaube.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 80,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "3 Auberginen",
+      "500 g Lammhack",
+      "400 g Dosentomaten",
+      "1 Zwiebel",
+      "500 ml Milch",
+      "50 g Butter",
+      "50 g Mehl",
+      "Zimt",
+      "Parmesan"
+    ],
+    "zubereitung": [
+      "Auberginen scheiben backen.",
+      "Hackfleisch-Tomatensauce kochen.",
+      "Béchamel zubereiten.",
+      "Alles schichten und 40 Min. backen."
+    ],
+    "image": "images/recipes/moussaka.jpg"
+  },
+  {
+    "name": "Lachsfilet mit Zitronenbutter",
+    "description": "Gegrillter Lachs mit Zitronenbutter, Kapern und Kartoffelpüree.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Lachsfilets",
+      "100 g Butter",
+      "1 Zitrone",
+      "2 EL Kapern",
+      "800 g Kartoffeln",
+      "100 ml Milch",
+      "Dill",
+      "Salz"
+    ],
+    "zubereitung": [
+      "Kartoffeln kochen und stampfen.",
+      "Lachs braten.",
+      "Zitronenbutter mit Kapern schmelzen.",
+      "Alles anrichten."
+    ],
+    "image": "images/recipes/lachs-zitronenbutter.jpg"
+  },
+  {
+    "name": "Kürbissuppe",
+    "description": "Cremige Hokkaido-Kürbissuppe mit Ingwer, Kokosmilch und Kürbiskernen.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "1 kg Hokkaido-Kürbis",
+      "1 Zwiebel",
+      "2 cm Ingwer",
+      "400 ml Kokosmilch",
+      "600 ml Gemüsebrühe",
+      "Kürbiskerne",
+      "Kürbiskernöl",
+      "Salz"
+    ],
+    "zubereitung": [
+      "Kürbis würfeln (Schale dran lassen).",
+      "Mit Zwiebel und Ingwer anbraten.",
+      "Brühe und Kokosmilch zugeben.",
+      "Weichkochen und pürieren."
+    ],
+    "image": "images/recipes/kuerbissuppe.jpg"
+  },
+  {
+    "name": "Hähnchen-Tikka-Masala",
+    "description": "Indisches Klassiker-Curry mit zartem Hähnchen in aromatischer Tomatensauce.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 45,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "600 g Hähnchenbrustfilet",
+      "400 g Dosentomaten",
+      "200 ml Sahne",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "2 cm Ingwer",
+      "2 EL Tikka-Masala-Gewürz",
+      "Ghee",
+      "Reis"
+    ],
+    "zubereitung": [
+      "Hähnchen in Joghurt-Gewürze marinieren.",
+      "Sauce aus Zwiebel, Knoblauch und Tomaten kochen.",
+      "Hähnchen braten und in Sauce garen.",
+      "Sahne einrühren."
+    ],
+    "image": "images/recipes/tikka-masala.jpg"
+  },
+  {
+    "name": "Spinat-Ricotta-Cannelloni",
+    "description": "Mit Spinat und Ricotta gefüllte Cannelloni in Tomaten-Béchamel-Sauce.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 60,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "16 Cannelloni",
+      "400 g frischer Spinat",
+      "250 g Ricotta",
+      "1 Ei",
+      "400 g Dosentomaten",
+      "300 ml Béchamel",
+      "Parmesan",
+      "Muskat"
+    ],
+    "zubereitung": [
+      "Spinat anwelken und hacken.",
+      "Mit Ricotta und Ei mischen.",
+      "Cannelloni füllen.",
+      "In Auflaufform mit Tomaten und Béchamel backen."
+    ],
+    "image": "images/recipes/cannelloni.jpg"
+  },
+  {
+    "name": "Chili sin Carne",
+    "description": "Herzhaftes veganes Chili mit Linsen, Kidneybohnen und Süßkartoffeln.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "mexikanisch",
+    "zeit": 45,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g rote Linsen",
+      "400 g Kidneybohnen",
+      "1 Süßkartoffel",
+      "400 g Dosentomaten",
+      "2 Zwiebeln",
+      "2 Paprika",
+      "2 TL Chilipulver",
+      "1 TL Kreuzkümmel"
+    ],
+    "zubereitung": [
+      "Zwiebeln und Paprika anbraten.",
+      "Süßkartoffel würfeln und mitgaren.",
+      "Tomaten, Linsen und Bohnen zugeben.",
+      "25 Min. köcheln."
+    ],
+    "image": "images/recipes/chili-sin-carne.jpg"
+  },
+  {
+    "name": "Steak mit Chimichurri",
+    "description": "Perfekt gegrilltes Rindersteak mit frischer argentinischer Chimichurri-Sauce.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 25,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "2 Rindersteaks (je 250 g)",
+      "Petersilie",
+      "Oregano",
+      "4 Knoblauchzehen",
+      "rote Chili",
+      "4 EL Olivenöl",
+      "2 EL Rotweinessig",
+      "Salz"
+    ],
+    "zubereitung": [
+      "Steak auf Raumtemperatur bringen.",
+      "Scharf angrillen und ruhen lassen.",
+      "Chimichurri aus Kräutern, Knoblauch, Öl und Essig hacken.",
+      "Servieren."
+    ],
+    "image": "images/recipes/steak-chimichurri.jpg"
+  },
+  {
+    "name": "Tom Kha Gai",
+    "description": "Thailändische Kokossuppe mit Hähnchen, Galangal und Zitronengras.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 35,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 ml Kokosmilch",
+      "400 ml Hühnerbrühe",
+      "300 g Hähnchenbrust",
+      "2 Stängel Zitronengras",
+      "3 Scheiben Galangal",
+      "4 Kaffirlimettenblätter",
+      "Champignons",
+      "Fischsoße"
+    ],
+    "zubereitung": [
+      "Brühe mit Zitronengras, Galangal und Limettenblättern kochen.",
+      "Kokosmilch zugeben.",
+      "Hähnchen und Pilze garen.",
+      "Mit Fischsoße abschmecken."
+    ],
+    "image": "images/recipes/tom-kha-gai.jpg"
+  },
+  {
+    "name": "Coq au Vin",
+    "description": "Französisches Schmorgericht – Hähnchen in Rotwein mit Champignons und Speck.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 90,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "1 Hähnchen (geteilt)",
+      "500 ml Rotwein",
+      "200 g Champignons",
+      "100 g Speckwürfel",
+      "200 g Schalotten",
+      "2 Knoblauchzehen",
+      "Thymian",
+      "Lorbeer"
+    ],
+    "zubereitung": [
+      "Hähnchen anbraten.",
+      "Speck und Schalotten mitrösten.",
+      "Wein ablöschen.",
+      "Champignons zugeben.",
+      "45 Min. schmoren."
+    ],
+    "image": "images/recipes/coq-au-vin.jpg"
+  },
+  {
+    "name": "Gnocchi alla Sorrentina",
+    "description": "Selbstgemachte Gnocchi in Tomatensauce mit Büffelmozzarella überbacken.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 50,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "1 kg mehligkochende Kartoffeln",
+      "250 g Mehl",
+      "1 Ei",
+      "Salz",
+      "400 g Dosentomaten",
+      "1 Knoblauchzehe",
+      "200 g Büffelmozzarella",
+      "Basilikum"
+    ],
+    "zubereitung": [
+      "Kartoffeln kochen und pressen.",
+      "Mit Mehl und Ei verkneten.",
+      "Gnocchi formen und kochen.",
+      "Tomatensauce einkochen.",
+      "Gratinieren."
+    ],
+    "image": "images/recipes/gnocchi-sorrentina.jpg"
+  },
+  {
+    "name": "Marokkanisches Lamm-Tagine",
+    "description": "Aromatisches Schmorgericht mit Lammfleisch, Aprikosen und Gewürzen.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 90,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "800 g Lammschulter",
+      "100 g getrocknete Aprikosen",
+      "400 g Kichererbsen",
+      "2 Zwiebeln",
+      "2 TL Ras-el-Hanout",
+      "400 g Dosentomaten",
+      "Koriander",
+      "Mandeln"
+    ],
+    "zubereitung": [
+      "Lamm würfeln und anbraten.",
+      "Zwiebeln mitrösten.",
+      "Gewürze zugeben.",
+      "Tomaten, Aprikosen und Kichererbsen zugeben.",
+      "60 Min. schmoren."
+    ],
+    "image": "images/recipes/lamm-tagine.jpg"
+  },
+  {
+    "name": "Seelachs auf Gemüsebett",
+    "description": "Saftig gebratener Seelachs auf Kürbis-Fenchel-Gemüse mit Safransauce.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 40,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "4 Seelachsfilets",
+      "1 kleiner Kürbis",
+      "1 Fenchelknolle",
+      "200 ml Weißwein",
+      "100 ml Sahne",
+      "Safran",
+      "Olivenöl",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Gemüse würfeln und anrösten.",
+      "Wein angießen und köcheln.",
+      "Safransahne einrühren.",
+      "Fisch braten.",
+      "Zusammen anrichten."
+    ],
+    "image": "images/recipes/seelachs-gemüse.jpg"
+  },
+  {
+    "name": "Vegane Bolognese",
+    "description": "Herzhafte Linsen-Bolognese mit geräuchertem Paprika.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 45,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g rote Linsen",
+      "400 g Dosentomaten",
+      "2 Möhren",
+      "2 Stangen Sellerie",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "1 TL Räucherpaprika",
+      "Tomatenmark",
+      "Pasta"
+    ],
+    "zubereitung": [
+      "Soffritto anbraten.",
+      "Tomatenmark einrühren.",
+      "Tomaten und Linsen zugeben.",
+      "30 Min. köcheln.",
+      "Pasta kochen."
+    ],
+    "image": "images/recipes/vegane-bolognese.jpg"
+  },
+  {
+    "name": "Beef Stroganoff",
+    "description": "Zartes Rindfleisch in cremiger Champignonsauce mit Schmand.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 40,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "600 g Rinderfilet",
+      "300 g Champignons",
+      "1 Zwiebel",
+      "200 g Schmand",
+      "100 ml Rinderbrühe",
+      "2 EL Tomatenmark",
+      "Petersilie",
+      "Öl"
+    ],
+    "zubereitung": [
+      "Fleisch in Streifen scharf anbraten.",
+      "Champignons und Zwiebeln braten.",
+      "Tomatenmark und Brühe zugeben.",
+      "Schmand einrühren.",
+      "Nicht mehr kochen lassen."
+    ],
+    "image": "images/recipes/stroganoff.jpg"
+  },
+  {
+    "name": "Ratatouille",
+    "description": "Provenzalisches Gemüsegericht mit Zucchini, Aubergine und Tomaten.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 55,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 Zucchini",
+      "1 Aubergine",
+      "1 Paprika",
+      "4 Tomaten",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "Thymian",
+      "Rosmarin",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Gemüse in Scheiben schneiden.",
+      "Zwiebel und Knoblauch andünsten.",
+      "Tomaten zugeben.",
+      "Gemüse abwechselnd darauf legen.",
+      "Im Ofen bei 180 °C 35 Min. backen."
+    ],
+    "image": "images/recipes/ratatouille.jpg"
+  },
+  {
+    "name": "Spare Ribs",
+    "description": "Zartverfallende Rippchen mit hausgemachter BBQ-Glasur.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 120,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "1,5 kg Spare Ribs",
+      "4 EL BBQ-Sauce",
+      "1 EL Honig",
+      "1 TL Paprikapulver",
+      "1 TL Knoblauchpulver",
+      "1 TL Salz",
+      "½ TL Chili"
+    ],
+    "zubereitung": [
+      "Rippchen mit Gewürzen einreiben.",
+      "In Folie 2 h bei 150 °C garen.",
+      "Folie entfernen und BBQ-Sauce auftragen.",
+      "20 Min. bei 220 °C glasieren."
+    ],
+    "image": "images/recipes/spare-ribs.jpg"
+  },
+  {
+    "name": "Kürbis-Risotto",
+    "description": "Cremiges Risotto mit Hokkaido-Kürbis, Salbei und Parmesan.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 45,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Risottoreis",
+      "400 g Hokkaido-Kürbis",
+      "1 Zwiebel",
+      "150 ml Weißwein",
+      "800 ml Gemüsebrühe",
+      "50 g Parmesan",
+      "2 EL Butter",
+      "Salbeiblätter"
+    ],
+    "zubereitung": [
+      "Kürbis würfeln und rösten.",
+      "Zwiebel anschwitzen, Reis zugeben.",
+      "Mit Wein ablöschen.",
+      "Schrittweise Brühe zugeben.",
+      "Butter und Parmesan einrühren."
+    ],
+    "image": "images/recipes/kuerbis-risotto.jpg"
+  },
+  {
+    "name": "Entenbraten",
+    "description": "Knuspriger Entenbraten mit Rotkohl und Kartoffelklößen.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 120,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "1 Ente (ca. 2 kg)",
+      "1 Rotkohl",
+      "4 Kartoffelklöße",
+      "1 Orange",
+      "Thymian",
+      "Majoran",
+      "200 ml Rotwein",
+      "Salz"
+    ],
+    "zubereitung": [
+      "Ente würzen und bei 160 °C 2 h braten.",
+      "Rotkohl mit Apfel schmoren.",
+      "Klöße zubereiten.",
+      "Ente zum Schluss knusprig grillen."
+    ],
+    "image": "images/recipes/entenbraten.jpg"
+  },
+  {
+    "name": "Tempeh-Bowl",
+    "description": "Asiatische Bowl mit gebratenem Tempeh, Edamame und Sesam-Dressing.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g Tempeh",
+      "150 g Edamame",
+      "200 g Naturreis",
+      "2 EL Sojasoße",
+      "1 EL Sesamöl",
+      "1 EL Reisessig",
+      "1 EL Sesam",
+      "Ingwer",
+      "Knoblauch"
+    ],
+    "zubereitung": [
+      "Tempeh in Würfel schneiden und anbraten.",
+      "Reis kochen.",
+      "Dressing aus Sojasoße, Sesamöl und Essig mischen.",
+      "Bowl anrichten."
+    ],
+    "image": "images/recipes/tempeh-bowl.jpg"
+  },
+  {
+    "name": "Wiener Schnitzel",
+    "description": "Original Wiener Schnitzel vom Kalb mit Zitrone und Kartoffelsalat.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 35,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "4 Kalbsschnitzel",
+      "100 g Mehl",
+      "2 Eier",
+      "200 g Semmelbrösel",
+      "Butterschmalz",
+      "Zitrone",
+      "Kartoffeln",
+      "Gurke",
+      "Mayonnaise"
+    ],
+    "zubereitung": [
+      "Schnitzel klopfen.",
+      "In Mehl, Ei und Brösel wenden.",
+      "In Butterschmalz goldgelb backen.",
+      "Kartoffelsalat zubereiten."
+    ],
+    "image": "images/recipes/wiener-schnitzel.jpg"
+  },
+  {
+    "name": "Jakobsmuscheln mit Erbsenmus",
+    "description": "Gebratene Jakobsmuscheln auf cremigem Erbsenmus mit Minzöl.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 25,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "12 Jakobsmuscheln",
+      "400 g Erbsen",
+      "50 g Butter",
+      "100 ml Sahne",
+      "Minze",
+      "Olivenöl",
+      "Salz, Pfeffer",
+      "1 Zitrone"
+    ],
+    "zubereitung": [
+      "Erbsen kochen und pürieren.",
+      "Mit Sahne und Butter verfeinern.",
+      "Jakobsmuscheln scharf anbraten.",
+      "Anrichten und mit Minzöl beträufeln."
+    ],
+    "image": "images/recipes/jakobsmuscheln.jpg"
+  },
+  {
+    "name": "Pad See Ew",
+    "description": "Gebratene breite Reisnudeln mit Ei, Pak Choi und süßer Sojasoße.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "300 g breite Reisnudeln",
+      "200 g Hähnchenbrust",
+      "200 g Pak Choi",
+      "2 Eier",
+      "3 EL süße Sojasoße",
+      "1 EL Fischsoße",
+      "1 EL Austernsauce",
+      "Knoblauch"
+    ],
+    "zubereitung": [
+      "Hähnchen anbraten.",
+      "Eier hinzufügen.",
+      "Nudeln und Pak Choi unterrühren.",
+      "Mit Soßen abschmecken."
+    ],
+    "image": "images/recipes/pad-see-ew.jpg"
+  },
+  {
+    "name": "Auberginen-Parmigiana",
+    "description": "Geschichtete Auberginen mit Tomaten, Mozzarella und Parmesan.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 60,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "3 Auberginen",
+      "400 g Dosentomaten",
+      "250 g Mozzarella",
+      "50 g Parmesan",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "Basilikum",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Auberginen scheiben braten.",
+      "Tomatensauce kochen.",
+      "Alles schichten.",
+      "Im Ofen bei 180 °C 30 Min. backen."
+    ],
+    "image": "images/recipes/parmigiana.jpg"
+  },
+  {
+    "name": "Blumenkohl-Curry",
+    "description": "Aromatisches indisches Curry mit Blumenkohl, Erbsen und Basmati.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "1 Blumenkohl",
+      "200 g Erbsen",
+      "400 g Dosentomaten",
+      "400 ml Kokosmilch",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "2 TL Garam Masala",
+      "1 TL Kurkuma",
+      "Basmati"
+    ],
+    "zubereitung": [
+      "Blumenkohl in Röschen teilen und anbraten.",
+      "Gewürze und Zwiebeln zugeben.",
+      "Tomaten und Kokosmilch zugeben.",
+      "20 Min. köcheln."
+    ],
+    "image": "images/recipes/blumenkohl-curry.jpg"
+  },
+  {
+    "name": "Seezunge Müllerin Art",
+    "description": "Klassische Seezunge in brauner Butter mit Kapern und Petersilie.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 Seezungenfilets",
+      "80 g Butter",
+      "2 EL Kapern",
+      "Petersilie",
+      "1 Zitrone",
+      "Mehl",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Fisch in Mehl wenden.",
+      "In Butter braten.",
+      "Butter nachbräunen.",
+      "Kapern und Zitronensaft zugeben.",
+      "Mit Petersilie servieren."
+    ],
+    "image": "images/recipes/seezunge.jpg"
+  },
+  {
+    "name": "Hähnchen-Sahne-Pilze",
+    "description": "Cremige Hähnchenpfanne mit Champignons und Thymian.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Hähnchenbrustfilets",
+      "400 g Champignons",
+      "200 ml Sahne",
+      "1 Zwiebel",
+      "1 Knoblauchzehe",
+      "Thymian",
+      "100 ml Hühnerbrühe",
+      "Öl"
+    ],
+    "zubereitung": [
+      "Hähnchen anbraten.",
+      "Champignons und Zwiebeln zugeben.",
+      "Brühe und Sahne angießen.",
+      "Mit Thymian köcheln bis Sauce eindickt."
+    ],
+    "image": "images/recipes/haehnchen-pilze.jpg"
+  },
+  {
+    "name": "Dal Makhani",
+    "description": "Cremiges indisches Schwarzlinsengericht mit Butter und Gewürzen.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 60,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Schwarzlinsen",
+      "400 g Dosentomaten",
+      "100 ml Sahne",
+      "3 EL Butter",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "2 cm Ingwer",
+      "1 TL Garam Masala",
+      "Koriander"
+    ],
+    "zubereitung": [
+      "Linsen über Nacht einweichen und kochen.",
+      "Sauce aus Gewürzen und Tomaten kochen.",
+      "Linsen untermischen.",
+      "Sahne und Butter einrühren."
+    ],
+    "image": "images/recipes/dal-makhani.jpg"
+  },
+  {
+    "name": "Fischstäbchen selbst gemacht",
+    "description": "Selbst gemachte knusprige Fischstäbchen mit Remoulade und Pommes.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "500 g Kabeljaufilet",
+      "100 g Paniermehl",
+      "2 Eier",
+      "50 g Mehl",
+      "600 g Kartoffeln",
+      "Mayonnaise",
+      "Senf",
+      "Kapern",
+      "Gewürzgurken"
+    ],
+    "zubereitung": [
+      "Fisch in Streifen schneiden.",
+      "Panieren.",
+      "In Öl knusprig braten.",
+      "Kartoffeln als Pommes backen.",
+      "Remoulade anrühren."
+    ],
+    "image": "images/recipes/fischstaebchen.jpg"
+  },
+  {
+    "name": "Süßkartoffel-Dal",
+    "description": "Wärmende Kokos-Linsensuppe mit Süßkartoffeln und Kurkuma.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g rote Linsen",
+      "2 Süßkartoffeln",
+      "400 ml Kokosmilch",
+      "800 ml Gemüsebrühe",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "1 TL Kurkuma",
+      "1 TL Kreuzkümmel"
+    ],
+    "zubereitung": [
+      "Süßkartoffeln würfeln.",
+      "Zwiebeln anbraten.",
+      "Linsen, Süßkartoffeln, Brühe und Kokosmilch zugeben.",
+      "25 Min. köcheln."
+    ],
+    "image": "images/recipes/suesskartoffel-dal.jpg"
+  },
+  {
+    "name": "Spaghetti alle Vongole",
+    "description": "Klassische Venusmuscheln-Pasta mit Weißwein und Petersilie.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 30,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 g Spaghetti",
+      "1 kg Venusmuscheln",
+      "150 ml Weißwein",
+      "4 Knoblauchzehen",
+      "Chili",
+      "Petersilie",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Muscheln schrubben.",
+      "Knoblauch und Chili in Öl braten.",
+      "Muscheln zugeben und Wein angießen.",
+      "Zugedeckt öffnen lassen.",
+      "Mit Pasta vermengen."
+    ],
+    "image": "images/recipes/spaghetti-vongole.jpg"
+  },
+  {
+    "name": "Zucchini-Lasagne",
+    "description": "Leichte Lasagne mit Zucchinistreifen statt Pasta und Ricotta-Füllung.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 60,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "4 Zucchini",
+      "500 g Ricotta",
+      "400 g Dosentomaten",
+      "1 Ei",
+      "100 g Parmesan",
+      "Basilikum",
+      "1 Zwiebel",
+      "2 Knoblauchzehen"
+    ],
+    "zubereitung": [
+      "Zucchini längs hobeln.",
+      "Sauce kochen.",
+      "Ricotta mit Ei und Kräutern mischen.",
+      "Abwechselnd schichten.",
+      "35 Min. backen."
+    ],
+    "image": "images/recipes/zucchini-lasagne.jpg"
+  },
+  {
+    "name": "Hähnchen-Gyros",
+    "description": "Griechisch gewürztes Hähnchen mit Tzatziki und Pitabrot.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "600 g Hähnchenbrustfilet",
+      "2 TL Gyros-Gewürz",
+      "Olivenöl",
+      "4 Pitabrote",
+      "200 g Joghurt",
+      "1 Gurke",
+      "2 Knoblauchzehen",
+      "Dill"
+    ],
+    "zubereitung": [
+      "Hähnchen würzen und braten.",
+      "Tzatziki aus Joghurt, Gurke, Knoblauch und Dill anrühren.",
+      "Pita erwärmen.",
+      "Servieren."
+    ],
+    "image": "images/recipes/gyros.jpg"
+  },
+  {
+    "name": "Bibimbap",
+    "description": "Koreanische Reisschüssel mit buntem Gemüse, Rindfleisch und Gochujang.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 45,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Rundkornreis",
+      "200 g Rindfleisch",
+      "100 g Spinat",
+      "1 Karotte",
+      "100 g Sojasprossen",
+      "1 Zucchini",
+      "4 Eier",
+      "2 EL Gochujang",
+      "Sesamöl"
+    ],
+    "zubereitung": [
+      "Reis kochen.",
+      "Gemüse einzeln würzen und anbraten.",
+      "Fleisch scharf braten.",
+      "Bowl anrichten, Spiegelei draufsetzen.",
+      "Mit Gochujang servieren."
+    ],
+    "image": "images/recipes/bibimbap.jpg"
+  },
+  {
+    "name": "Ossobuco",
+    "description": "Italienischer Kalbshaxenschmorbraten mit Gremolata und Safranrisotto.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 120,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "4 Kalbshaxenscheiben",
+      "1 Zwiebel",
+      "2 Möhren",
+      "2 Stangen Sellerie",
+      "200 ml Weißwein",
+      "400 g Dosentomaten",
+      "Zitronenschale",
+      "Petersilie",
+      "Knoblauch"
+    ],
+    "zubereitung": [
+      "Haxen mehlieren und anbraten.",
+      "Gemüse anschwitzen.",
+      "Wein und Tomaten zugeben.",
+      "90 Min. schmoren.",
+      "Gremolata darüberstreuen."
+    ],
+    "image": "images/recipes/ossobuco.jpg"
+  },
+  {
+    "name": "Boeuf Bourguignon",
+    "description": "Klassisches französisches Rinderragout in Burgunderwein mit Speck.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 180,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "1 kg Rindergulasch",
+      "750 ml Burgunderwein",
+      "200 g Speckwürfel",
+      "300 g Champignons",
+      "200 g Perlzwiebeln",
+      "Thymian",
+      "Lorbeer",
+      "2 EL Tomatenmark"
+    ],
+    "zubereitung": [
+      "Fleisch marinieren.",
+      "Speck anbraten, Fleisch zugeben.",
+      "Wein und Tomatenmark zugeben.",
+      "2 h schmoren.",
+      "Champignons und Zwiebeln zugeben."
+    ],
+    "image": "images/recipes/boeuf-bourguignon.jpg"
+  },
+  {
+    "name": "Palak Paneer",
+    "description": "Cremige indische Spinatsauce mit frisch gemachtem Paneer-Käse.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 45,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 g Spinat",
+      "250 g Paneer",
+      "200 g Dosentomaten",
+      "200 ml Sahne",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "2 cm Ingwer",
+      "1 TL Garam Masala",
+      "Ghee"
+    ],
+    "zubereitung": [
+      "Spinat blanchieren und pürieren.",
+      "Gewürze anbraten.",
+      "Tomaten zugeben.",
+      "Spinat und Sahne einrühren.",
+      "Paneer würfeln und anbraten, unterrühren."
+    ],
+    "image": "images/recipes/palak-paneer.jpg"
+  },
+  {
+    "name": "Forelle Blau",
+    "description": "Pochierte Forelle mit Butter, Petersilie und Salzkartoffeln.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "2 frische Forellen",
+      "1 L Wasser",
+      "100 ml Weißweinessig",
+      "1 Zwiebel",
+      "Lorbeer",
+      "Pfefferkörner",
+      "Butter",
+      "Petersilie",
+      "Kartoffeln"
+    ],
+    "zubereitung": [
+      "Sud aus Wasser, Essig und Gewürzen kochen.",
+      "Forellen einlegen und 15 Min. ziehen lassen.",
+      "Kartoffeln kochen.",
+      "Nussbutter zubereiten."
+    ],
+    "image": "images/recipes/forelle-blau.jpg"
+  },
+  {
+    "name": "Hoisin-Ente mit Pfannkuchen",
+    "description": "Knusprige Entenbrust mit Hoisin-Sauce, Gurken und chinesischen Pfannkuchen.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 60,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "2 Entenbrüste",
+      "4 EL Hoisin-Sauce",
+      "8 chinesische Pfannkuchen",
+      "1 Gurke",
+      "4 Frühlingszwiebeln",
+      "Sesamöl"
+    ],
+    "zubereitung": [
+      "Entenhaut einritzen und auf Hautseite anbraten.",
+      "Im Ofen bei 180 °C 20 Min. fertig garen.",
+      "Pfannkuchen dämpfen.",
+      "Alles zusammen servieren."
+    ],
+    "image": "images/recipes/hoisin-ente.jpg"
+  },
+  {
+    "name": "Pasta e Fagioli",
+    "description": "Rustikales italienisches Nudelgericht mit weißen Bohnen und Rosmarin.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g kleine Pasta",
+      "400 g weiße Bohnen",
+      "400 g Dosentomaten",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "Rosmarin",
+      "800 ml Gemüsebrühe",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Zwiebel und Knoblauch anbraten.",
+      "Bohnen und Tomaten zugeben.",
+      "Brühe eingießen.",
+      "Pasta kochen.",
+      "Alles vermengen."
+    ],
+    "image": "images/recipes/pasta-fagioli.jpg"
+  },
+  {
+    "name": "Seitan-Braten",
+    "description": "Herzhafter veganer Braten aus Seitan mit Bratenjus und Kartoffelgratin.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 90,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "400 g Seitan",
+      "500 g Kartoffeln",
+      "200 ml Sahne (vegan)",
+      "100 g geriebener veganer Käse",
+      "2 Zwiebeln",
+      "500 ml Gemüsebrühe",
+      "Thymian",
+      "Rosmarin"
+    ],
+    "zubereitung": [
+      "Seitan anbraten und würzen.",
+      "Brühe angießen und schmoren.",
+      "Kartoffelgratin schichten.",
+      "Alles zusammen servieren."
+    ],
+    "image": "images/recipes/seitan-braten.jpg"
+  },
+  {
+    "name": "Lammkotelett mit Ratatouille",
+    "description": "Gebratene Lammkoteletts auf provenzalischem Gemüse.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 50,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "8 Lammkoteletts",
+      "2 Zucchini",
+      "1 Aubergine",
+      "3 Tomaten",
+      "1 Paprika",
+      "3 Knoblauchzehen",
+      "Thymian",
+      "Rosmarin",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Gemüse würfeln und langsam in Öl garen.",
+      "Koteletts würzen.",
+      "Auf dem Grill 3 Min. je Seite braten.",
+      "Zusammen anrichten."
+    ],
+    "image": "images/recipes/lammkotelett-ratatouille.jpg"
+  },
+  {
+    "name": "Hummus Bowl",
+    "description": "Cremiger Hummus-Bowl mit gerösteten Kichererbsen, Oliven und Fladenbrot.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g Kichererbsen",
+      "3 EL Tahini",
+      "2 Knoblauchzehen",
+      "1 Zitrone",
+      "3 EL Olivenöl",
+      "50 g schwarze Oliven",
+      "Paprikapulver",
+      "Fladenbrot"
+    ],
+    "zubereitung": [
+      "Kichererbsen pürieren.",
+      "Tahini, Knoblauch, Zitronensaft und Öl unterrühren.",
+      "Auf Teller verteilen.",
+      "Mit Toppings garnieren."
+    ],
+    "image": "images/recipes/hummus-bowl.jpg"
+  },
+  {
+    "name": "Sauerkraut-Eintopf",
+    "description": "Herzhafter Eintopf mit Sauerkraut, Kasseler und Kartoffeln.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 50,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "500 g Kasseler",
+      "500 g Sauerkraut",
+      "600 g Kartoffeln",
+      "1 Zwiebel",
+      "1 TL Kümmel",
+      "500 ml Fleischbrühe",
+      "1 Lorbeerblatt"
+    ],
+    "zubereitung": [
+      "Kasseler würfeln.",
+      "Kartoffeln würfeln.",
+      "Alles in Brühe mit Sauerkraut und Gewürzen köcheln.",
+      "30 Min. garen."
+    ],
+    "image": "images/recipes/sauerkraut-eintopf.jpg"
+  },
+  {
+    "name": "Green Curry",
+    "description": "Thailändisches Green Curry mit Tofu, Bambus und Kokosmilch.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g Tofu",
+      "400 ml Kokosmilch",
+      "2 EL grüne Currypaste",
+      "200 g Bambussprossen",
+      "1 Paprika",
+      "Zitronengras",
+      "Kaffirlimettenblätter",
+      "Sesamöl",
+      "Reis"
+    ],
+    "zubereitung": [
+      "Currypaste in Öl anbraten.",
+      "Kokosmilch zugeben.",
+      "Gemüse und Tofu einlegen.",
+      "Zitronengras und Limettenblätter aromatisieren."
+    ],
+    "image": "images/recipes/green-curry.jpg"
+  },
+  {
+    "name": "Hähnchen-Souvlaki",
+    "description": "Griechische Hähnchen-Spieße vom Grill mit Tzatziki und Bauernsalat.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "600 g Hähnchenbrust",
+      "Oregano",
+      "Zitrone",
+      "Knoblauch",
+      "Olivenöl",
+      "Joghurt",
+      "Gurke",
+      "Tomaten",
+      "rote Zwiebel",
+      "Oliven"
+    ],
+    "zubereitung": [
+      "Hähnchen marinieren und auf Spieße stecken.",
+      "Grillen.",
+      "Tzatziki anrühren.",
+      "Salat aus Tomaten, Zwiebel und Oliven anrichten."
+    ],
+    "image": "images/recipes/souvlaki.jpg"
+  },
+  {
+    "name": "Spinat-Tofu-Curry",
+    "description": "Indisches Spinat-Tofu-Curry ähnlich Saag Paneer – vollständig vegan.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g Spinat",
+      "300 g fester Tofu",
+      "400 g Dosentomaten",
+      "200 ml Kokosmilch",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "1 TL Garam Masala",
+      "Ingwer"
+    ],
+    "zubereitung": [
+      "Tofu würfeln und anbraten.",
+      "Zwiebeln und Gewürze anschwitzen.",
+      "Tomaten und Kokosmilch zugeben.",
+      "Spinat einrühren."
+    ],
+    "image": "images/recipes/spinat-tofu-curry.jpg"
+  },
+  {
+    "name": "Zanderfilet auf Linsen",
+    "description": "Gebratenes Zanderfilet auf Puy-Linsen mit Senf-Vinaigrette.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 35,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "4 Zanderfilets",
+      "200 g Puy-Linsen",
+      "2 Schalotten",
+      "1 EL Dijonsenf",
+      "3 EL Weißweinessig",
+      "4 EL Olivenöl",
+      "Thymian",
+      "Petersilie"
+    ],
+    "zubereitung": [
+      "Linsen kochen.",
+      "Vinaigrette anrühren.",
+      "Fisch braten.",
+      "Linsen mit Dressing vermengen.",
+      "Zusammen anrichten."
+    ],
+    "image": "images/recipes/zander-linsen.jpg"
+  },
+  {
+    "name": "Kichererbsen-Eintopf",
+    "description": "Mediteraner Eintopf mit Kichererbsen, Spinat und Chorizo.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g Kichererbsen",
+      "200 g Chorizo",
+      "200 g Spinat",
+      "400 g Dosentomaten",
+      "1 Zwiebel",
+      "3 Knoblauchzehen",
+      "1 TL Paprikapulver",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Chorizo anbraten.",
+      "Zwiebeln und Knoblauch zugeben.",
+      "Tomaten und Kichererbsen einrühren.",
+      "Spinat unterheben."
+    ],
+    "image": "images/recipes/kichererbsen-eintopf.jpg"
+  },
+  {
+    "name": "Sauerbraten",
+    "description": "Rheinischer Sauerbraten mit Rosinensauce und Kartoffelklößen.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 180,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "1,2 kg Rindfleisch",
+      "500 ml Rotweinessig",
+      "500 ml Rotwein",
+      "1 Zwiebel",
+      "Lorbeer",
+      "Gewürznelken",
+      "50 g Rosinen",
+      "Lebkuchen",
+      "Kartoffelklöße"
+    ],
+    "zubereitung": [
+      "Fleisch 3 Tage in Beize einlegen.",
+      "Anbraten.",
+      "2 h schmoren.",
+      "Sauce mit Rosinen und Lebkuchen binden."
+    ],
+    "image": "images/recipes/sauerbraten.jpg"
+  },
+  {
+    "name": "Kabeljau in Safransauce",
+    "description": "Sanft gegarter Kabeljau in goldener Safransauce mit Fenchel.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 35,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "4 Kabeljaufilets",
+      "1 Fenchelknolle",
+      "200 ml Weißwein",
+      "200 ml Sahne",
+      "Safran",
+      "1 Schalotte",
+      "Butter",
+      "Dill"
+    ],
+    "zubereitung": [
+      "Fenchel dünn hobeln und andünsten.",
+      "Wein angießen.",
+      "Safran und Sahne zugeben.",
+      "Kabeljau sanft pochieren."
+    ],
+    "image": "images/recipes/kabeljau-safran.jpg"
+  },
+  {
+    "name": "Tofu-Scramble Abendessen",
+    "description": "Würziger Tofu-Scramble mit schwarzem Salz und Gemüse – vegane Alternative.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g fester Tofu",
+      "1 Paprika",
+      "1 Zucchini",
+      "2 EL Sojasoße",
+      "1 TL Kurkuma",
+      "½ TL Kala Namak",
+      "Paprikapulver",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Tofu zerkrümeln.",
+      "Gemüse würfeln.",
+      "Alles in Öl braten.",
+      "Gewürze zugeben.",
+      "Abschmecken."
+    ],
+    "image": "images/recipes/tofu-scramble.jpg"
+  },
+  {
+    "name": "Pulled Jackfruit Taco",
+    "description": "Vegane Tacos mit würzigem Pulled Jackfruit, Coleslaw und Limette.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "mexikanisch",
+    "zeit": 45,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "2 Dosen Jackfruit",
+      "2 EL BBQ-Gewürz",
+      "2 EL Tomatenmark",
+      "8 kleine Tortillas",
+      "200 g Weißkohl",
+      "Limette",
+      "Koriander",
+      "Öl"
+    ],
+    "zubereitung": [
+      "Jackfruit abtropfen und fasernd braten.",
+      "Tomatenmark und Gewürze unterrühren.",
+      "Coleslaw anrühren.",
+      "Tacos befüllen."
+    ],
+    "image": "images/recipes/jackfruit-taco.jpg"
+  },
+  {
+    "name": "Marinierte Rinderbrust",
+    "description": "Texanische Brisket-Scheiben mit Raucharoma und Bohnen.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 240,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "1,5 kg Rinderbrust",
+      "2 EL Paprikapulver",
+      "1 EL Knoblauchpulver",
+      "1 EL brauner Zucker",
+      "1 TL Cayenne",
+      "400 g Dose weiße Bohnen",
+      "BBQ-Sauce"
+    ],
+    "zubereitung": [
+      "Fleisch mit Rub einreiben.",
+      "Über Nacht ruhen lassen.",
+      "Bei 130 °C 4–5 h im Ofen garen.",
+      "Bohnen in Sauce erwärmen."
+    ],
+    "image": "images/recipes/brisket.jpg"
+  },
+  {
+    "name": "Gemüse-Tempura",
+    "description": "Knusprig ausgebackene Gemüsevariationen in leichtem Teig mit Dip.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 30,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "1 Paprika",
+      "2 Süßkartoffeln",
+      "200 g Shiitake",
+      "1 Brokkoli",
+      "150 g Weizenmehl",
+      "200 ml Eiswasser",
+      "1 Ei",
+      "Sojasoße",
+      "Mirin"
+    ],
+    "zubereitung": [
+      "Gemüse in Stücke schneiden.",
+      "Tempurateig aus Mehl und Eiswasser rühren.",
+      "Gemüse eintauchen und in Öl frittieren.",
+      "Dip zubereiten."
+    ],
+    "image": "images/recipes/tempura.jpg"
+  },
+  {
+    "name": "Hähnchenbrust mit Gremolata",
+    "description": "Saftige Hähnchenbrust mit frischer Gremolata auf Weißbohnenmus.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Hähnchenbrustfilets",
+      "400 g weiße Bohnen",
+      "2 EL Olivenöl",
+      "2 Knoblauchzehen",
+      "1 Zitrone (Schale)",
+      "Petersilie",
+      "Brühe",
+      "Salz"
+    ],
+    "zubereitung": [
+      "Hähnchen würzen und braten.",
+      "Bohnen in Brühe pürieren.",
+      "Gremolata aus Zitronenschale, Knoblauch und Petersilie hacken.",
+      "Anrichten."
+    ],
+    "image": "images/recipes/haehnchen-gremolata.jpg"
+  },
+  {
+    "name": "Lachs-Poke Bowl",
+    "description": "Hawaiianische Poke Bowl mit rohem Lachs, Edamame und Sesam-Dressing.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "300 g sashimi-frischer Lachs",
+      "200 g Sushireis",
+      "100 g Edamame",
+      "1 Avocado",
+      "1 Gurke",
+      "2 EL Sojasoße",
+      "1 EL Sesamöl",
+      "1 TL Sriracha",
+      "Sesam"
+    ],
+    "zubereitung": [
+      "Sushireis kochen.",
+      "Lachs würfeln und marinieren.",
+      "Bowl mit Reis, Lachs und Toppings anrichten.",
+      "Mit Dressing beträufeln."
+    ],
+    "image": "images/recipes/poke-bowl.jpg"
+  },
+  {
+    "name": "Germknödel",
+    "description": "Luftige bayerische Dampfnudeln mit Pflaumenfüllung und Vanillesauce.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 60,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "500 g Mehl",
+      "250 ml Milch",
+      "1 Würfel Hefe",
+      "80 g Butter",
+      "2 Eier",
+      "200 g Pflaumenmus",
+      "500 ml Milch",
+      "3 Eigelb",
+      "50 g Zucker",
+      "Vanille"
+    ],
+    "zubereitung": [
+      "Hefeteig zubereiten und gehen lassen.",
+      "Knödel mit Pflaumenmus füllen.",
+      "Im Dampf garen.",
+      "Vanillesauce kochen."
+    ],
+    "image": "images/recipes/germknoedel.jpg"
+  },
+  {
+    "name": "Kabeljau-Tacos",
+    "description": "Knusprig panierter Kabeljau in Maistortillas mit Mango-Salsa.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "mexikanisch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g Kabeljaufilet",
+      "8 Maistortillas",
+      "1 Mango",
+      "1 rote Zwiebel",
+      "Koriander",
+      "1 Jalapeño",
+      "Limette",
+      "100 g Panko",
+      "Öl"
+    ],
+    "zubereitung": [
+      "Kabeljau würzen und in Panko wälzen.",
+      "Frittieren.",
+      "Mango-Salsa würfeln.",
+      "Tacos belegen."
+    ],
+    "image": "images/recipes/kabeljau-tacos.jpg"
+  },
+  {
+    "name": "Bulgur-Gemüse-Pfanne",
+    "description": "Schnelle vegane Pfanne mit Bulgur, Paprika und mediterranen Kräutern.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 25,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "250 g Bulgur",
+      "2 Paprika",
+      "1 Zucchini",
+      "1 Dose Kichererbsen",
+      "1 TL Kreuzkümmel",
+      "1 TL Koriander",
+      "3 EL Olivenöl",
+      "Zitrone",
+      "Minze"
+    ],
+    "zubereitung": [
+      "Bulgur quellen lassen.",
+      "Gemüse anbraten.",
+      "Kichererbsen zugeben.",
+      "Alles vermengen und würzen.",
+      "Mit Minze garnieren."
+    ],
+    "image": "images/recipes/bulgur-pfanne.jpg"
+  },
+  {
+    "name": "Ente à l\\",
+    "description": "Klassische Entenbrust mit süß-saurer Orangensauce.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 50,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "2 Entenbrüste",
+      "3 Orangen",
+      "100 ml Weißwein",
+      "50 ml Orangenlikör",
+      "2 EL Zucker",
+      "200 ml Geflügelbrühe",
+      "Thymian",
+      "Butter"
+    ],
+    "zubereitung": [
+      "Entenhaut einritzen und anbraten.",
+      "Im Ofen garen.",
+      "Sauce aus Saft, Wein, Likör und Brühe reduzieren.",
+      "Mit Butter binden."
+    ],
+    "image": "images/recipes/ente-orange.jpg"
+  },
+  {
+    "name": "Khao Pad (Gebratener Reis)",
+    "description": "Thailändischer gebratener Jasminreis mit Ei, Gemüse und Fischsoße.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g gekochter Jasminreis (vom Vortag)",
+      "3 Eier",
+      "1 Paprika",
+      "1 Möhre",
+      "3 Frühlingszwiebeln",
+      "2 EL Sojasoße",
+      "1 EL Fischsoße",
+      "Knoblauch",
+      "Öl"
+    ],
+    "zubereitung": [
+      "Knoblauch anbraten.",
+      "Eier einrühren.",
+      "Gemüse und Reis zugeben.",
+      "Soßen einrühren.",
+      "Heiß servieren."
+    ],
+    "image": "images/recipes/khao-pad.jpg"
+  },
+  {
+    "name": "Grüner Spargel mit Schinken",
+    "description": "Gegrillter grüner Spargel in Parmaschinken mit Hollandaise.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 30,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "500 g grüner Spargel",
+      "8 Scheiben Parmaschinken",
+      "3 Eigelb",
+      "150 g Butter",
+      "1 Zitrone",
+      "Salz",
+      "Weißweinessig"
+    ],
+    "zubereitung": [
+      "Spargel in Schinken wickeln.",
+      "Auf dem Grill 10 Min. garen.",
+      "Hollandaise im Wasserbad aufschlagen.",
+      "Zusammen servieren."
+    ],
+    "image": "images/recipes/spargel-schinken.jpg"
+  },
+  {
+    "name": "Quinoa-Gemüse-Bowl",
+    "description": "Nährstoffreiche Quinoa-Bowl mit geröstetem Gemüse und Tahini-Dressing.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g Quinoa",
+      "1 Süßkartoffel",
+      "200 g Kichererbsen",
+      "1 Paprika",
+      "Rucola",
+      "3 EL Tahini",
+      "1 Zitrone",
+      "1 Knoblauchzehe",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Quinoa kochen.",
+      "Gemüse rösten.",
+      "Tahini-Dressing anrühren.",
+      "Bowl anrichten."
+    ],
+    "image": "images/recipes/quinoa-bowl.jpg"
+  },
+  {
+    "name": "Garnelen-Scampi",
+    "description": "Gebratene Garnelen in Knoblauch-Weißwein-Butter mit Pasta.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "300 g Garnelen",
+      "400 g Linguine",
+      "4 Knoblauchzehen",
+      "100 ml Weißwein",
+      "80 g Butter",
+      "Petersilie",
+      "Chili",
+      "Olivenöl"
+    ],
+    "zubereitung": [
+      "Pasta kochen.",
+      "Knoblauch und Chili in Öl anbraten.",
+      "Garnelen zugeben.",
+      "Mit Wein ablöschen.",
+      "Butter einrühren."
+    ],
+    "image": "images/recipes/garnelen-scampi.jpg"
+  },
+  {
+    "name": "Okonomiyaki",
+    "description": "Japanischer Kohlpfannkuchen mit Sojasoße, Mayo und Bonito-Flocken.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "asiatisch",
+    "zeit": 35,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Weißkohl",
+      "200 g Mehl",
+      "3 Eier",
+      "100 ml Dashi",
+      "100 g Garnelen",
+      "Okonomi-Sauce",
+      "Japanische Mayonnaise",
+      "Bonito-Flocken",
+      "Nori"
+    ],
+    "zubereitung": [
+      "Kohl hobeln und mit Mehl, Eiern und Dashi mischen.",
+      "Garnelen unterheben.",
+      "In Pfanne von beiden Seiten backen.",
+      "Belegen und servieren."
+    ],
+    "image": "images/recipes/okonomiyaki.jpg"
+  },
+  {
+    "name": "Ofengemüse mit Halloumi",
+    "description": "Buntes geröstetes Ofengemüse mit gebratenem Halloumi und Zitronenjoghurt.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "international",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "250 g Halloumi",
+      "1 Zucchini",
+      "1 Aubergine",
+      "1 Paprika",
+      "200 g Kirschtomaten",
+      "3 EL Olivenöl",
+      "200 g Joghurt",
+      "1 Zitrone",
+      "Kräuter"
+    ],
+    "zubereitung": [
+      "Gemüse würfeln und mit Öl und Kräutern mischen.",
+      "Bei 200 °C 25 Min. rösten.",
+      "Halloumi scheiben braten.",
+      "Zitronenjoghurt anrühren."
+    ],
+    "image": "images/recipes/ofengemüse-halloumi.jpg"
+  },
+  {
+    "name": "Pizza Margherita",
+    "description": "Klassische neapolitanische Pizza mit Tomatensauce, Mozzarella und frischem Basilikum.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "italienisch",
+    "zeit": 45,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Pizzamehl (Typ 00)",
+      "200 ml lauwarmes Wasser",
+      "7 g Trockenhefe",
+      "1 TL Salz",
+      "1 TL Olivenöl",
+      "200 g passierte Tomaten",
+      "1 Knoblauchzehe",
+      "250 g Mozzarella",
+      "Frisches Basilikum",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Hefe im Wasser auflösen, mit Mehl, Salz und Öl zu einem glatten Teig kneten. 30 Min. gehen lassen.",
+      "Passierte Tomaten mit gepresstem Knoblauch, Salz und Pfeffer würzen.",
+      "Teig dünn ausrollen, auf ein bemehltes Blech legen.",
+      "Tomatensauce gleichmäßig verteilen, Mozzarella in Scheiben darauflegen.",
+      "Im vorgeheizten Ofen bei 250 °C (Ober-/Unterhitze) 10–12 Min. backen.",
+      "Mit frischem Basilikum garnieren und sofort servieren."
+    ],
+    "image": "images/recipes/pizza-margherita.jpg"
+  },
+  {
+    "name": "Sauerbraten",
+    "description": "Klassischer rheinischer Sauerbraten mit zartem Rindfleisch in einer würzig-süßsauren Soße.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 180,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "1 kg Rinderbraten",
+      "500 ml Rotweinessig",
+      "500 ml Wasser",
+      "2 Zwiebeln",
+      "2 Lorbeerblätter",
+      "10 Pfefferkörner",
+      "1 EL Zucker",
+      "1 EL Butterschmalz",
+      "100 g Rosinen",
+      "4 Lebkuchen",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Essig, Wasser, Zwiebeln und Gewürze aufkochen, abkühlen lassen.",
+      "Fleisch 3 Tage darin marinieren.",
+      "Fleisch herausnehmen, trocken tupfen und in Butterschmalz scharf anbraten.",
+      "Marinade angießen, Fleisch 2 Stunden schmoren.",
+      "Soße mit zerbröserten Lebkuchen und Rosinen eindicken."
+    ],
+    "image": "images/recipes/sauerbraten.jpg"
+  },
+  {
+    "name": "Käsespätzle",
+    "description": "Saftige hausgemachte Spätzle mit geschmolzenem Bergkäse und knusprigen Röstzwiebeln.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 40,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Mehl",
+      "3 Eier",
+      "150 ml Wasser",
+      "1 TL Salz",
+      "200 g Bergkäse gerieben",
+      "2 Zwiebeln",
+      "2 EL Butter"
+    ],
+    "zubereitung": [
+      "Mehl, Eier, Wasser und Salz zu einem zähflüssigen Teig verrühren.",
+      "Teig durch Spätzlesieb in kochendes Salzwasser drücken.",
+      "Spätzle abschöpfen, mit Käse schichten.",
+      "Zwiebeln in Butter goldbraun rösten und über die Käsespätzle geben."
+    ],
+    "image": "images/recipes/kaesespaetzle.jpg"
+  },
+  {
+    "name": "Flammkuchen",
+    "description": "Hauchdünner elsässischer Flammkuchen mit Crème fraîche, Zwiebeln und Speck.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "250 g Mehl",
+      "125 ml Wasser",
+      "2 EL Öl",
+      "200 g Crème fraîche",
+      "2 Zwiebeln",
+      "150 g Speckwürfel",
+      "Salz, Pfeffer, Muskat"
+    ],
+    "zubereitung": [
+      "Mehl, Wasser, Öl und Salz zu einem glatten Teig kneten.",
+      "Teig sehr dünn ausrollen.",
+      "Crème fraîche würzen und verteilen.",
+      "Zwiebeln und Speck darüber verteilen.",
+      "Im vorgeheizten Ofen bei 250 °C 10–12 Minuten backen."
+    ],
+    "image": "images/recipes/flammkuchen.jpg"
+  },
+  {
+    "name": "Rösti",
+    "description": "Knusprige Schweizer Rösti aus geriebenen Kartoffeln, perfekt goldbraun in der Pfanne gebraten.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck",
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "600 g festkochende Kartoffeln",
+      "1 TL Salz",
+      "3 EL Butterschmalz"
+    ],
+    "zubereitung": [
+      "Kartoffeln kochen, abkühlen lassen und grob reiben.",
+      "Mit Salz würzen.",
+      "Butterschmalz in Pfanne erhitzen, Kartoffelmasse flach eindrücken.",
+      "Bei mittlerer Hitze 8 Min. pro Seite goldbraun braten."
+    ],
+    "image": "images/recipes/roesti.jpg"
+  },
+  {
+    "name": "Germknödel",
+    "description": "Fluffige österreichische Germknödel mit Mohnfüllung, serviert mit Vanillesauce und Mohn-Butter.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 90,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "400 g Mehl",
+      "1 Päckchen Trockenhefe",
+      "250 ml lauwarme Milch",
+      "60 g Butter",
+      "2 Eier",
+      "150 g Mohnfüllung (Fertig)",
+      "Vanillesauce zum Servieren",
+      "Puderzucker"
+    ],
+    "zubereitung": [
+      "Hefe in Milch auflösen, mit Mehl, Butter und Eiern zu Teig kneten.",
+      "60 Min. gehen lassen.",
+      "Teig teilen, Mohnfüllung einschlagen, Knödel formen.",
+      "Knödel über Dampf 20 Min. garen.",
+      "Mit Vanillesauce und Puderzucker servieren."
+    ],
+    "image": "images/recipes/germknoedel.jpg"
+  },
+  {
+    "name": "Reibekuchen",
+    "description": "Goldbraune Kartoffelpuffer aus frisch geriebenen Kartoffeln – ein rheinisches Klassiker.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "700 g Kartoffeln",
+      "1 Zwiebel",
+      "2 Eier",
+      "3 EL Mehl",
+      "Salz, Pfeffer",
+      "Öl zum Braten",
+      "Apfelmus zum Servieren"
+    ],
+    "zubereitung": [
+      "Kartoffeln und Zwiebel fein reiben, Flüssigkeit ausdrücken.",
+      "Mit Eiern, Mehl, Salz und Pfeffer vermengen.",
+      "Portionsweise in heißem Öl von jeder Seite 3–4 Min. goldbraun braten.",
+      "Mit Apfelmus servieren."
+    ],
+    "image": "images/recipes/reibekuchen.jpg"
+  },
+  {
+    "name": "Graupensuppe",
+    "description": "Herzhafte deutsche Graupensuppe mit Gemüse und Speck – ein wärmendes Wintergericht.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 60,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "150 g Graupen",
+      "100 g Speckwürfel",
+      "2 Karotten",
+      "1 Sellerieknollen (klein)",
+      "1 Lauchstange",
+      "1,5 L Fleischbrühe",
+      "Salz, Pfeffer",
+      "Petersilie"
+    ],
+    "zubereitung": [
+      "Speck anbraten, Gemüse in Würfel schneiden und mitdünsten.",
+      "Graupen und Brühe dazugeben.",
+      "45 Min. köcheln bis Graupen weich.",
+      "Mit Salz, Pfeffer und Petersilie abschmecken."
+    ],
+    "image": "images/recipes/graupensuppe.jpg"
+  },
+  {
+    "name": "Maultaschen in Brühe",
+    "description": "Schwäbische Maultaschen mit Fleisch-Spinat-Füllung, serviert in aromatischer Rindsbrühe.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 80,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 g Nudelteig (Fertig)",
+      "300 g gemischtes Hackfleisch",
+      "200 g Blattspinat",
+      "1 Zwiebel",
+      "2 Eier",
+      "Salz, Pfeffer, Muskat",
+      "1 L Rindsbrühe",
+      "Schnittlauch"
+    ],
+    "zubereitung": [
+      "Spinat blanchieren und hacken.",
+      "Hackfleisch, Spinat, Zwiebel und Eier vermengen, würzen.",
+      "Teig ausrollen, Füllung auf eine Hälfte verteilen, zusammenklappen.",
+      "Maultaschen ausstechen und in Salzwasser garen.",
+      "In heißer Brühe mit Schnittlauch servieren."
+    ],
+    "image": "images/recipes/maultaschen.jpg"
+  },
+  {
+    "name": "Zwiebelrostbraten",
+    "description": "Saftiger österreichischer Rostbraten mit goldener Zwiebelhaube und cremiger Bratensauce.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 45,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "4 Rindssteaks (je 180 g)",
+      "4 Zwiebeln",
+      "200 ml Rinderbrühe",
+      "100 ml Sauerrahm",
+      "2 EL Butterschmalz",
+      "Salz, Pfeffer",
+      "Mehl zum Bestäuben"
+    ],
+    "zubereitung": [
+      "Steaks klopfen, salzen, pfeffern und in Mehl wenden.",
+      "In Butterschmalz beidseitig scharf anbraten, warm stellen.",
+      "Zwiebeln in Ringe schneiden und im Bratfett goldbraun rösten.",
+      "Brühe angießen, aufkochen, Sauerrahm einrühren.",
+      "Steaks mit Zwiebeln und Sauce servieren."
+    ],
+    "image": "images/recipes/zwiebelrostbraten.jpg"
+  },
+  {
+    "name": "Linseneintopf",
+    "description": "Sättigender Linseneintopf mit Würstchen und Essig-Note – ein klassisches deutsches Wintergericht.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 55,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "300 g Tellerlinsen",
+      "2 Karotten",
+      "1 Sellerieknollen (klein)",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "4 Wiener Würstchen",
+      "1 L Gemüsebrühe",
+      "2 EL Weißweinessig",
+      "Salz, Pfeffer",
+      "Petersilie"
+    ],
+    "zubereitung": [
+      "Linsen waschen. Gemüse würfeln, in Öl andünsten.",
+      "Linsen und Brühe dazugeben, 35 Min. köcheln.",
+      "Würstchen in Scheiben zugeben und 5 Min. mitkochen.",
+      "Mit Essig, Salz und Pfeffer abschmecken, mit Petersilie servieren."
+    ],
+    "image": "images/recipes/linseneintopf.jpg"
+  },
+  {
+    "name": "Königsberger Klopse",
+    "description": "Zartes deutsches Hackfleischgericht in einer cremigen Kapernsauce mit Salzkartoffeln.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 50,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "500 g gemischtes Hackfleisch",
+      "1 Brötchen (altbacken)",
+      "1 Ei",
+      "1 Zwiebel",
+      "500 ml Rinderbrühe",
+      "150 ml Sahne",
+      "3 EL Kapern",
+      "1 EL Mehl",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Brötchen einweichen, ausdrücken. Mit Hack, Ei, Zwiebel, Salz und Pfeffer verkneten.",
+      "Klöße formen und in Brühe 20 Min. garen, herausnehmen.",
+      "Mehl in Fett anschwitzen, Brühe und Sahne zugeben.",
+      "Kapern unterrühren, Klöße zurückgeben und kurz ziehen lassen."
+    ],
+    "image": "images/recipes/koenisberger-klopse.jpg"
+  },
+  {
+    "name": "Bircher Müsli",
+    "description": "Cremiges Schweizer Bircher-Müsli mit geriebenen Äpfeln, Nüssen und Joghurt – ideal zum Frühstück.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "deutsch",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "80 g Haferflocken",
+      "200 ml Milch",
+      "150 g Naturjoghurt",
+      "2 Äpfel",
+      "50 g gemischte Nüsse",
+      "2 EL Honig",
+      "Saft einer halben Zitrone"
+    ],
+    "zubereitung": [
+      "Haferflocken über Nacht in Milch einweichen.",
+      "Äpfel reiben und mit Zitronensaft vermischen.",
+      "Joghurt und Honig unterrühren.",
+      "Äpfel und Nüsse untermischen und servieren."
+    ],
+    "image": "images/recipes/bircher-muesli.jpg"
+  },
+  {
+    "name": "Spargel mit Sauce Hollandaise",
+    "description": "Weißer Stangenspargel an selbstgemachter Sauce Hollandaise – der deutsche Frühlingskoch.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 40,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "1 kg weißer Spargel",
+      "3 Eigelb",
+      "200 g Butter",
+      "2 EL Weißweinessig",
+      "Salz, Zucker",
+      "Zitronensaft"
+    ],
+    "zubereitung": [
+      "Spargel schälen und in Salzwasser mit Zucker und Butter bissfest garen.",
+      "Eigelb mit Essig über Dampf cremig aufschlagen.",
+      "Flüssige Butter tröpfchenweise einrühren.",
+      "Mit Salz und Zitronensaft abschmecken. Zu Spargel servieren."
+    ],
+    "image": "images/recipes/spargel.jpg"
+  },
+  {
+    "name": "Schwarzwälder Kirschtorte",
+    "description": "Dekadente Schwarzwälder Kirschtorte mit Schokoladenbiskuit, Kirschen und Kirschwasser-Sahne.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 90,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "4 Eier",
+      "150 g Zucker",
+      "100 g Mehl",
+      "50 g Kakao",
+      "1 Glas Kirschen",
+      "600 ml Sahne",
+      "4 EL Kirschwasser",
+      "Schokoladenraspeln"
+    ],
+    "zubereitung": [
+      "Eier und Zucker schaumig schlagen. Mehl und Kakao unterheben.",
+      "Bei 180 °C 30 Min. backen.",
+      "Boden dreimal teilen, mit Kirschwasser tränken.",
+      "Sahne steif schlagen, mit Kirschen schichten.",
+      "Mit Schokoladenraspeln und Kirschen dekorieren."
+    ],
+    "image": "images/recipes/schwarzwaelder-kirschtorte.jpg"
+  },
+  {
+    "name": "Pfannkuchen mit Ahornsirup",
+    "description": "Fluffige amerikanisch inspirierte Pfannkuchen zum Frühstück mit Ahornsirup und frischen Beeren.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "international",
+    "zeit": 25,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g Mehl",
+      "2 TL Backpulver",
+      "2 EL Zucker",
+      "1 Prise Salz",
+      "250 ml Milch",
+      "2 Eier",
+      "2 EL Butter",
+      "Ahornsirup",
+      "Beeren"
+    ],
+    "zubereitung": [
+      "Trockene Zutaten mischen. Milch, Eier und Butter einrühren.",
+      "Teig 5 Min. ruhen lassen.",
+      "Portionsweise in Butterpfanne von jeder Seite 2 Min. backen.",
+      "Mit Ahornsirup und Beeren servieren."
+    ],
+    "image": "images/recipes/pancakes.jpg"
+  },
+  {
+    "name": "Brotzeit-Teller",
+    "description": "Bayerischer Brotzeit-Teller mit Obatzda, Radieschen, Bretzel und dunklem Brot.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g Camembert",
+      "100 g Frischkäse",
+      "1 Zwiebel",
+      "2 EL Butter",
+      "1 TL Kümmel",
+      "Paprikapulver",
+      "Salz, Pfeffer",
+      "Dunkles Brot",
+      "Radieschen",
+      "Brezel"
+    ],
+    "zubereitung": [
+      "Camembert und Frischkäse zerdrücken.",
+      "Zwiebel würfeln und untermischen.",
+      "Mit Butter, Kümmel, Paprika, Salz und Pfeffer abschmecken.",
+      "Mit Brot, Radieschen und Bretzel servieren."
+    ],
+    "image": "images/recipes/brotzeit.jpg"
+  },
+  {
+    "name": "Rindergulasch",
+    "description": "Herzhaftes deutsches Rindergulasch mit zarten Fleischwürfeln in kräftiger Paprikasoße.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 120,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "800 g Rindfleisch (Gulasch)",
+      "3 Zwiebeln",
+      "3 EL edelsüßes Paprikapulver",
+      "1 EL Tomatenmark",
+      "400 ml Rinderbrühe",
+      "200 ml Rotwein",
+      "2 EL Schmalz",
+      "Salz, Pfeffer, Kümmel",
+      "2 Lorbeerblätter"
+    ],
+    "zubereitung": [
+      "Fleisch in Würfel schneiden, Zwiebeln hacken.",
+      "Schmalz erhitzen, Fleisch portionsweise scharf anbraten.",
+      "Zwiebeln andünsten, Paprika und Tomatenmark zugeben.",
+      "Mit Wein und Brühe ablöschen, Gewürze zugeben.",
+      "1,5 Stunden schmoren bis Fleisch zart ist."
+    ],
+    "image": "images/recipes/gulasch.jpg"
+  },
+  {
+    "name": "Apfelstrudel",
+    "description": "Zartes österreichisches Strudel-Gebäck mit gewürzten Äpfeln, Rosinen und Zimt.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 70,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Strudelteig (Fertig)",
+      "1 kg Äpfel",
+      "80 g Zucker",
+      "80 g Rosinen",
+      "1 TL Zimt",
+      "50 g Semmelbrösel",
+      "50 g Butter",
+      "Puderzucker zum Bestäuben"
+    ],
+    "zubereitung": [
+      "Äpfel schälen und in dünne Scheiben schneiden.",
+      "Mit Zucker, Rosinen und Zimt mischen.",
+      "Strudelteig ausbreiten, mit gebräunten Bröseln bestreuen.",
+      "Apfelmischung auflegen, einrollen.",
+      "Mit Butter bepinseln, bei 190 °C 35 Min. backen."
+    ],
+    "image": "images/recipes/apfelstrudel.jpg"
+  },
+  {
+    "name": "Knödel mit Pilzrahmsoße",
+    "description": "Saftige Semmelknödel an einer cremigen Pilzrahmsoße – perfektes bayerisches Abendessen.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 50,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 g altbackene Brötchen",
+      "300 ml Milch",
+      "3 Eier",
+      "1 Zwiebel",
+      "Petersilie",
+      "Salz, Pfeffer, Muskat",
+      "400 g gemischte Pilze",
+      "200 ml Sahne",
+      "1 EL Butter"
+    ],
+    "zubereitung": [
+      "Brötchen würfeln, mit warmer Milch übergießen.",
+      "Eier, Zwiebel und Petersilie unterkneten, würzen.",
+      "Knödel formen und 20 Min. in Salzwasser ziehen lassen.",
+      "Pilze in Butter anbraten, mit Sahne ablöschen, einkochen.",
+      "Knödel mit Pilzsoße servieren."
+    ],
+    "image": "images/recipes/knoedel-pilzrahm.jpg"
+  },
+  {
+    "name": "Rote Grütze",
+    "description": "Fruchtige norddeutsche Rote Grütze mit Kirschen, Himbeeren und Johannisbeeren – klassisch mit Sahne.",
+    "label": "vegan",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "500 g gemischte rote Früchte (TK)",
+      "200 ml roter Traubensaft",
+      "4 EL Zucker",
+      "3 EL Stärke",
+      "Schlagsahne zum Servieren"
+    ],
+    "zubereitung": [
+      "Früchte und Saft aufkochen, Zucker zugeben.",
+      "Stärke mit 4 EL kaltem Wasser glatt rühren.",
+      "In die kochende Masse rühren, kurz aufkochen.",
+      "In Schüsseln füllen, abkühlen lassen. Mit Sahne servieren."
+    ],
+    "image": "images/recipes/rote-gruetze.jpg"
+  },
+  {
+    "name": "Quark mit Leinöl und Kartoffeln",
+    "description": "Ostdeutsches Nationalgericht: cremiger Quark mit Leinöl und mehligen Pellkartoffeln.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen",
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "500 g Magerquark",
+      "3 EL Leinöl",
+      "1 kleine Zwiebel",
+      "Schnittlauch",
+      "Salz",
+      "800 g mehlige Kartoffeln"
+    ],
+    "zubereitung": [
+      "Kartoffeln als Pellkartoffeln kochen.",
+      "Quark mit Leinöl, gehackter Zwiebel und Schnittlauch verrühren.",
+      "Mit Salz abschmecken.",
+      "Zu den heißen Pellkartoffeln servieren."
+    ],
+    "image": "images/recipes/quark-leinoel-kartoffeln.jpg"
+  },
+  {
+    "name": "Tafelspitz",
+    "description": "Klassischer Wiener Tafelspitz – zartes gekochtes Rindfleisch in aromatischer Brühe mit Meerrettich.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 150,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "1,2 kg Tafelspitz",
+      "2 Karotten",
+      "1 Sellerie",
+      "1 Lauch",
+      "1 Zwiebel",
+      "Lorbeer, Pfefferkörner",
+      "Salz",
+      "Frischer Meerrettich zum Servieren"
+    ],
+    "zubereitung": [
+      "Wasser mit Salz und Gewürzen aufkochen.",
+      "Fleisch einlegen und 2 Stunden leise köcheln.",
+      "Gemüse nach 1 Stunde zugeben.",
+      "Fleisch herausnehmen und in Scheiben schneiden.",
+      "Mit Brühe und frisch geriebenem Meerrettich servieren."
+    ],
+    "image": "images/recipes/tafelspitz.jpg"
+  },
+  {
+    "name": "Currywurst mit Pommes",
+    "description": "Berliner Streetfood-Klassiker: knackige Bratwurst mit würziger Currysauce und knusprigen Pommes.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Bratwürste",
+      "500 g Kartoffeln",
+      "200 ml Tomatenketchup",
+      "2 TL Currypulver",
+      "Öl zum Frittieren",
+      "Salz"
+    ],
+    "zubereitung": [
+      "Kartoffeln in Stifte schneiden und bei 180 °C frittieren.",
+      "Bratwürste in der Pfanne rundum braun braten.",
+      "Ketchup mit Curry verrühren und erhitzen.",
+      "Würste in Scheiben schneiden, Curry-Sauce darübergeben.",
+      "Mit Pommes servieren."
+    ],
+    "image": "images/recipes/currywurst.jpg"
+  },
+  {
+    "name": "Weißwurst mit Brezn",
+    "description": "Bayerische Weißwürste im Wasserbad gegart, mit süßem Senf und frischer Brezel – Frühstücksklassiker.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "fruehstueck"
+    ],
+    "kueche": "deutsch",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Weißwürste",
+      "4 Brezeln",
+      "Süßer Senf"
+    ],
+    "zubereitung": [
+      "Wasser auf 70–80 °C erhitzen (nicht kochen).",
+      "Weißwürste 10 Min. darin ziehen lassen.",
+      "Mit süßem Senf und Brezeln servieren."
+    ],
+    "image": "images/recipes/weisswurst.jpg"
+  },
+  {
+    "name": "Rinderschmorbraten",
+    "description": "Saftiger Schmorbraten mit Wurzelgemüse, Rotwein und dunkler Bratensauce.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 160,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "1,5 kg Rinderbraten",
+      "2 Karotten",
+      "1 Sellerie",
+      "2 Zwiebeln",
+      "300 ml Rotwein",
+      "400 ml Rinderbrühe",
+      "2 EL Tomatenmark",
+      "Öl, Lorbeer, Thymian",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Braten rundum scharf anbraten.",
+      "Gemüse anrösten, Tomatenmark zugeben.",
+      "Mit Wein ablöschen, Brühe und Gewürze dazugeben.",
+      "Bei 160 °C 2,5 Stunden im Ofen schmoren.",
+      "Bratensaft passieren, ggf. einkochen. Braten aufschneiden und servieren."
+    ],
+    "image": "images/recipes/schmorbraten.jpg"
+  },
+  {
+    "name": "Apfel-Mohn-Kuchen",
+    "description": "Saftiger Blechkuchen mit Mohnfüllung und Apfelstücken – einfach und unwiderstehlich.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 65,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "300 g Mehl",
+      "150 g Zucker",
+      "150 g Butter",
+      "3 Eier",
+      "1 Päckchen Backpulver",
+      "200 g Mohnfüllung (Fertig)",
+      "3 Äpfel",
+      "Puderzucker"
+    ],
+    "zubereitung": [
+      "Butter und Zucker cremig rühren, Eier unterrühren.",
+      "Mehl und Backpulver unterkneten.",
+      "Hälfte des Teigs auf Blech geben.",
+      "Mohnfüllung und Apfelscheiben verteilen, Rest Teig drüber.",
+      "Bei 175 °C 45 Min. backen, mit Puderzucker bestäuben."
+    ],
+    "image": "images/recipes/apfel-mohn-kuchen.jpg"
+  },
+  {
+    "name": "Labskaus",
+    "description": "Norddeutsches Seemannsgericht: Corned Beef mit Roter Bete, Kartoffeln und Spiegelei.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g Corned Beef (Dose)",
+      "400 g Kartoffeln",
+      "1 Glas Rote Bete",
+      "2 Zwiebeln",
+      "4 Eier",
+      "Öl",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Kartoffeln kochen und stampfen.",
+      "Corned Beef, Rote Bete und gebratene Zwiebeln untermischen.",
+      "Mit Salz und Pfeffer abschmecken.",
+      "Spiegeleier braten.",
+      "Labskaus mit Spiegelei servieren."
+    ],
+    "image": "images/recipes/labskaus.jpg"
+  },
+  {
+    "name": "Bienenstich",
+    "description": "Traditioneller Bienenstich-Kuchen mit Honig-Mandel-Kruste und Vanillepudding-Füllung.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 80,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "300 g Mehl",
+      "1 Päckchen Trockenhefe",
+      "150 ml Milch",
+      "80 g Butter",
+      "60 g Zucker",
+      "2 Eier",
+      "100 g Mandelblättchen",
+      "4 EL Honig",
+      "500 ml Vanillepudding"
+    ],
+    "zubereitung": [
+      "Hefeteig bereiten und 45 Min. gehen lassen.",
+      "Auf Blech ausrollen.",
+      "Butter, Zucker, Honig und Mandeln zu Topping kochen.",
+      "Auf Teig verteilen, bei 180 °C 20 Min. backen.",
+      "Abkühlen, teilen, Pudding als Füllung einarbeiten."
+    ],
+    "image": "images/recipes/bienenstich.jpg"
+  },
+  {
+    "name": "Himmel und Erde",
+    "description": "Rheinisches Himmel-und-Erde mit Blutwurst, Kartoffelpüree und karamellisierten Äpfeln.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 40,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "600 g Kartoffeln",
+      "3 Äpfel",
+      "4 Scheiben Blutwurst",
+      "2 Zwiebeln",
+      "50 g Butter",
+      "100 ml Milch",
+      "Salz, Pfeffer",
+      "Öl"
+    ],
+    "zubereitung": [
+      "Kartoffeln kochen und stampfen, mit Butter und Milch verrühren.",
+      "Äpfel schälen, vierteln und in Butter karamellisieren.",
+      "Zwiebeln in Ringe schneiden und goldbraun braten.",
+      "Blutwurst in Scheiben braten.",
+      "Alles zusammen anrichten."
+    ],
+    "image": "images/recipes/himmel-erde.jpg"
+  },
+  {
+    "name": "Grünkohl mit Pinkel",
+    "description": "Norddeutsches Wintergericht: milder Grünkohl mit geräucherter Pinkelwurst und Kasseler.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 90,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "1 kg Grünkohl (frisch)",
+      "2 Pinkelwürste",
+      "300 g Kasseler",
+      "2 Zwiebeln",
+      "100 g Schmalz",
+      "Salz, Pfeffer",
+      "Senf"
+    ],
+    "zubereitung": [
+      "Grünkohl waschen und blanchieren.",
+      "Schmalz erhitzen, Zwiebeln andünsten.",
+      "Grünkohl zugeben, Kasseler und Pinkel auflegen.",
+      "1 Stunde bei niedriger Hitze schmoren.",
+      "Mit Senf und Salzkartoffeln servieren."
+    ],
+    "image": "images/recipes/gruenkohl.jpg"
+  },
+  {
+    "name": "Dampfnudeln",
+    "description": "Schwäbische Dampfnudeln mit knuspriger Salzkruste, serviert mit Vanillesauce oder Sauerkraut.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 80,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "400 g Mehl",
+      "1 Päckchen Trockenhefe",
+      "250 ml lauwarme Milch",
+      "60 g Butter",
+      "1 Ei",
+      "1 Prise Salz",
+      "200 ml Milch (zum Dämpfen)",
+      "1 TL Salz",
+      "Vanillesauce"
+    ],
+    "zubereitung": [
+      "Hefeteig bereiten, 45 Min. gehen lassen.",
+      "Kugeln formen, nochmals gehen lassen.",
+      "Milch und Salz in Pfanne erhitzen, Nudeln hinein.",
+      "Bei geschlossenem Deckel 25 Min. dämpfen bis Knusperkruste.",
+      "Mit Vanillesauce servieren."
+    ],
+    "image": "images/recipes/dampfnudeln.jpg"
+  },
+  {
+    "name": "Kartoffelgratin",
+    "description": "Cremiges Kartoffelgratin mit Knoblauch und Käse – goldbraun überbacken und unwiderstehlich.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 65,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "800 g festkochende Kartoffeln",
+      "300 ml Sahne",
+      "2 Knoblauchzehen",
+      "100 g Gruyère gerieben",
+      "Butter für die Form",
+      "Salz, Pfeffer, Muskat"
+    ],
+    "zubereitung": [
+      "Kartoffeln dünn hobeln.",
+      "Sahne mit Knoblauch, Salz, Pfeffer und Muskat aufkochen.",
+      "Kartoffeln in gebutterte Form schichten, Sahne darübergießen.",
+      "Käse darüberstreuen.",
+      "Bei 180 °C 45 Min. backen bis goldbraun."
+    ],
+    "image": "images/recipes/kartoffelgratin.jpg"
+  },
+  {
+    "name": "Fischbrötchen mit Bismarckhering",
+    "description": "Norddeutsches Streetfood: knuspriges Brötchen mit mariniertem Bismarckhering und Zwiebeln.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 10,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Brötchen",
+      "4 Bismarckheringe (Glas)",
+      "1 Zwiebel",
+      "Remoulade",
+      "Eisbergsalat",
+      "Gurken"
+    ],
+    "zubereitung": [
+      "Brötchen aufschneiden.",
+      "Remoulade auf beide Hälften streichen.",
+      "Salat, Hering, Zwiebelringe und Gurken belegen.",
+      "Sofort servieren."
+    ],
+    "image": "images/recipes/fischbroetchen.jpg"
+  },
+  {
+    "name": "Sauerkrautsuppe",
+    "description": "Deftige Sauerkrautsuppe mit Kasseler und Gewürzgurken – Hausmannskost vom Feinsten.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 45,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g Sauerkraut",
+      "300 g Kasseler",
+      "2 Zwiebeln",
+      "3 Gewürzgurken",
+      "1 L Fleischbrühe",
+      "200 g Crème fraîche",
+      "Salz, Pfeffer, Kümmel"
+    ],
+    "zubereitung": [
+      "Kasseler würfeln, Zwiebeln hacken und andünsten.",
+      "Sauerkraut, Gurken und Brühe zugeben.",
+      "30 Min. köcheln.",
+      "Crème fraîche einrühren.",
+      "Mit Salz, Pfeffer und Kümmel abschmecken."
+    ],
+    "image": "images/recipes/sauerkrautsuppe.jpg"
+  },
+  {
+    "name": "Milchreis mit Zimtzucker",
+    "description": "Cremiger Milchreis mit Zimtzucker und Apfelmus – der deutsche Lieblingsklassiker aus der Kindheit.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "200 g Milchreis",
+      "1 L Milch",
+      "3 EL Zucker",
+      "1 Prise Salz",
+      "Zimt zum Bestreuen",
+      "Apfelmus zum Servieren"
+    ],
+    "zubereitung": [
+      "Milch mit Salz aufkochen, Reis einrühren.",
+      "Bei kleiner Hitze 25–30 Min. quellen lassen, gelegentlich rühren.",
+      "Zucker unterrühren.",
+      "In Schüsseln füllen, mit Zimtzucker bestreuen.",
+      "Mit Apfelmus servieren."
+    ],
+    "image": "images/recipes/milchreis.jpg"
+  },
+  {
+    "name": "Hausgemachte Brühwurst",
+    "description": "Zartes selbstgemachtes Brühwürstchen in der Fleischbrühe – einfach und ursprünglich gut.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 30,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Frankfurter Würstchen",
+      "1 L Fleischbrühe",
+      "Senf",
+      "Brot"
+    ],
+    "zubereitung": [
+      "Brühe erhitzen (nicht kochen).",
+      "Würstchen darin 8–10 Min. ziehen lassen.",
+      "Mit Senf und Brot servieren."
+    ],
+    "image": "images/recipes/bruehwurst.jpg"
+  },
+  {
+    "name": "Holunder-Schorle Crème brûlée",
+    "description": "Elegante Crème brûlée mit Holunderblütenessenz und knuspriger Karamellkruste.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 60,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "400 ml Sahne",
+      "6 Eigelb",
+      "80 g Zucker",
+      "3 EL Holunderblütensirup",
+      "4 EL brauner Zucker"
+    ],
+    "zubereitung": [
+      "Sahne mit Holundersirup erwärmen.",
+      "Eigelb und Zucker cremig rühren, Sahne zugeben.",
+      "In Förmchen füllen, im Wasserbad bei 150 °C 40 Min. stocken lassen.",
+      "Abkühlen, mit braunem Zucker bestreuen.",
+      "Mit Flambierbrenner karamellisieren."
+    ],
+    "image": "images/recipes/creme-brulee.jpg"
+  },
+  {
+    "name": "Kartoffelsalat (warm, bayrisch)",
+    "description": "Bayrischer Kartoffelsalat mit Essig-Öl-Marinade, Gurken und Radieschen – warm serviert.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 35,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "800 g festkochende Kartoffeln",
+      "200 ml Fleischbrühe",
+      "4 EL Weißweinessig",
+      "4 EL Öl",
+      "1 Zwiebel",
+      "Gurken",
+      "Radieschen",
+      "Salz, Pfeffer, Zucker",
+      "Schnittlauch"
+    ],
+    "zubereitung": [
+      "Kartoffeln kochen, noch warm pellen und in Scheiben schneiden.",
+      "Brühe, Essig, Öl und Zwiebel zur Marinade verrühren.",
+      "Warm über Kartoffeln gießen, 15 Min. ziehen lassen.",
+      "Gurken und Radieschen untermischen.",
+      "Mit Schnittlauch bestreut servieren."
+    ],
+    "image": "images/recipes/kartoffelsalat.jpg"
+  },
+  {
+    "name": "Gefüllte Paprika",
+    "description": "Klassische gefüllte Paprika mit Hackfleisch-Reis-Füllung in Tomatensoße – Hausmannskost.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 70,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Paprikaschoten",
+      "400 g Hackfleisch",
+      "150 g Reis (gekocht)",
+      "1 Zwiebel",
+      "400 g passierte Tomaten",
+      "Salz, Pfeffer",
+      "Öl"
+    ],
+    "zubereitung": [
+      "Paprika Deckel abschneiden, entkernen.",
+      "Hack mit Reis, Zwiebel, Salz und Pfeffer mischen.",
+      "Paprika füllen.",
+      "In Auflaufform setzen, Tomaten drumherum gießen.",
+      "Bei 180 °C 45 Min. backen."
+    ],
+    "image": "images/recipes/gefuellte-paprika.jpg"
+  },
+  {
+    "name": "Erbsensuppe mit Würstchen",
+    "description": "Sättigende Erbsensuppe mit Speck und Wiener Würstchen – wärmt von innen an kalten Tagen.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 60,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "400 g gelbe Schälerbsen",
+      "100 g Speckwürfel",
+      "2 Karotten",
+      "1 Lauchstange",
+      "1 L Fleischbrühe",
+      "4 Wiener Würstchen",
+      "Majoran",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Erbsen über Nacht einweichen.",
+      "Speck anbraten, Gemüse dazugeben.",
+      "Erbsen und Brühe zugeben, 45 Min. köcheln.",
+      "Würstchen in Scheiben zugeben.",
+      "Mit Majoran, Salz und Pfeffer abschmecken."
+    ],
+    "image": "images/recipes/erbsensuppe.jpg"
+  },
+  {
+    "name": "Zwetschgendatschi",
+    "description": "Saftig-fruchtig-butteriger bayerischer Pflaumenkuchen vom Blech – klassischer Sommerkuchen.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 70,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "300 g Mehl",
+      "150 g Butter",
+      "80 g Zucker",
+      "1 Ei",
+      "1 kg Pflaumen/Zwetschgen",
+      "Zimtzucker"
+    ],
+    "zubereitung": [
+      "Mehl, Butter, Zucker und Ei zu Mürbteig kneten.",
+      "Auf Blech ausrollen und kalt stellen.",
+      "Pflaumen entkernen und auf den Teig legen.",
+      "Mit Zimtzucker bestreuen.",
+      "Bei 180 °C 45 Min. backen."
+    ],
+    "image": "images/recipes/zwetschgendatschi.jpg"
+  },
+  {
+    "name": "Kohlrouladen",
+    "description": "Zarte Weißkohlrouladen gefüllt mit Hackfleisch und Reis, geschmort in kräftiger Tomatensoße.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 90,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "1 Weißkohlkopf",
+      "500 g gemischtes Hackfleisch",
+      "150 g Reis (gekocht)",
+      "1 Ei",
+      "1 Zwiebel",
+      "400 g Tomaten passiert",
+      "Brühe",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Kohlblätter im Salzwasser 3 Min. blanchieren.",
+      "Hack mit Reis, Ei, Zwiebel und Gewürzen mischen.",
+      "Füllung auf Blätter geben, fest einrollen.",
+      "In Bräter legen, Tomaten und Brühe zugeben.",
+      "Bei 160 °C 1 Stunde schmoren."
+    ],
+    "image": "images/recipes/kohlrouladen.jpg"
+  },
+  {
+    "name": "Obazda Toast",
+    "description": "Herzhafter Toast mit warmem Obazda und Rucola – ideal als schnelles bayerisches Abendessen.",
+    "label": "vegetarisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Scheiben Toastbrot",
+      "200 g Camembert",
+      "50 g Frischkäse",
+      "1 EL Butter",
+      "Paprikapulver",
+      "Salz",
+      "Rucola",
+      "Radieschen"
+    ],
+    "zubereitung": [
+      "Brot toasten.",
+      "Camembert und Frischkäse mit Butter und Paprika mischen.",
+      "Auf Toast verteilen.",
+      "Im Ofen kurz überbacken.",
+      "Mit Rucola und Radieschen servieren."
+    ],
+    "image": "images/recipes/obazda-toast.jpg"
+  },
+  {
+    "name": "Hühnerfrikassee",
+    "description": "Cremiges deutsches Hühnerfrikassee mit Champignons und Erbsen in zarter Sahnesoße.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 55,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "600 g Hühnerbrust",
+      "200 g Champignons",
+      "150 g Erbsen (TK)",
+      "1 Zwiebel",
+      "200 ml Sahne",
+      "500 ml Hühnerbrühe",
+      "2 EL Mehl",
+      "2 EL Butter",
+      "Salz, Pfeffer, Muskat"
+    ],
+    "zubereitung": [
+      "Hühnerbrust in Brühe 20 Min. garen, herausnehmen und würfeln.",
+      "Butter schmelzen, Mehl anschwitzen, Brühe einrühren.",
+      "Sahne zugeben, Champignons und Erbsen einkochen.",
+      "Hähnchen zurückgeben, würzen.",
+      "Mit Reis oder Nudeln servieren."
+    ],
+    "image": "images/recipes/huehnerfrikassee.jpg"
+  },
+  {
+    "name": "Speckpfanne mit Ei",
+    "description": "Deftige Bauernfrühstück-Pfanne mit Speck, Kartoffeln und Spiegelei – schnell und sättigend.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "fruehstueck",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 20,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "300 g gekochte Kartoffeln",
+      "150 g Speckwürfel",
+      "4 Eier",
+      "1 Zwiebel",
+      "Öl",
+      "Salz, Pfeffer",
+      "Schnittlauch"
+    ],
+    "zubereitung": [
+      "Speck und Zwiebeln in Öl anbraten.",
+      "Kartoffeln in Scheiben zugeben und goldbraun braten.",
+      "Eier daraufschlagen, stocken lassen.",
+      "Mit Salz, Pfeffer und Schnittlauch würzen."
+    ],
+    "image": "images/recipes/speckpfanne.jpg"
+  },
+  {
+    "name": "Kartoffelklöße mit Braten",
+    "description": "Bayrische Kartoffelklöße aus Rohkartoffeln, klassisch zu Schweinebraten und Blaukraut.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen",
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 60,
+    "schwierigkeit": "mittel",
+    "zutaten": [
+      "1 kg Kartoffeln (roh)",
+      "200 g Kartoffeln (gekocht)",
+      "2 EL Kartoffelmehl",
+      "Salz",
+      "1 Schweinebraten (800 g)",
+      "400 ml Bratensaft"
+    ],
+    "zubereitung": [
+      "Rohe Kartoffeln reiben, Flüssigkeit ausdrücken.",
+      "Gekochte Kartoffeln stampfen und mischen.",
+      "Mit Kartoffelmehl und Salz zu Klößen formen.",
+      "In Salzwasser 20 Min. garen.",
+      "Zu Schweinebraten und Soße servieren."
+    ],
+    "image": "images/recipes/kartoffelkloesse.jpg"
+  },
+  {
+    "name": "Matjes nach Hausfrauenart",
+    "description": "Nordischer Matjeshering mit Äpfeln, Zwiebeln und Sauerrahm – norddeutsche Spezialität.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "mittagessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 15,
+    "schwierigkeit": "einfach",
+    "zutaten": [
+      "4 Matjesfilets",
+      "2 Äpfel",
+      "1 Zwiebel",
+      "150 g Sauerrahm",
+      "1 EL Essig",
+      "1 TL Zucker",
+      "Dill",
+      "Salz, Pfeffer"
+    ],
+    "zubereitung": [
+      "Matjes in mundgerechte Stücke schneiden.",
+      "Äpfel schälen und würfeln, Zwiebel in Ringe schneiden.",
+      "Sauerrahm mit Essig, Zucker und Dill verrühren.",
+      "Alles mischen, mit Salz und Pfeffer abschmecken.",
+      "Mit Salzkartoffeln servieren."
+    ],
+    "image": "images/recipes/matjes.jpg"
+  },
+  {
+    "name": "Ente à l'orange (Deutsch)",
+    "description": "Festliche Entenkeule mit Orangensauce und Rotkraut – Sonntagsessen der Extraklasse.",
+    "label": "fleisch",
+    "mahlzeit": [
+      "abendessen"
+    ],
+    "kueche": "deutsch",
+    "zeit": 130,
+    "schwierigkeit": "schwer",
+    "zutaten": [
+      "2 Entenkeulen",
+      "3 Orangen",
+      "200 ml Weißwein",
+      "300 ml Entenfond",
+      "1 EL Honig",
+      "Salz, Pfeffer",
+      "Rotkraut zum Servieren"
+    ],
+    "zubereitung": [
+      "Entenkeulen würzen und bei 180 °C 1 Stunde braten.",
+      "Saft von 2 Orangen, Wein und Fond aufkochen.",
+      "Honig und Orangenschale zugeben, einkochen.",
+      "Keulen übergießen, nochmals 30 Min. braten.",
+      "Mit Rotkraut und Klößen servieren."
+    ],
+    "image": "images/recipes/ente-orange.jpg"
+  }
+]
