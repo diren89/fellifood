@@ -1,3 +1,6 @@
+// ─── Recipe DB Version (bump when replacing the full recipe set) ──────────────
+const RECIPE_DB_VERSION = 2; // v2 = TheMealDB 500-recipe import
+
 // ─── Initial Recipe Data ─────────────────────────────────────────────────────
 const INITIAL_RECIPES = [
 
@@ -8028,17 +8031,42 @@ function saveState(state) {
 function initState() {
   const saved = loadState();
   if (saved) {
-    // Merge new recipes from INITIAL_RECIPES that don't exist in saved state
+    // ── Recipe DB version check ───────────────────────────────────────────────
+    // When the full recipe set is replaced (RECIPE_DB_VERSION bumped), we swap
+    // out all recipes while keeping weekPlan, settings, etc. intact.
+    // Recipes added by the user (ids starting with 'u') are always preserved.
+    if ((saved.recipeDbVersion || 0) < RECIPE_DB_VERSION) {
+      const userRecipes = (saved.recipes || []).filter(r => String(r.id).startsWith('u'));
+      saved.recipes = [...INITIAL_RECIPES, ...userRecipes];
+      saved.recipeDbVersion = RECIPE_DB_VERSION;
+      // Clear weekPlan slots that referenced old recipe IDs
+      const validIds = new Set(saved.recipes.map(r => r.id));
+      if (saved.weekPlan) {
+        saved.weekPlan.forEach(day => {
+          (day.meals || []).forEach(meal => {
+            if (meal.recipeId && !validIds.has(meal.recipeId)) {
+              meal.recipeId = null;
+              meal.done = false;
+            }
+          });
+        });
+      }
+      saveState(saved);
+      return saved;
+    }
+
+    // ── Incremental merge: add new recipes, keep user recipes & image paths ───
     const savedIds = new Set(saved.recipes.map(r => r.id));
     const newRecipes = INITIAL_RECIPES.filter(r => !savedIds.has(r.id));
     if (newRecipes.length > 0) {
       saved.recipes = [...saved.recipes, ...newRecipes];
     }
-    // Update image paths of existing recipes to local paths
+    // Refresh image paths for built-in recipes (in case deployment updated them)
     const imageMap = Object.fromEntries(INITIAL_RECIPES.map(r => [r.id, r.image]));
     saved.recipes = saved.recipes.map(r =>
       imageMap[r.id] ? { ...r, image: imageMap[r.id] } : r
     );
+    saved.recipeDbVersion = RECIPE_DB_VERSION;
     saveState(saved);
     return saved;
   }
@@ -8050,7 +8078,8 @@ function initState() {
     intervalWeeks: 1,
     cyclePlans: {},
     settings: { dayConstraints: {} },
-    lastModified: 0
+    lastModified: 0,
+    recipeDbVersion: RECIPE_DB_VERSION
   };
 }
 
